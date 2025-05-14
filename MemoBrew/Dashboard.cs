@@ -16,5 +16,10 @@ namespace MemoBrew
         {
             InitializeComponent();
         }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

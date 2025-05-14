@@ -29,53 +29,43 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.usertextBox = new System.Windows.Forms.TextBox();
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.signupButton = new System.Windows.Forms.Button();
             this.dataSet = new MemoBrew.DataSet();
             this.drinkCategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.drinkCategoriesTableAdapter = new MemoBrew.DataSetTableAdapters.DrinkCategoriesTableAdapter();
             this.tableAdapterManager = new MemoBrew.DataSetTableAdapters.TableAdapterManager();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.drinkCategoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // usertextBox
-            // 
-            this.usertextBox.Location = new System.Drawing.Point(108, 377);
-            this.usertextBox.Name = "usertextBox";
-            this.usertextBox.Size = new System.Drawing.Size(324, 22);
-            this.usertextBox.TabIndex = 0;
-            // 
-            // PasswordTextBox
-            // 
-            this.PasswordTextBox.Location = new System.Drawing.Point(108, 423);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(324, 22);
-            this.PasswordTextBox.TabIndex = 1;
             // 
             // loginButton
             // 
             this.loginButton.BackColor = System.Drawing.Color.Black;
             this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
             this.loginButton.FlatAppearance.BorderSize = 50;
-            this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loginButton.Location = new System.Drawing.Point(130, 469);
+            this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.ForeColor = System.Drawing.Color.SeaShell;
+            this.loginButton.Location = new System.Drawing.Point(84, 530);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(0);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(283, 42);
             this.loginButton.TabIndex = 2;
-            this.loginButton.Text = "log in";
+            this.loginButton.Text = "Log In";
             this.loginButton.UseVisualStyleBackColor = false;
             // 
             // signupButton
             // 
             this.signupButton.BackColor = System.Drawing.Color.SeaShell;
-            this.signupButton.Location = new System.Drawing.Point(130, 528);
+            this.signupButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupButton.Location = new System.Drawing.Point(84, 595);
             this.signupButton.Name = "signupButton";
             this.signupButton.Size = new System.Drawing.Size(283, 42);
             this.signupButton.TabIndex = 3;
-            this.signupButton.Text = "sign up";
+            this.signupButton.Text = "Sign Up";
             this.signupButton.UseVisualStyleBackColor = false;
             // 
             // dataSet
@@ -107,37 +97,58 @@
             this.tableAdapterManager.UserLogTableAdapter = null;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
+            // pictureBox
+            // 
+            this.pictureBox.Image = global::MemoBrew.Properties.Resources.beer_mug;
+            this.pictureBox.Location = new System.Drawing.Point(123, 114);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(205, 197);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox.TabIndex = 4;
+            this.pictureBox.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(146, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(194, 37);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "MemoBrew";
+            // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SandyBrown;
-            this.ClientSize = new System.Drawing.Size(545, 622);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(451, 675);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.signupButton);
             this.Controls.Add(this.loginButton);
-            this.Controls.Add(this.PasswordTextBox);
-            this.Controls.Add(this.usertextBox);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Welcome";
             this.Text = "Welcome";
             this.Load += new System.EventHandler(this.Welcome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.drinkCategoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox usertextBox;
-        private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Button signupButton;
         private DataSet dataSet;
         private System.Windows.Forms.BindingSource drinkCategoriesBindingSource;
         private DataSetTableAdapters.DrinkCategoriesTableAdapter drinkCategoriesTableAdapter;
         private DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
