@@ -1,35 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MemoBrew
 {
-    public partial class Welcome: Form
+    public partial class Welcome : Form
     {
         public Welcome()
         {
             InitializeComponent();
+            this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
 
-        private void drinkCategoriesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void loginButton_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.drinkCategoriesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dataSet);
-
+            Login loginForm = new Login();
+            CloseAndOpenNewForm(loginForm);
         }
 
-        private void Welcome_Load(object sender, EventArgs e)
+        private void signupButton_Click(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dataSet.DrinkCategories' table. You can move, or remove it, as needed.
-            this.drinkCategoriesTableAdapter.Fill(this.dataSet.DrinkCategories);
+            Signup signupForm = new Signup();
+            CloseAndOpenNewForm(signupForm);
+        }
 
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Application.OpenForms.Count == 1)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void CloseAndOpenNewForm(Form newForm)
+        {
+            newForm.Show();
+            this.Hide();
+
+            newForm.FormClosed += (s, args) => this.Close();
         }
     }
 }

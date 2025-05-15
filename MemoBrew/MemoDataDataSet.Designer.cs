@@ -20,9 +20,9 @@ namespace MemoBrew {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("MemoDataDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DataSet : global::System.Data.DataSet {
+    public partial class MemoDataDataSet : global::System.Data.DataSet {
         
         private DrinkCategoriesDataTable tableDrinkCategories;
         
@@ -50,33 +50,33 @@ namespace MemoBrew {
         
         private UserFriendsViewDataTable tableUserFriendsView;
         
-        private global::System.Data.DataRelation relationFK__Drinks__Category__4316F928;
+        private global::System.Data.DataRelation relationFK__Drinks__Category__412EB0B6;
         
-        private global::System.Data.DataRelation relationFK__Drinks__CreatedB__440B1D61;
+        private global::System.Data.DataRelation relationFK__Drinks__CreatedB__4222D4EF;
         
-        private global::System.Data.DataRelation relationFK__FriendReq__Recei__10566F31;
+        private global::System.Data.DataRelation relationFK__FriendReq__Recei__48CFD27E;
         
-        private global::System.Data.DataRelation relationFK__FriendReq__Sende__0F624AF8;
+        private global::System.Data.DataRelation relationFK__FriendReq__Sende__47DBAE45;
         
-        private global::System.Data.DataRelation relationFK__Friends__FriendI__1F98B2C1;
+        private global::System.Data.DataRelation relationFK__Friends__FriendI__4E88ABD4;
         
-        private global::System.Data.DataRelation relationFK__Friends__UserID__1EA48E88;
+        private global::System.Data.DataRelation relationFK__Friends__UserID__4D94879B;
         
-        private global::System.Data.DataRelation relationFK__Images__CreatorI__41EDCAC5;
+        private global::System.Data.DataRelation relationFK__Images__CreatorI__5BE2A6F2;
         
-        private global::System.Data.DataRelation relationFK__Images__Occasion__40F9A68C;
+        private global::System.Data.DataRelation relationFK__Images__Occasion__5AEE82B9;
         
-        private global::System.Data.DataRelation relationFK__Occasion__Creato__02FC7413;
+        private global::System.Data.DataRelation relationFK__Occasion__Creato__5165187F;
         
-        private global::System.Data.DataRelation relationFK__OccasionP__Occas__2739D489;
+        private global::System.Data.DataRelation relationFK__OccasionP__Occas__5629CD9C;
         
-        private global::System.Data.DataRelation relationFK__OccasionP__UserI__282DF8C2;
+        private global::System.Data.DataRelation relationFK__OccasionP__UserI__571DF1D5;
         
-        private global::System.Data.DataRelation relationFK__UserDrink__Drink__4C6B5938;
+        private global::System.Data.DataRelation relationFK__UserDrink__Drink__619B8048;
         
-        private global::System.Data.DataRelation relationFK__UserDrink__Occas__4D5F7D71;
+        private global::System.Data.DataRelation relationFK__UserDrink__Occas__628FA481;
         
-        private global::System.Data.DataRelation relationFK__UserDrink__UserI__4B7734FF;
+        private global::System.Data.DataRelation relationFK__UserDrink__UserI__60A75C0F;
         
         private global::System.Data.DataRelation relationFK__UserLog__UserID__3A81B327;
         
@@ -84,7 +84,7 @@ namespace MemoBrew {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DataSet() {
+        public MemoDataDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -95,7 +95,7 @@ namespace MemoBrew {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected MemoDataDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -337,7 +337,7 @@ namespace MemoBrew {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DataSet cln = ((DataSet)(base.Clone()));
+            MemoDataDataSet cln = ((MemoDataDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -512,29 +512,29 @@ namespace MemoBrew {
                     this.tableUserFriendsView.InitVars();
                 }
             }
-            this.relationFK__Drinks__Category__4316F928 = this.Relations["FK__Drinks__Category__4316F928"];
-            this.relationFK__Drinks__CreatedB__440B1D61 = this.Relations["FK__Drinks__CreatedB__440B1D61"];
-            this.relationFK__FriendReq__Recei__10566F31 = this.Relations["FK__FriendReq__Recei__10566F31"];
-            this.relationFK__FriendReq__Sende__0F624AF8 = this.Relations["FK__FriendReq__Sende__0F624AF8"];
-            this.relationFK__Friends__FriendI__1F98B2C1 = this.Relations["FK__Friends__FriendI__1F98B2C1"];
-            this.relationFK__Friends__UserID__1EA48E88 = this.Relations["FK__Friends__UserID__1EA48E88"];
-            this.relationFK__Images__CreatorI__41EDCAC5 = this.Relations["FK__Images__CreatorI__41EDCAC5"];
-            this.relationFK__Images__Occasion__40F9A68C = this.Relations["FK__Images__Occasion__40F9A68C"];
-            this.relationFK__Occasion__Creato__02FC7413 = this.Relations["FK__Occasion__Creato__02FC7413"];
-            this.relationFK__OccasionP__Occas__2739D489 = this.Relations["FK__OccasionP__Occas__2739D489"];
-            this.relationFK__OccasionP__UserI__282DF8C2 = this.Relations["FK__OccasionP__UserI__282DF8C2"];
-            this.relationFK__UserDrink__Drink__4C6B5938 = this.Relations["FK__UserDrink__Drink__4C6B5938"];
-            this.relationFK__UserDrink__Occas__4D5F7D71 = this.Relations["FK__UserDrink__Occas__4D5F7D71"];
-            this.relationFK__UserDrink__UserI__4B7734FF = this.Relations["FK__UserDrink__UserI__4B7734FF"];
+            this.relationFK__Drinks__Category__412EB0B6 = this.Relations["FK__Drinks__Category__412EB0B6"];
+            this.relationFK__Drinks__CreatedB__4222D4EF = this.Relations["FK__Drinks__CreatedB__4222D4EF"];
+            this.relationFK__FriendReq__Recei__48CFD27E = this.Relations["FK__FriendReq__Recei__48CFD27E"];
+            this.relationFK__FriendReq__Sende__47DBAE45 = this.Relations["FK__FriendReq__Sende__47DBAE45"];
+            this.relationFK__Friends__FriendI__4E88ABD4 = this.Relations["FK__Friends__FriendI__4E88ABD4"];
+            this.relationFK__Friends__UserID__4D94879B = this.Relations["FK__Friends__UserID__4D94879B"];
+            this.relationFK__Images__CreatorI__5BE2A6F2 = this.Relations["FK__Images__CreatorI__5BE2A6F2"];
+            this.relationFK__Images__Occasion__5AEE82B9 = this.Relations["FK__Images__Occasion__5AEE82B9"];
+            this.relationFK__Occasion__Creato__5165187F = this.Relations["FK__Occasion__Creato__5165187F"];
+            this.relationFK__OccasionP__Occas__5629CD9C = this.Relations["FK__OccasionP__Occas__5629CD9C"];
+            this.relationFK__OccasionP__UserI__571DF1D5 = this.Relations["FK__OccasionP__UserI__571DF1D5"];
+            this.relationFK__UserDrink__Drink__619B8048 = this.Relations["FK__UserDrink__Drink__619B8048"];
+            this.relationFK__UserDrink__Occas__628FA481 = this.Relations["FK__UserDrink__Occas__628FA481"];
+            this.relationFK__UserDrink__UserI__60A75C0F = this.Relations["FK__UserDrink__UserI__60A75C0F"];
             this.relationFK__UserLog__UserID__3A81B327 = this.Relations["FK__UserLog__UserID__3A81B327"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DataSet";
+            this.DataSetName = "MemoDataDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/MemoDataDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableDrinkCategories = new DrinkCategoriesDataTable();
@@ -563,62 +563,62 @@ namespace MemoBrew {
             base.Tables.Add(this.tableUserDrinksSummaryView);
             this.tableUserFriendsView = new UserFriendsViewDataTable();
             base.Tables.Add(this.tableUserFriendsView);
-            this.relationFK__Drinks__Category__4316F928 = new global::System.Data.DataRelation("FK__Drinks__Category__4316F928", new global::System.Data.DataColumn[] {
+            this.relationFK__Drinks__Category__412EB0B6 = new global::System.Data.DataRelation("FK__Drinks__Category__412EB0B6", new global::System.Data.DataColumn[] {
                         this.tableDrinkCategories.CategoryIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableDrinks.CategoryIDColumn}, false);
-            this.Relations.Add(this.relationFK__Drinks__Category__4316F928);
-            this.relationFK__Drinks__CreatedB__440B1D61 = new global::System.Data.DataRelation("FK__Drinks__CreatedB__440B1D61", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Drinks__Category__412EB0B6);
+            this.relationFK__Drinks__CreatedB__4222D4EF = new global::System.Data.DataRelation("FK__Drinks__CreatedB__4222D4EF", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableDrinks.CreatedByUserIDColumn}, false);
-            this.Relations.Add(this.relationFK__Drinks__CreatedB__440B1D61);
-            this.relationFK__FriendReq__Recei__10566F31 = new global::System.Data.DataRelation("FK__FriendReq__Recei__10566F31", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Drinks__CreatedB__4222D4EF);
+            this.relationFK__FriendReq__Recei__48CFD27E = new global::System.Data.DataRelation("FK__FriendReq__Recei__48CFD27E", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableFriendRequest.ReceiverIDColumn}, false);
-            this.Relations.Add(this.relationFK__FriendReq__Recei__10566F31);
-            this.relationFK__FriendReq__Sende__0F624AF8 = new global::System.Data.DataRelation("FK__FriendReq__Sende__0F624AF8", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__FriendReq__Recei__48CFD27E);
+            this.relationFK__FriendReq__Sende__47DBAE45 = new global::System.Data.DataRelation("FK__FriendReq__Sende__47DBAE45", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableFriendRequest.SenderIDColumn}, false);
-            this.Relations.Add(this.relationFK__FriendReq__Sende__0F624AF8);
-            this.relationFK__Friends__FriendI__1F98B2C1 = new global::System.Data.DataRelation("FK__Friends__FriendI__1F98B2C1", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__FriendReq__Sende__47DBAE45);
+            this.relationFK__Friends__FriendI__4E88ABD4 = new global::System.Data.DataRelation("FK__Friends__FriendI__4E88ABD4", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableFriends.FriendIDColumn}, false);
-            this.Relations.Add(this.relationFK__Friends__FriendI__1F98B2C1);
-            this.relationFK__Friends__UserID__1EA48E88 = new global::System.Data.DataRelation("FK__Friends__UserID__1EA48E88", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Friends__FriendI__4E88ABD4);
+            this.relationFK__Friends__UserID__4D94879B = new global::System.Data.DataRelation("FK__Friends__UserID__4D94879B", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableFriends.UserIDColumn}, false);
-            this.Relations.Add(this.relationFK__Friends__UserID__1EA48E88);
-            this.relationFK__Images__CreatorI__41EDCAC5 = new global::System.Data.DataRelation("FK__Images__CreatorI__41EDCAC5", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Friends__UserID__4D94879B);
+            this.relationFK__Images__CreatorI__5BE2A6F2 = new global::System.Data.DataRelation("FK__Images__CreatorI__5BE2A6F2", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableImages.CreatorIDColumn}, false);
-            this.Relations.Add(this.relationFK__Images__CreatorI__41EDCAC5);
-            this.relationFK__Images__Occasion__40F9A68C = new global::System.Data.DataRelation("FK__Images__Occasion__40F9A68C", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Images__CreatorI__5BE2A6F2);
+            this.relationFK__Images__Occasion__5AEE82B9 = new global::System.Data.DataRelation("FK__Images__Occasion__5AEE82B9", new global::System.Data.DataColumn[] {
                         this.tableOccasion.OccasionIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableImages.OccasionIDColumn}, false);
-            this.Relations.Add(this.relationFK__Images__Occasion__40F9A68C);
-            this.relationFK__Occasion__Creato__02FC7413 = new global::System.Data.DataRelation("FK__Occasion__Creato__02FC7413", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Images__Occasion__5AEE82B9);
+            this.relationFK__Occasion__Creato__5165187F = new global::System.Data.DataRelation("FK__Occasion__Creato__5165187F", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableOccasion.CreatorIDColumn}, false);
-            this.Relations.Add(this.relationFK__Occasion__Creato__02FC7413);
-            this.relationFK__OccasionP__Occas__2739D489 = new global::System.Data.DataRelation("FK__OccasionP__Occas__2739D489", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Occasion__Creato__5165187F);
+            this.relationFK__OccasionP__Occas__5629CD9C = new global::System.Data.DataRelation("FK__OccasionP__Occas__5629CD9C", new global::System.Data.DataColumn[] {
                         this.tableOccasion.OccasionIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableOccasionParticipants.OccasionIDColumn}, false);
-            this.Relations.Add(this.relationFK__OccasionP__Occas__2739D489);
-            this.relationFK__OccasionP__UserI__282DF8C2 = new global::System.Data.DataRelation("FK__OccasionP__UserI__282DF8C2", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__OccasionP__Occas__5629CD9C);
+            this.relationFK__OccasionP__UserI__571DF1D5 = new global::System.Data.DataRelation("FK__OccasionP__UserI__571DF1D5", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableOccasionParticipants.UserIDColumn}, false);
-            this.Relations.Add(this.relationFK__OccasionP__UserI__282DF8C2);
-            this.relationFK__UserDrink__Drink__4C6B5938 = new global::System.Data.DataRelation("FK__UserDrink__Drink__4C6B5938", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__OccasionP__UserI__571DF1D5);
+            this.relationFK__UserDrink__Drink__619B8048 = new global::System.Data.DataRelation("FK__UserDrink__Drink__619B8048", new global::System.Data.DataColumn[] {
                         this.tableDrinks.DrinkIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableUserDrinks.DrinkIDColumn}, false);
-            this.Relations.Add(this.relationFK__UserDrink__Drink__4C6B5938);
-            this.relationFK__UserDrink__Occas__4D5F7D71 = new global::System.Data.DataRelation("FK__UserDrink__Occas__4D5F7D71", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__UserDrink__Drink__619B8048);
+            this.relationFK__UserDrink__Occas__628FA481 = new global::System.Data.DataRelation("FK__UserDrink__Occas__628FA481", new global::System.Data.DataColumn[] {
                         this.tableOccasion.OccasionIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableUserDrinks.OccasionIDColumn}, false);
-            this.Relations.Add(this.relationFK__UserDrink__Occas__4D5F7D71);
-            this.relationFK__UserDrink__UserI__4B7734FF = new global::System.Data.DataRelation("FK__UserDrink__UserI__4B7734FF", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__UserDrink__Occas__628FA481);
+            this.relationFK__UserDrink__UserI__60A75C0F = new global::System.Data.DataRelation("FK__UserDrink__UserI__60A75C0F", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableUserDrinks.UserIDColumn}, false);
-            this.Relations.Add(this.relationFK__UserDrink__UserI__4B7734FF);
+            this.Relations.Add(this.relationFK__UserDrink__UserI__60A75C0F);
             this.relationFK__UserLog__UserID__3A81B327 = new global::System.Data.DataRelation("FK__UserLog__UserID__3A81B327", new global::System.Data.DataColumn[] {
                         this.tableUsers.UserIDColumn}, new global::System.Data.DataColumn[] {
                         this.tableUserLog.UserIDColumn}, false);
@@ -714,7 +714,7 @@ namespace MemoBrew {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DataSet ds = new DataSet();
+            MemoDataDataSet ds = new MemoDataDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -1031,7 +1031,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1237,7 +1237,7 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DrinksRow AddDrinksRow(string Name, DrinkCategoriesRow parentDrinkCategoriesRowByFK__Drinks__Category__4316F928, decimal AlcoholContent, decimal Amount, string Unit, UsersRow parentUsersRowByFK__Drinks__CreatedB__440B1D61) {
+            public DrinksRow AddDrinksRow(string Name, DrinkCategoriesRow parentDrinkCategoriesRowByFK__Drinks__Category__412EB0B6, decimal AlcoholContent, decimal Amount, string Unit, UsersRow parentUsersRowByFK__Drinks__CreatedB__4222D4EF) {
                 DrinksRow rowDrinksRow = ((DrinksRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1247,11 +1247,11 @@ namespace MemoBrew {
                         Amount,
                         Unit,
                         null};
-                if ((parentDrinkCategoriesRowByFK__Drinks__Category__4316F928 != null)) {
-                    columnValuesArray[2] = parentDrinkCategoriesRowByFK__Drinks__Category__4316F928[0];
+                if ((parentDrinkCategoriesRowByFK__Drinks__Category__412EB0B6 != null)) {
+                    columnValuesArray[2] = parentDrinkCategoriesRowByFK__Drinks__Category__412EB0B6[0];
                 }
-                if ((parentUsersRowByFK__Drinks__CreatedB__440B1D61 != null)) {
-                    columnValuesArray[6] = parentUsersRowByFK__Drinks__CreatedB__440B1D61[0];
+                if ((parentUsersRowByFK__Drinks__CreatedB__4222D4EF != null)) {
+                    columnValuesArray[6] = parentUsersRowByFK__Drinks__CreatedB__4222D4EF[0];
                 }
                 rowDrinksRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDrinksRow);
@@ -1388,7 +1388,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1574,7 +1574,7 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FriendRequestRow AddFriendRequestRow(UsersRow parentUsersRowByFK__FriendReq__Sende__0F624AF8, UsersRow parentUsersRowByFK__FriendReq__Recei__10566F31, string Status, System.DateTime RequestDate) {
+            public FriendRequestRow AddFriendRequestRow(UsersRow parentUsersRowByFK__FriendReq__Sende__47DBAE45, UsersRow parentUsersRowByFK__FriendReq__Recei__48CFD27E, string Status, System.DateTime RequestDate) {
                 FriendRequestRow rowFriendRequestRow = ((FriendRequestRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1582,11 +1582,11 @@ namespace MemoBrew {
                         null,
                         Status,
                         RequestDate};
-                if ((parentUsersRowByFK__FriendReq__Sende__0F624AF8 != null)) {
-                    columnValuesArray[1] = parentUsersRowByFK__FriendReq__Sende__0F624AF8[0];
+                if ((parentUsersRowByFK__FriendReq__Sende__47DBAE45 != null)) {
+                    columnValuesArray[1] = parentUsersRowByFK__FriendReq__Sende__47DBAE45[0];
                 }
-                if ((parentUsersRowByFK__FriendReq__Recei__10566F31 != null)) {
-                    columnValuesArray[2] = parentUsersRowByFK__FriendReq__Recei__10566F31[0];
+                if ((parentUsersRowByFK__FriendReq__Recei__48CFD27E != null)) {
+                    columnValuesArray[2] = parentUsersRowByFK__FriendReq__Recei__48CFD27E[0];
                 }
                 rowFriendRequestRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFriendRequestRow);
@@ -1715,7 +1715,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1891,18 +1891,18 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FriendsRow AddFriendsRow(UsersRow parentUsersRowByFK__Friends__UserID__1EA48E88, UsersRow parentUsersRowByFK__Friends__FriendI__1F98B2C1, System.DateTime FriendsSince) {
+            public FriendsRow AddFriendsRow(UsersRow parentUsersRowByFK__Friends__UserID__4D94879B, UsersRow parentUsersRowByFK__Friends__FriendI__4E88ABD4, System.DateTime FriendsSince) {
                 FriendsRow rowFriendsRow = ((FriendsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null,
                         FriendsSince};
-                if ((parentUsersRowByFK__Friends__UserID__1EA48E88 != null)) {
-                    columnValuesArray[1] = parentUsersRowByFK__Friends__UserID__1EA48E88[0];
+                if ((parentUsersRowByFK__Friends__UserID__4D94879B != null)) {
+                    columnValuesArray[1] = parentUsersRowByFK__Friends__UserID__4D94879B[0];
                 }
-                if ((parentUsersRowByFK__Friends__FriendI__1F98B2C1 != null)) {
-                    columnValuesArray[2] = parentUsersRowByFK__Friends__FriendI__1F98B2C1[0];
+                if ((parentUsersRowByFK__Friends__FriendI__4E88ABD4 != null)) {
+                    columnValuesArray[2] = parentUsersRowByFK__Friends__FriendI__4E88ABD4[0];
                 }
                 rowFriendsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFriendsRow);
@@ -2027,7 +2027,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2223,7 +2223,7 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ImagesRow AddImagesRow(string ImagePath, string Caption, OccasionRow parentOccasionRowByFK__Images__Occasion__40F9A68C, UsersRow parentUsersRowByFK__Images__CreatorI__41EDCAC5, System.DateTime UploadDate) {
+            public ImagesRow AddImagesRow(string ImagePath, string Caption, OccasionRow parentOccasionRowByFK__Images__Occasion__5AEE82B9, UsersRow parentUsersRowByFK__Images__CreatorI__5BE2A6F2, System.DateTime UploadDate) {
                 ImagesRow rowImagesRow = ((ImagesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2232,11 +2232,11 @@ namespace MemoBrew {
                         null,
                         null,
                         UploadDate};
-                if ((parentOccasionRowByFK__Images__Occasion__40F9A68C != null)) {
-                    columnValuesArray[3] = parentOccasionRowByFK__Images__Occasion__40F9A68C[0];
+                if ((parentOccasionRowByFK__Images__Occasion__5AEE82B9 != null)) {
+                    columnValuesArray[3] = parentOccasionRowByFK__Images__Occasion__5AEE82B9[0];
                 }
-                if ((parentUsersRowByFK__Images__CreatorI__41EDCAC5 != null)) {
-                    columnValuesArray[4] = parentUsersRowByFK__Images__CreatorI__41EDCAC5[0];
+                if ((parentUsersRowByFK__Images__CreatorI__5BE2A6F2 != null)) {
+                    columnValuesArray[4] = parentUsersRowByFK__Images__CreatorI__5BE2A6F2[0];
                 }
                 rowImagesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowImagesRow);
@@ -2369,7 +2369,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2585,7 +2585,7 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OccasionRow AddOccasionRow(string Name, string Location, string Description, System.DateTime Date, System.TimeSpan StartTime, System.TimeSpan EndTime, UsersRow parentUsersRowByFK__Occasion__Creato__02FC7413) {
+            public OccasionRow AddOccasionRow(string Name, string Location, string Description, System.DateTime Date, System.TimeSpan StartTime, System.TimeSpan EndTime, UsersRow parentUsersRowByFK__Occasion__Creato__5165187F) {
                 OccasionRow rowOccasionRow = ((OccasionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2596,8 +2596,8 @@ namespace MemoBrew {
                         StartTime,
                         EndTime,
                         null};
-                if ((parentUsersRowByFK__Occasion__Creato__02FC7413 != null)) {
-                    columnValuesArray[7] = parentUsersRowByFK__Occasion__Creato__02FC7413[0];
+                if ((parentUsersRowByFK__Occasion__Creato__5165187F != null)) {
+                    columnValuesArray[7] = parentUsersRowByFK__Occasion__Creato__5165187F[0];
                 }
                 rowOccasionRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOccasionRow);
@@ -2738,7 +2738,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2914,18 +2914,18 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public OccasionParticipantsRow AddOccasionParticipantsRow(OccasionRow parentOccasionRowByFK__OccasionP__Occas__2739D489, UsersRow parentUsersRowByFK__OccasionP__UserI__282DF8C2, string Status) {
+            public OccasionParticipantsRow AddOccasionParticipantsRow(OccasionRow parentOccasionRowByFK__OccasionP__Occas__5629CD9C, UsersRow parentUsersRowByFK__OccasionP__UserI__571DF1D5, string Status) {
                 OccasionParticipantsRow rowOccasionParticipantsRow = ((OccasionParticipantsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         null,
                         Status};
-                if ((parentOccasionRowByFK__OccasionP__Occas__2739D489 != null)) {
-                    columnValuesArray[1] = parentOccasionRowByFK__OccasionP__Occas__2739D489[0];
+                if ((parentOccasionRowByFK__OccasionP__Occas__5629CD9C != null)) {
+                    columnValuesArray[1] = parentOccasionRowByFK__OccasionP__Occas__5629CD9C[0];
                 }
-                if ((parentUsersRowByFK__OccasionP__UserI__282DF8C2 != null)) {
-                    columnValuesArray[2] = parentUsersRowByFK__OccasionP__UserI__282DF8C2[0];
+                if ((parentUsersRowByFK__OccasionP__UserI__571DF1D5 != null)) {
+                    columnValuesArray[2] = parentUsersRowByFK__OccasionP__UserI__571DF1D5[0];
                 }
                 rowOccasionParticipantsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOccasionParticipantsRow);
@@ -3051,7 +3051,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3267,7 +3267,7 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UserDrinksRow AddUserDrinksRow(UsersRow parentUsersRowByFK__UserDrink__UserI__4B7734FF, DrinksRow parentDrinksRowByFK__UserDrink__Drink__4C6B5938, OccasionRow parentOccasionRowByFK__UserDrink__Occas__4D5F7D71, int Quantity, System.DateTime ConsumedAt, int HungoverRating, string Notes) {
+            public UserDrinksRow AddUserDrinksRow(UsersRow parentUsersRowByFK__UserDrink__UserI__60A75C0F, DrinksRow parentDrinksRowByFK__UserDrink__Drink__619B8048, OccasionRow parentOccasionRowByFK__UserDrink__Occas__628FA481, int Quantity, System.DateTime ConsumedAt, int HungoverRating, string Notes) {
                 UserDrinksRow rowUserDrinksRow = ((UserDrinksRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3278,14 +3278,14 @@ namespace MemoBrew {
                         ConsumedAt,
                         HungoverRating,
                         Notes};
-                if ((parentUsersRowByFK__UserDrink__UserI__4B7734FF != null)) {
-                    columnValuesArray[1] = parentUsersRowByFK__UserDrink__UserI__4B7734FF[0];
+                if ((parentUsersRowByFK__UserDrink__UserI__60A75C0F != null)) {
+                    columnValuesArray[1] = parentUsersRowByFK__UserDrink__UserI__60A75C0F[0];
                 }
-                if ((parentDrinksRowByFK__UserDrink__Drink__4C6B5938 != null)) {
-                    columnValuesArray[2] = parentDrinksRowByFK__UserDrink__Drink__4C6B5938[0];
+                if ((parentDrinksRowByFK__UserDrink__Drink__619B8048 != null)) {
+                    columnValuesArray[2] = parentDrinksRowByFK__UserDrink__Drink__619B8048[0];
                 }
-                if ((parentOccasionRowByFK__UserDrink__Occas__4D5F7D71 != null)) {
-                    columnValuesArray[3] = parentOccasionRowByFK__UserDrink__Occas__4D5F7D71[0];
+                if ((parentOccasionRowByFK__UserDrink__Occas__628FA481 != null)) {
+                    columnValuesArray[3] = parentOccasionRowByFK__UserDrink__Occas__628FA481[0];
                 }
                 rowUserDrinksRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowUserDrinksRow);
@@ -3425,7 +3425,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3719,7 +3719,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3787,7 +3787,7 @@ namespace MemoBrew {
             
             private global::System.Data.DataColumn columnUserID;
             
-            private global::System.Data.DataColumn columnUserName;
+            private global::System.Data.DataColumn columnUsername;
             
             private global::System.Data.DataColumn columnFirstName;
             
@@ -3848,9 +3848,9 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn UserNameColumn {
+            public global::System.Data.DataColumn UsernameColumn {
                 get {
-                    return this.columnUserName;
+                    return this.columnUsername;
                 }
             }
             
@@ -3955,11 +3955,11 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow AddUsersRow(string UserName, string FirstName, string LastName, System.DateTime DateOfBirth, decimal Weight, decimal Height, string Gender, string ProfilePicture, string Password) {
+            public UsersRow AddUsersRow(string Username, string FirstName, string LastName, System.DateTime DateOfBirth, decimal Weight, decimal Height, string Gender, string ProfilePicture, string Password) {
                 UsersRow rowUsersRow = ((UsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        UserName,
+                        Username,
                         FirstName,
                         LastName,
                         DateOfBirth,
@@ -3998,7 +3998,7 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnUserID = base.Columns["UserID"];
-                this.columnUserName = base.Columns["UserName"];
+                this.columnUsername = base.Columns["Username"];
                 this.columnFirstName = base.Columns["FirstName"];
                 this.columnLastName = base.Columns["LastName"];
                 this.columnDateOfBirth = base.Columns["DateOfBirth"];
@@ -4014,8 +4014,8 @@ namespace MemoBrew {
             private void InitClass() {
                 this.columnUserID = new global::System.Data.DataColumn("UserID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUserID);
-                this.columnUserName = new global::System.Data.DataColumn("UserName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUserName);
+                this.columnUsername = new global::System.Data.DataColumn("Username", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUsername);
                 this.columnFirstName = new global::System.Data.DataColumn("FirstName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFirstName);
                 this.columnLastName = new global::System.Data.DataColumn("LastName", typeof(string), null, global::System.Data.MappingType.Element);
@@ -4040,8 +4040,8 @@ namespace MemoBrew {
                 this.columnUserID.AllowDBNull = false;
                 this.columnUserID.ReadOnly = true;
                 this.columnUserID.Unique = true;
-                this.columnUserName.AllowDBNull = false;
-                this.columnUserName.MaxLength = 50;
+                this.columnUsername.AllowDBNull = false;
+                this.columnUsername.MaxLength = 50;
                 this.columnFirstName.AllowDBNull = false;
                 this.columnFirstName.MaxLength = 50;
                 this.columnLastName.AllowDBNull = false;
@@ -4118,7 +4118,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4501,7 +4501,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4850,7 +4850,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5238,7 +5238,7 @@ namespace MemoBrew {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet ds = new DataSet();
+                MemoDataDataSet ds = new MemoDataDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5364,11 +5364,11 @@ namespace MemoBrew {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DrinksRow[] GetDrinksRows() {
-                if ((this.Table.ChildRelations["FK__Drinks__Category__4316F928"] == null)) {
+                if ((this.Table.ChildRelations["FK__Drinks__Category__412EB0B6"] == null)) {
                     return new DrinksRow[0];
                 }
                 else {
-                    return ((DrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Drinks__Category__4316F928"])));
+                    return ((DrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Drinks__Category__412EB0B6"])));
                 }
             }
         }
@@ -5483,10 +5483,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DrinkCategoriesRow DrinkCategoriesRow {
                 get {
-                    return ((DrinkCategoriesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Drinks__Category__4316F928"])));
+                    return ((DrinkCategoriesRow)(this.GetParentRow(this.Table.ParentRelations["FK__Drinks__Category__412EB0B6"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Drinks__Category__4316F928"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Drinks__Category__412EB0B6"]);
                 }
             }
             
@@ -5494,10 +5494,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow UsersRow {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Drinks__CreatedB__440B1D61"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Drinks__CreatedB__4222D4EF"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Drinks__CreatedB__440B1D61"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Drinks__CreatedB__4222D4EF"]);
                 }
             }
             
@@ -5540,11 +5540,11 @@ namespace MemoBrew {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UserDrinksRow[] GetUserDrinksRows() {
-                if ((this.Table.ChildRelations["FK__UserDrink__Drink__4C6B5938"] == null)) {
+                if ((this.Table.ChildRelations["FK__UserDrink__Drink__619B8048"] == null)) {
                     return new UserDrinksRow[0];
                 }
                 else {
-                    return ((UserDrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__UserDrink__Drink__4C6B5938"])));
+                    return ((UserDrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__UserDrink__Drink__619B8048"])));
                 }
             }
         }
@@ -5630,23 +5630,23 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow UsersRowByFK__FriendReq__Recei__10566F31 {
+            public UsersRow UsersRowByFK__FriendReq__Recei__48CFD27E {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__FriendReq__Recei__10566F31"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__FriendReq__Recei__48CFD27E"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__FriendReq__Recei__10566F31"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__FriendReq__Recei__48CFD27E"]);
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow UsersRowByFK__FriendReq__Sende__0F624AF8 {
+            public UsersRow UsersRowByFK__FriendReq__Sende__47DBAE45 {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__FriendReq__Sende__0F624AF8"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__FriendReq__Sende__47DBAE45"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__FriendReq__Sende__0F624AF8"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__FriendReq__Sende__47DBAE45"]);
                 }
             }
             
@@ -5740,23 +5740,23 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow UsersRowByFK__Friends__FriendI__1F98B2C1 {
+            public UsersRow UsersRowByFK__Friends__FriendI__4E88ABD4 {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Friends__FriendI__1F98B2C1"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Friends__FriendI__4E88ABD4"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Friends__FriendI__1F98B2C1"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Friends__FriendI__4E88ABD4"]);
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public UsersRow UsersRowByFK__Friends__UserID__1EA48E88 {
+            public UsersRow UsersRowByFK__Friends__UserID__4D94879B {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Friends__UserID__1EA48E88"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Friends__UserID__4D94879B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Friends__UserID__1EA48E88"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Friends__UserID__4D94879B"]);
                 }
             }
             
@@ -5872,10 +5872,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow UsersRow {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Images__CreatorI__41EDCAC5"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Images__CreatorI__5BE2A6F2"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Images__CreatorI__41EDCAC5"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Images__CreatorI__5BE2A6F2"]);
                 }
             }
             
@@ -5883,10 +5883,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public OccasionRow OccasionRow {
                 get {
-                    return ((OccasionRow)(this.GetParentRow(this.Table.ParentRelations["FK__Images__Occasion__40F9A68C"])));
+                    return ((OccasionRow)(this.GetParentRow(this.Table.ParentRelations["FK__Images__Occasion__5AEE82B9"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Images__Occasion__40F9A68C"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Images__Occasion__5AEE82B9"]);
                 }
             }
             
@@ -6053,10 +6053,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow UsersRow {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Occasion__Creato__02FC7413"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Occasion__Creato__5165187F"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Occasion__Creato__02FC7413"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Occasion__Creato__5165187F"]);
                 }
             }
             
@@ -6111,33 +6111,33 @@ namespace MemoBrew {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ImagesRow[] GetImagesRows() {
-                if ((this.Table.ChildRelations["FK__Images__Occasion__40F9A68C"] == null)) {
+                if ((this.Table.ChildRelations["FK__Images__Occasion__5AEE82B9"] == null)) {
                     return new ImagesRow[0];
                 }
                 else {
-                    return ((ImagesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Images__Occasion__40F9A68C"])));
+                    return ((ImagesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Images__Occasion__5AEE82B9"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public OccasionParticipantsRow[] GetOccasionParticipantsRows() {
-                if ((this.Table.ChildRelations["FK__OccasionP__Occas__2739D489"] == null)) {
+                if ((this.Table.ChildRelations["FK__OccasionP__Occas__5629CD9C"] == null)) {
                     return new OccasionParticipantsRow[0];
                 }
                 else {
-                    return ((OccasionParticipantsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__OccasionP__Occas__2739D489"])));
+                    return ((OccasionParticipantsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__OccasionP__Occas__5629CD9C"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UserDrinksRow[] GetUserDrinksRows() {
-                if ((this.Table.ChildRelations["FK__UserDrink__Occas__4D5F7D71"] == null)) {
+                if ((this.Table.ChildRelations["FK__UserDrink__Occas__628FA481"] == null)) {
                     return new UserDrinksRow[0];
                 }
                 else {
-                    return ((UserDrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__UserDrink__Occas__4D5F7D71"])));
+                    return ((UserDrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__UserDrink__Occas__628FA481"])));
                 }
             }
         }
@@ -6209,10 +6209,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public OccasionRow OccasionRow {
                 get {
-                    return ((OccasionRow)(this.GetParentRow(this.Table.ParentRelations["FK__OccasionP__Occas__2739D489"])));
+                    return ((OccasionRow)(this.GetParentRow(this.Table.ParentRelations["FK__OccasionP__Occas__5629CD9C"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__OccasionP__Occas__2739D489"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__OccasionP__Occas__5629CD9C"]);
                 }
             }
             
@@ -6220,10 +6220,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow UsersRow {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__OccasionP__UserI__282DF8C2"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__OccasionP__UserI__571DF1D5"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__OccasionP__UserI__282DF8C2"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__OccasionP__UserI__571DF1D5"]);
                 }
             }
             
@@ -6361,10 +6361,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DrinksRow DrinksRow {
                 get {
-                    return ((DrinksRow)(this.GetParentRow(this.Table.ParentRelations["FK__UserDrink__Drink__4C6B5938"])));
+                    return ((DrinksRow)(this.GetParentRow(this.Table.ParentRelations["FK__UserDrink__Drink__619B8048"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__UserDrink__Drink__4C6B5938"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__UserDrink__Drink__619B8048"]);
                 }
             }
             
@@ -6372,10 +6372,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public OccasionRow OccasionRow {
                 get {
-                    return ((OccasionRow)(this.GetParentRow(this.Table.ParentRelations["FK__UserDrink__Occas__4D5F7D71"])));
+                    return ((OccasionRow)(this.GetParentRow(this.Table.ParentRelations["FK__UserDrink__Occas__628FA481"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__UserDrink__Occas__4D5F7D71"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__UserDrink__Occas__628FA481"]);
                 }
             }
             
@@ -6383,10 +6383,10 @@ namespace MemoBrew {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UsersRow UsersRow {
                 get {
-                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__UserDrink__UserI__4B7734FF"])));
+                    return ((UsersRow)(this.GetParentRow(this.Table.ParentRelations["FK__UserDrink__UserI__60A75C0F"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__UserDrink__UserI__4B7734FF"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__UserDrink__UserI__60A75C0F"]);
                 }
             }
             
@@ -6530,12 +6530,12 @@ namespace MemoBrew {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string UserName {
+            public string Username {
                 get {
-                    return ((string)(this[this.tableUsers.UserNameColumn]));
+                    return ((string)(this[this.tableUsers.UsernameColumn]));
                 }
                 set {
-                    this[this.tableUsers.UserNameColumn] = value;
+                    this[this.tableUsers.UsernameColumn] = value;
                 }
             }
             
@@ -6698,99 +6698,99 @@ namespace MemoBrew {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DrinksRow[] GetDrinksRows() {
-                if ((this.Table.ChildRelations["FK__Drinks__CreatedB__440B1D61"] == null)) {
+                if ((this.Table.ChildRelations["FK__Drinks__CreatedB__4222D4EF"] == null)) {
                     return new DrinksRow[0];
                 }
                 else {
-                    return ((DrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Drinks__CreatedB__440B1D61"])));
+                    return ((DrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Drinks__CreatedB__4222D4EF"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FriendRequestRow[] GetFriendRequestRowsByFK__FriendReq__Recei__10566F31() {
-                if ((this.Table.ChildRelations["FK__FriendReq__Recei__10566F31"] == null)) {
+            public FriendRequestRow[] GetFriendRequestRowsByFK__FriendReq__Recei__48CFD27E() {
+                if ((this.Table.ChildRelations["FK__FriendReq__Recei__48CFD27E"] == null)) {
                     return new FriendRequestRow[0];
                 }
                 else {
-                    return ((FriendRequestRow[])(base.GetChildRows(this.Table.ChildRelations["FK__FriendReq__Recei__10566F31"])));
+                    return ((FriendRequestRow[])(base.GetChildRows(this.Table.ChildRelations["FK__FriendReq__Recei__48CFD27E"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FriendRequestRow[] GetFriendRequestRowsByFK__FriendReq__Sende__0F624AF8() {
-                if ((this.Table.ChildRelations["FK__FriendReq__Sende__0F624AF8"] == null)) {
+            public FriendRequestRow[] GetFriendRequestRowsByFK__FriendReq__Sende__47DBAE45() {
+                if ((this.Table.ChildRelations["FK__FriendReq__Sende__47DBAE45"] == null)) {
                     return new FriendRequestRow[0];
                 }
                 else {
-                    return ((FriendRequestRow[])(base.GetChildRows(this.Table.ChildRelations["FK__FriendReq__Sende__0F624AF8"])));
+                    return ((FriendRequestRow[])(base.GetChildRows(this.Table.ChildRelations["FK__FriendReq__Sende__47DBAE45"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FriendsRow[] GetFriendsRowsByFK__Friends__FriendI__1F98B2C1() {
-                if ((this.Table.ChildRelations["FK__Friends__FriendI__1F98B2C1"] == null)) {
+            public FriendsRow[] GetFriendsRowsByFK__Friends__FriendI__4E88ABD4() {
+                if ((this.Table.ChildRelations["FK__Friends__FriendI__4E88ABD4"] == null)) {
                     return new FriendsRow[0];
                 }
                 else {
-                    return ((FriendsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Friends__FriendI__1F98B2C1"])));
+                    return ((FriendsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Friends__FriendI__4E88ABD4"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FriendsRow[] GetFriendsRowsByFK__Friends__UserID__1EA48E88() {
-                if ((this.Table.ChildRelations["FK__Friends__UserID__1EA48E88"] == null)) {
+            public FriendsRow[] GetFriendsRowsByFK__Friends__UserID__4D94879B() {
+                if ((this.Table.ChildRelations["FK__Friends__UserID__4D94879B"] == null)) {
                     return new FriendsRow[0];
                 }
                 else {
-                    return ((FriendsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Friends__UserID__1EA48E88"])));
+                    return ((FriendsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Friends__UserID__4D94879B"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public ImagesRow[] GetImagesRows() {
-                if ((this.Table.ChildRelations["FK__Images__CreatorI__41EDCAC5"] == null)) {
+                if ((this.Table.ChildRelations["FK__Images__CreatorI__5BE2A6F2"] == null)) {
                     return new ImagesRow[0];
                 }
                 else {
-                    return ((ImagesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Images__CreatorI__41EDCAC5"])));
+                    return ((ImagesRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Images__CreatorI__5BE2A6F2"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public OccasionRow[] GetOccasionRows() {
-                if ((this.Table.ChildRelations["FK__Occasion__Creato__02FC7413"] == null)) {
+                if ((this.Table.ChildRelations["FK__Occasion__Creato__5165187F"] == null)) {
                     return new OccasionRow[0];
                 }
                 else {
-                    return ((OccasionRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Occasion__Creato__02FC7413"])));
+                    return ((OccasionRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Occasion__Creato__5165187F"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public OccasionParticipantsRow[] GetOccasionParticipantsRows() {
-                if ((this.Table.ChildRelations["FK__OccasionP__UserI__282DF8C2"] == null)) {
+                if ((this.Table.ChildRelations["FK__OccasionP__UserI__571DF1D5"] == null)) {
                     return new OccasionParticipantsRow[0];
                 }
                 else {
-                    return ((OccasionParticipantsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__OccasionP__UserI__282DF8C2"])));
+                    return ((OccasionParticipantsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__OccasionP__UserI__571DF1D5"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public UserDrinksRow[] GetUserDrinksRows() {
-                if ((this.Table.ChildRelations["FK__UserDrink__UserI__4B7734FF"] == null)) {
+                if ((this.Table.ChildRelations["FK__UserDrink__UserI__60A75C0F"] == null)) {
                     return new UserDrinksRow[0];
                 }
                 else {
-                    return ((UserDrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__UserDrink__UserI__4B7734FF"])));
+                    return ((UserDrinksRow[])(base.GetChildRows(this.Table.ChildRelations["FK__UserDrink__UserI__60A75C0F"])));
                 }
             }
             
@@ -7747,7 +7747,7 @@ namespace MemoBrew {
         }
     }
 }
-namespace MemoBrew.DataSetTableAdapters {
+namespace MemoBrew.MemoDataDataSetTableAdapters {
     
     
     /// <summary>
@@ -7911,7 +7911,7 @@ SELECT CategoryID, Name, Description FROM DrinkCategories WHERE (CategoryID = @C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7928,7 +7928,7 @@ SELECT CategoryID, Name, Description FROM DrinkCategories WHERE (CategoryID = @C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.DrinkCategoriesDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.DrinkCategoriesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7941,9 +7941,9 @@ SELECT CategoryID, Name, Description FROM DrinkCategories WHERE (CategoryID = @C
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.DrinkCategoriesDataTable GetData() {
+        public virtual MemoDataDataSet.DrinkCategoriesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.DrinkCategoriesDataTable dataTable = new DataSet.DrinkCategoriesDataTable();
+            MemoDataDataSet.DrinkCategoriesDataTable dataTable = new MemoDataDataSet.DrinkCategoriesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -7951,14 +7951,14 @@ SELECT CategoryID, Name, Description FROM DrinkCategories WHERE (CategoryID = @C
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.DrinkCategoriesDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.DrinkCategoriesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "DrinkCategories");
         }
         
@@ -8286,7 +8286,7 @@ SELECT DrinkID, Name, CategoryID, AlcoholContent, Amount, Unit, CreatedByUserID 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8304,7 +8304,7 @@ SELECT DrinkID, Name, CategoryID, AlcoholContent, Amount, Unit, CreatedByUserID 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.DrinksDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.DrinksDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8317,9 +8317,9 @@ SELECT DrinkID, Name, CategoryID, AlcoholContent, Amount, Unit, CreatedByUserID 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.DrinksDataTable GetData() {
+        public virtual MemoDataDataSet.DrinksDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.DrinksDataTable dataTable = new DataSet.DrinksDataTable();
+            MemoDataDataSet.DrinksDataTable dataTable = new MemoDataDataSet.DrinksDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8327,14 +8327,14 @@ SELECT DrinkID, Name, CategoryID, AlcoholContent, Amount, Unit, CreatedByUserID 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.DrinksDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.DrinksDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Drinks");
         }
         
@@ -8714,7 +8714,7 @@ SELECT RequestID, SenderID, ReceiverID, Status, RequestDate FROM FriendRequest W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8732,7 +8732,7 @@ SELECT RequestID, SenderID, ReceiverID, Status, RequestDate FROM FriendRequest W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.FriendRequestDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.FriendRequestDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8745,9 +8745,9 @@ SELECT RequestID, SenderID, ReceiverID, Status, RequestDate FROM FriendRequest W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.FriendRequestDataTable GetData() {
+        public virtual MemoDataDataSet.FriendRequestDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.FriendRequestDataTable dataTable = new DataSet.FriendRequestDataTable();
+            MemoDataDataSet.FriendRequestDataTable dataTable = new MemoDataDataSet.FriendRequestDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8755,14 +8755,14 @@ SELECT RequestID, SenderID, ReceiverID, Status, RequestDate FROM FriendRequest W
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.FriendRequestDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.FriendRequestDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "FriendRequest");
         }
         
@@ -9087,7 +9087,7 @@ SELECT FriendshipID, UserID, FriendID, FriendsSince FROM Friends WHERE (Friendsh
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9104,7 +9104,7 @@ SELECT FriendshipID, UserID, FriendID, FriendsSince FROM Friends WHERE (Friendsh
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.FriendsDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.FriendsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9117,9 +9117,9 @@ SELECT FriendshipID, UserID, FriendID, FriendsSince FROM Friends WHERE (Friendsh
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.FriendsDataTable GetData() {
+        public virtual MemoDataDataSet.FriendsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.FriendsDataTable dataTable = new DataSet.FriendsDataTable();
+            MemoDataDataSet.FriendsDataTable dataTable = new MemoDataDataSet.FriendsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9127,14 +9127,14 @@ SELECT FriendshipID, UserID, FriendID, FriendsSince FROM Friends WHERE (Friendsh
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.FriendsDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.FriendsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Friends");
         }
         
@@ -9441,7 +9441,7 @@ SELECT ImageID, ImagePath, Caption, OccasionID, CreatorID, UploadDate FROM Image
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9459,7 +9459,7 @@ SELECT ImageID, ImagePath, Caption, OccasionID, CreatorID, UploadDate FROM Image
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.ImagesDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.ImagesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9472,9 +9472,9 @@ SELECT ImageID, ImagePath, Caption, OccasionID, CreatorID, UploadDate FROM Image
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.ImagesDataTable GetData() {
+        public virtual MemoDataDataSet.ImagesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.ImagesDataTable dataTable = new DataSet.ImagesDataTable();
+            MemoDataDataSet.ImagesDataTable dataTable = new MemoDataDataSet.ImagesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9482,14 +9482,14 @@ SELECT ImageID, ImagePath, Caption, OccasionID, CreatorID, UploadDate FROM Image
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.ImagesDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.ImagesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Images");
         }
         
@@ -9880,7 +9880,7 @@ SELECT OccasionID, Name, Location, Description, Date, StartTime, EndTime, Creato
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9898,7 +9898,7 @@ SELECT OccasionID, Name, Location, Description, Date, StartTime, EndTime, Creato
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.OccasionDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.OccasionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9911,9 +9911,9 @@ SELECT OccasionID, Name, Location, Description, Date, StartTime, EndTime, Creato
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.OccasionDataTable GetData() {
+        public virtual MemoDataDataSet.OccasionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.OccasionDataTable dataTable = new DataSet.OccasionDataTable();
+            MemoDataDataSet.OccasionDataTable dataTable = new MemoDataDataSet.OccasionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9921,14 +9921,14 @@ SELECT OccasionID, Name, Location, Description, Date, StartTime, EndTime, Creato
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.OccasionDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.OccasionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Occasion");
         }
         
@@ -10317,7 +10317,7 @@ SELECT ParticipantID, OccasionID, UserID, Status FROM OccasionParticipants WHERE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10334,7 +10334,7 @@ SELECT ParticipantID, OccasionID, UserID, Status FROM OccasionParticipants WHERE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.OccasionParticipantsDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.OccasionParticipantsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10347,9 +10347,9 @@ SELECT ParticipantID, OccasionID, UserID, Status FROM OccasionParticipants WHERE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.OccasionParticipantsDataTable GetData() {
+        public virtual MemoDataDataSet.OccasionParticipantsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.OccasionParticipantsDataTable dataTable = new DataSet.OccasionParticipantsDataTable();
+            MemoDataDataSet.OccasionParticipantsDataTable dataTable = new MemoDataDataSet.OccasionParticipantsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10357,14 +10357,14 @@ SELECT ParticipantID, OccasionID, UserID, Status FROM OccasionParticipants WHERE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.OccasionParticipantsDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.OccasionParticipantsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "OccasionParticipants");
         }
         
@@ -10677,7 +10677,7 @@ SELECT UserDrinkID, UserID, DrinkID, OccasionID, Quantity, ConsumedAt, HungoverR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10695,7 +10695,7 @@ SELECT UserDrinkID, UserID, DrinkID, OccasionID, Quantity, ConsumedAt, HungoverR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.UserDrinksDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.UserDrinksDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10708,9 +10708,9 @@ SELECT UserDrinkID, UserID, DrinkID, OccasionID, Quantity, ConsumedAt, HungoverR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.UserDrinksDataTable GetData() {
+        public virtual MemoDataDataSet.UserDrinksDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.UserDrinksDataTable dataTable = new DataSet.UserDrinksDataTable();
+            MemoDataDataSet.UserDrinksDataTable dataTable = new MemoDataDataSet.UserDrinksDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10718,14 +10718,14 @@ SELECT UserDrinkID, UserID, DrinkID, OccasionID, Quantity, ConsumedAt, HungoverR
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.UserDrinksDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.UserDrinksDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "UserDrinks");
         }
         
@@ -11063,7 +11063,7 @@ SELECT LogID, UserID, LoginTime FROM UserLog WHERE (LogID = @LogID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11080,7 +11080,7 @@ SELECT LogID, UserID, LoginTime FROM UserLog WHERE (LogID = @LogID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.UserLogDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.UserLogDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11093,9 +11093,9 @@ SELECT LogID, UserID, LoginTime FROM UserLog WHERE (LogID = @LogID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.UserLogDataTable GetData() {
+        public virtual MemoDataDataSet.UserLogDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.UserLogDataTable dataTable = new DataSet.UserLogDataTable();
+            MemoDataDataSet.UserLogDataTable dataTable = new MemoDataDataSet.UserLogDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11103,14 +11103,14 @@ SELECT LogID, UserID, LoginTime FROM UserLog WHERE (LogID = @LogID)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.UserLogDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.UserLogDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "UserLog");
         }
         
@@ -11358,7 +11358,7 @@ SELECT LogID, UserID, LoginTime FROM UserLog WHERE (LogID = @LogID)";
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Users";
             tableMapping.ColumnMappings.Add("UserID", "UserID");
-            tableMapping.ColumnMappings.Add("UserName", "UserName");
+            tableMapping.ColumnMappings.Add("Username", "Username");
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
             tableMapping.ColumnMappings.Add("DateOfBirth", "DateOfBirth");
@@ -11370,10 +11370,10 @@ SELECT LogID, UserID, LoginTime FROM UserLog WHERE (LogID = @LogID)";
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Users] WHERE (([UserID] = @Original_UserID) AND ([UserName] = @Original_UserName) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ([DateOfBirth] = @Original_DateOfBirth) AND ((@IsNull_Weight = 1 AND [Weight] IS NULL) OR ([Weight] = @Original_Weight)) AND ((@IsNull_Height = 1 AND [Height] IS NULL) OR ([Height] = @Original_Height)) AND ((@IsNull_Gender = 1 AND [Gender] IS NULL) OR ([Gender] = @Original_Gender)) AND ((@IsNull_ProfilePicture = 1 AND [ProfilePicture] IS NULL) OR ([ProfilePicture] = @Original_ProfilePicture)) AND ([Password] = @Original_Password))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Users] WHERE (([UserID] = @Original_UserID) AND ([Username] = @Original_Username) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ([DateOfBirth] = @Original_DateOfBirth) AND ((@IsNull_Weight = 1 AND [Weight] IS NULL) OR ([Weight] = @Original_Weight)) AND ((@IsNull_Height = 1 AND [Height] IS NULL) OR ([Height] = @Original_Height)) AND ((@IsNull_Gender = 1 AND [Gender] IS NULL) OR ([Gender] = @Original_Gender)) AND ((@IsNull_ProfilePicture = 1 AND [ProfilePicture] IS NULL) OR ([ProfilePicture] = @Original_ProfilePicture)) AND ([Password] = @Original_Password))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UserID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UserName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FirstName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LastName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DateOfBirth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateOfBirth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -11388,10 +11388,10 @@ SELECT LogID, UserID, LoginTime FROM UserLog WHERE (LogID = @LogID)";
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Users] ([UserName], [FirstName], [LastName], [DateOfBirth], [Weight], [Height], [Gender], [ProfilePicture], [Password]) VALUES (@UserName, @FirstName, @LastName, @DateOfBirth, @Weight, @Height, @Gender, @ProfilePicture, @Password);
-SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gender, ProfilePicture, Password FROM Users WHERE (UserID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Users] ([Username], [FirstName], [LastName], [DateOfBirth], [Weight], [Height], [Gender], [ProfilePicture], [Password]) VALUES (@Username, @FirstName, @LastName, @DateOfBirth, @Weight, @Height, @Gender, @ProfilePicture, @Password);
+SELECT UserID, Username, FirstName, LastName, DateOfBirth, Weight, Height, Gender, ProfilePicture, Password FROM Users WHERE (UserID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FirstName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DateOfBirth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateOfBirth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11402,10 +11402,10 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Users] SET [UserName] = @UserName, [FirstName] = @FirstName, [LastName] = @LastName, [DateOfBirth] = @DateOfBirth, [Weight] = @Weight, [Height] = @Height, [Gender] = @Gender, [ProfilePicture] = @ProfilePicture, [Password] = @Password WHERE (([UserID] = @Original_UserID) AND ([UserName] = @Original_UserName) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ([DateOfBirth] = @Original_DateOfBirth) AND ((@IsNull_Weight = 1 AND [Weight] IS NULL) OR ([Weight] = @Original_Weight)) AND ((@IsNull_Height = 1 AND [Height] IS NULL) OR ([Height] = @Original_Height)) AND ((@IsNull_Gender = 1 AND [Gender] IS NULL) OR ([Gender] = @Original_Gender)) AND ((@IsNull_ProfilePicture = 1 AND [ProfilePicture] IS NULL) OR ([ProfilePicture] = @Original_ProfilePicture)) AND ([Password] = @Original_Password));
-SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gender, ProfilePicture, Password FROM Users WHERE (UserID = @UserID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Users] SET [Username] = @Username, [FirstName] = @FirstName, [LastName] = @LastName, [DateOfBirth] = @DateOfBirth, [Weight] = @Weight, [Height] = @Height, [Gender] = @Gender, [ProfilePicture] = @ProfilePicture, [Password] = @Password WHERE (([UserID] = @Original_UserID) AND ([Username] = @Original_Username) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ([DateOfBirth] = @Original_DateOfBirth) AND ((@IsNull_Weight = 1 AND [Weight] IS NULL) OR ([Weight] = @Original_Weight)) AND ((@IsNull_Height = 1 AND [Height] IS NULL) OR ([Height] = @Original_Height)) AND ((@IsNull_Gender = 1 AND [Gender] IS NULL) OR ([Gender] = @Original_Gender)) AND ((@IsNull_ProfilePicture = 1 AND [ProfilePicture] IS NULL) OR ([ProfilePicture] = @Original_ProfilePicture)) AND ([Password] = @Original_Password));
+SELECT UserID, Username, FirstName, LastName, DateOfBirth, Weight, Height, Gender, ProfilePicture, Password FROM Users WHERE (UserID = @UserID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@UserName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FirstName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DateOfBirth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateOfBirth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -11415,7 +11415,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProfilePicture", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProfilePicture", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UserID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_UserName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "UserName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_FirstName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LastName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DateOfBirth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateOfBirth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -11435,7 +11435,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11444,7 +11444,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gender" +
+            this._commandCollection[0].CommandText = "SELECT UserID, Username, FirstName, LastName, DateOfBirth, Weight, Height, Gender" +
                 ", ProfilePicture, Password FROM dbo.Users";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
@@ -11453,7 +11453,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.UsersDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.UsersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11466,9 +11466,9 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.UsersDataTable GetData() {
+        public virtual MemoDataDataSet.UsersDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.UsersDataTable dataTable = new DataSet.UsersDataTable();
+            MemoDataDataSet.UsersDataTable dataTable = new MemoDataDataSet.UsersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11476,14 +11476,14 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet.UsersDataTable dataTable) {
+        public virtual int Update(MemoDataDataSet.UsersDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet dataSet) {
+        public virtual int Update(MemoDataDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Users");
         }
         
@@ -11506,13 +11506,13 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_UserID, string Original_UserName, string Original_FirstName, string Original_LastName, System.DateTime Original_DateOfBirth, global::System.Nullable<decimal> Original_Weight, global::System.Nullable<decimal> Original_Height, string Original_Gender, string Original_ProfilePicture, string Original_Password) {
+        public virtual int Delete(int Original_UserID, string Original_Username, string Original_FirstName, string Original_LastName, System.DateTime Original_DateOfBirth, global::System.Nullable<decimal> Original_Weight, global::System.Nullable<decimal> Original_Height, string Original_Gender, string Original_ProfilePicture, string Original_Password) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_UserID));
-            if ((Original_UserName == null)) {
-                throw new global::System.ArgumentNullException("Original_UserName");
+            if ((Original_Username == null)) {
+                throw new global::System.ArgumentNullException("Original_Username");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_UserName));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Username));
             }
             if ((Original_FirstName == null)) {
                 throw new global::System.ArgumentNullException("Original_FirstName");
@@ -11585,12 +11585,12 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string UserName, string FirstName, string LastName, System.DateTime DateOfBirth, global::System.Nullable<decimal> Weight, global::System.Nullable<decimal> Height, string Gender, string ProfilePicture, string Password) {
-            if ((UserName == null)) {
-                throw new global::System.ArgumentNullException("UserName");
+        public virtual int Insert(string Username, string FirstName, string LastName, System.DateTime DateOfBirth, global::System.Nullable<decimal> Weight, global::System.Nullable<decimal> Height, string Gender, string ProfilePicture, string Password) {
+            if ((Username == null)) {
+                throw new global::System.ArgumentNullException("Username");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(UserName));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Username));
             }
             if ((FirstName == null)) {
                 throw new global::System.ArgumentNullException("FirstName");
@@ -11656,7 +11656,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string UserName, 
+                    string Username, 
                     string FirstName, 
                     string LastName, 
                     System.DateTime DateOfBirth, 
@@ -11666,7 +11666,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
                     string ProfilePicture, 
                     string Password, 
                     int Original_UserID, 
-                    string Original_UserName, 
+                    string Original_Username, 
                     string Original_FirstName, 
                     string Original_LastName, 
                     System.DateTime Original_DateOfBirth, 
@@ -11676,11 +11676,11 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
                     string Original_ProfilePicture, 
                     string Original_Password, 
                     int UserID) {
-            if ((UserName == null)) {
-                throw new global::System.ArgumentNullException("UserName");
+            if ((Username == null)) {
+                throw new global::System.ArgumentNullException("Username");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(UserName));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Username));
             }
             if ((FirstName == null)) {
                 throw new global::System.ArgumentNullException("FirstName");
@@ -11726,11 +11726,11 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Password));
             }
             this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_UserID));
-            if ((Original_UserName == null)) {
-                throw new global::System.ArgumentNullException("Original_UserName");
+            if ((Original_Username == null)) {
+                throw new global::System.ArgumentNullException("Original_Username");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_UserName));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_Username));
             }
             if ((Original_FirstName == null)) {
                 throw new global::System.ArgumentNullException("Original_FirstName");
@@ -11805,7 +11805,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string UserName, 
+                    string Username, 
                     string FirstName, 
                     string LastName, 
                     System.DateTime DateOfBirth, 
@@ -11815,7 +11815,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
                     string ProfilePicture, 
                     string Password, 
                     int Original_UserID, 
-                    string Original_UserName, 
+                    string Original_Username, 
                     string Original_FirstName, 
                     string Original_LastName, 
                     System.DateTime Original_DateOfBirth, 
@@ -11824,7 +11824,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
                     string Original_Gender, 
                     string Original_ProfilePicture, 
                     string Original_Password) {
-            return this.Update(UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gender, ProfilePicture, Password, Original_UserID, Original_UserName, Original_FirstName, Original_LastName, Original_DateOfBirth, Original_Weight, Original_Height, Original_Gender, Original_ProfilePicture, Original_Password, Original_UserID);
+            return this.Update(Username, FirstName, LastName, DateOfBirth, Weight, Height, Gender, ProfilePicture, Password, Original_UserID, Original_Username, Original_FirstName, Original_LastName, Original_DateOfBirth, Original_Weight, Original_Height, Original_Gender, Original_ProfilePicture, Original_Password, Original_UserID);
         }
     }
     
@@ -11966,7 +11966,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11984,7 +11984,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.UpcomingOccasionsViewDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.UpcomingOccasionsViewDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11997,9 +11997,9 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.UpcomingOccasionsViewDataTable GetData() {
+        public virtual MemoDataDataSet.UpcomingOccasionsViewDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.UpcomingOccasionsViewDataTable dataTable = new DataSet.UpcomingOccasionsViewDataTable();
+            MemoDataDataSet.UpcomingOccasionsViewDataTable dataTable = new MemoDataDataSet.UpcomingOccasionsViewDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12140,7 +12140,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12158,7 +12158,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.UserDrinksSummaryViewDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.UserDrinksSummaryViewDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12171,9 +12171,9 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.UserDrinksSummaryViewDataTable GetData() {
+        public virtual MemoDataDataSet.UserDrinksSummaryViewDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.UserDrinksSummaryViewDataTable dataTable = new DataSet.UserDrinksSummaryViewDataTable();
+            MemoDataDataSet.UserDrinksSummaryViewDataTable dataTable = new MemoDataDataSet.UserDrinksSummaryViewDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12317,7 +12317,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.DatabaseConnectionString;
+            this._connection.ConnectionString = global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12336,7 +12336,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet.UserFriendsViewDataTable dataTable) {
+        public virtual int Fill(MemoDataDataSet.UserFriendsViewDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12349,11 +12349,219 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet.UserFriendsViewDataTable GetData() {
+        public virtual MemoDataDataSet.UserFriendsViewDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet.UserFriendsViewDataTable dataTable = new DataSet.UserFriendsViewDataTable();
+            MemoDataDataSet.UserFriendsViewDataTable dataTable = new MemoDataDataSet.UserFriendsViewDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class QueriesTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.IDbCommand[] _commandCollection;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.IDbCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.IDbCommand[3];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Connection = new global::System.Data.SqlClient.SqlConnection(global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandText = "SELECT COUNT(*) FROM Users WHERE Username = @Username";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandType = global::System.Data.CommandType.Text;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Connection = new global::System.Data.SqlClient.SqlConnection(global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).CommandText = "INSERT INTO Users \r\n(Username, FirstName, LastName, DateOfBirth, Weight, Height, " +
+                "Gender, ProfilePicture, Password)\r\nVALUES \r\n(@Username, @FirstName, @LastName, @" +
+                "DateOfBirth, @Weight, @Height, @Gender, @ProfilePicture, @Password)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).CommandType = global::System.Data.CommandType.Text;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FirstName", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastName", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DateOfBirth", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "DateOfBirth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Weight", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 5, 2, "Weight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Height", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 5, 2, "Height", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 20, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProfilePicture", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "ProfilePicture", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[1])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Connection = new global::System.Data.SqlClient.SqlConnection(global::MemoBrew.Properties.Settings.Default.MemoDataConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandText = "SELECT UserID FROM Users WHERE Username = @Username AND Password = @Password";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).CommandType = global::System.Data.CommandType.Text;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual global::System.Nullable<int> CheckIfUsernameExists(string Username) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[0]));
+            if ((Username == null)) {
+                throw new global::System.ArgumentNullException("Username");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Username));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return new global::System.Nullable<int>();
+            }
+            else {
+                return new global::System.Nullable<int>(((int)(returnValue)));
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertUser(string Username, string FirstName, string LastName, string DateOfBirth, global::System.Nullable<decimal> Weight, global::System.Nullable<decimal> Height, string Gender, string ProfilePicture, string Password) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[1]));
+            if ((Username == null)) {
+                throw new global::System.ArgumentNullException("Username");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Username));
+            }
+            if ((FirstName == null)) {
+                throw new global::System.ArgumentNullException("FirstName");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(FirstName));
+            }
+            if ((LastName == null)) {
+                throw new global::System.ArgumentNullException("LastName");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(LastName));
+            }
+            if ((DateOfBirth == null)) {
+                throw new global::System.ArgumentNullException("DateOfBirth");
+            }
+            else {
+                command.Parameters[3].Value = ((string)(DateOfBirth));
+            }
+            if ((Weight.HasValue == true)) {
+                command.Parameters[4].Value = ((decimal)(Weight.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((Height.HasValue == true)) {
+                command.Parameters[5].Value = ((decimal)(Height.Value));
+            }
+            else {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((Gender == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(Gender));
+            }
+            if ((ProfilePicture == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(ProfilePicture));
+            }
+            if ((Password == null)) {
+                throw new global::System.ArgumentNullException("Password");
+            }
+            else {
+                command.Parameters[8].Value = ((string)(Password));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual object ValidateLogin(string Username, string Password) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[2]));
+            if ((Username == null)) {
+                throw new global::System.ArgumentNullException("Username");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(Username));
+            }
+            if ((Password == null)) {
+                throw new global::System.ArgumentNullException("Password");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Password));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            object returnValue;
+            try {
+                returnValue = command.ExecuteScalar();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
         }
     }
     
@@ -12655,7 +12863,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(MemoDataDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._drinkCategoriesTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.DrinkCategories.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -12755,7 +12963,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(MemoDataDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._drinkCategoriesTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.DrinkCategories.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -12845,7 +13053,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(MemoDataDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._userLogTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.UserLog.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -12959,7 +13167,7 @@ SELECT UserID, UserName, FirstName, LastName, DateOfBirth, Weight, Height, Gende
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DataSet dataSet) {
+        public virtual int UpdateAll(MemoDataDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

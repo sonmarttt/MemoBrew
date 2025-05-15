@@ -1,25 +1,47 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MemoBrew
 {
-    public partial class User: Form
+    public partial class Dashboard : Form
     {
-        public User()
+        private int userId;
+
+        public Dashboard(int userId)
         {
             InitializeComponent();
+            this.userId = userId;
+            this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
+            LoadUserData();
         }
 
-        private void pictureBox_Click(object sender, EventArgs e)
+        private void LoadUserData()
         {
+            try
+            {
+                MemoDataDataSetTableAdapters.UsersTableAdapter usersAdapter =
+                    new MemoDataDataSetTableAdapters.UsersTableAdapter();
+                MemoDataDataSet.UsersDataTable userTable = usersAdapter.GetData();
+                MemoDataDataSet.UsersRow userRow = userTable.FindByUserID(userId);
 
+                if (userRow != null)
+                {
+                    welcomeLabel.Text = $"Welcome, {userRow.FirstName} {userRow.LastName}!";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading user data: " + ex.Message,
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Application.OpenForms.Count == 1)
+            {
+                Application.Exit();
+            }
         }
     }
 }
