@@ -46,7 +46,7 @@ namespace MemoBrew
 
         private void eventButton_Click(object sender, EventArgs e)
         {
-            CreateOccasion createOccasion = new CreateOccasion();
+            CreateOccasion createOccasion = new CreateOccasion(userId);
             CloseAndOpenNewForm(createOccasion);
         }
 
@@ -54,7 +54,7 @@ namespace MemoBrew
 
         private void friendsButton_Click(object sender, EventArgs e)
         {
-            Friends friends = new Friends();
+            Friends friends = new Friends(userId);
             CloseAndOpenNewForm(friends);
         }
 
