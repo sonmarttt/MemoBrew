@@ -43,5 +43,32 @@ namespace MemoBrew
                 Application.Exit();
             }
         }
+
+        private void eventButton_Click(object sender, EventArgs e)
+        {
+            CreateOccasion createOccasion = new CreateOccasion();
+            CloseAndOpenNewForm(createOccasion);
+        }
+
+       
+
+        private void friendsButton_Click(object sender, EventArgs e)
+        {
+            Friends friends = new Friends();
+            CloseAndOpenNewForm(friends);
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CloseAndOpenNewForm(Form newForm)
+        {
+            newForm.Show();
+            this.Hide();
+
+            newForm.FormClosed += (s, args) => this.Close();
+        }
     }
 }

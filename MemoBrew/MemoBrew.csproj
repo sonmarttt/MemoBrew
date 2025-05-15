@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateOccasion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateOccasion.Designer.cs">
+      <DependentUpon>CreateOccasion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Friends.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MemoDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OccasionLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OccasionLogs.Designer.cs">
+      <DependentUpon>OccasionLogs.cs</DependentUpon>
     </Compile>
     <Compile Include="Occasions.cs">
       <SubType>Form</SubType>
@@ -108,11 +120,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreateOccasion.resx">
+      <DependentUpon>CreateOccasion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Friends.resx">
       <DependentUpon>Friends.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccasionLogs.resx">
+      <DependentUpon>OccasionLogs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Occasions.resx">
       <DependentUpon>Occasions.cs</DependentUpon>
@@ -200,6 +218,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>MemoData.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\right-arrow.png" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\plus %282%29.png" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\back-button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

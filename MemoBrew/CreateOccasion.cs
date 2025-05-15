@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MemoBrew
 {
-    public partial class Occasions: Form
+    public partial class CreateOccasion: Form
     {
-        public Occasions()
+        public CreateOccasion()
         {
             InitializeComponent();
         }

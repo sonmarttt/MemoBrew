@@ -92,6 +92,7 @@
             this.friendsButton.Size = new System.Drawing.Size(53, 49);
             this.friendsButton.TabIndex = 9;
             this.friendsButton.UseVisualStyleBackColor = false;
+            this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
             // 
             // eventButton
             // 
@@ -103,6 +104,7 @@
             this.eventButton.Size = new System.Drawing.Size(69, 63);
             this.eventButton.TabIndex = 8;
             this.eventButton.UseVisualStyleBackColor = false;
+            this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
             // 
             // homeButton
             // 
@@ -115,6 +117,7 @@
             this.homeButton.Size = new System.Drawing.Size(57, 49);
             this.homeButton.TabIndex = 7;
             this.homeButton.UseVisualStyleBackColor = false;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox2
             // 
