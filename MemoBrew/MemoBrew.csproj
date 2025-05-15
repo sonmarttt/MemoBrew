@@ -80,6 +80,7 @@
     <Compile Include="Friends.Designer.cs">
       <DependentUpon>Friends.cs</DependentUpon>
     </Compile>
+    <Compile Include="LanguageManager.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,8 +145,20 @@
     <EmbeddedResource Include="Occasions.resx">
       <DependentUpon>Occasions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Signup.es.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.fr.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.es.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.fr.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

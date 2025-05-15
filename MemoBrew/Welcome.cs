@@ -8,6 +8,8 @@ namespace MemoBrew
         public Welcome()
         {
             InitializeComponent();
+            //added langaugeManagerclass
+            LanguageManager.ApplyLanguage();
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
 
@@ -37,6 +39,22 @@ namespace MemoBrew
             this.Hide();
 
             newForm.FormClosed += (s, args) => this.Close();
+        }
+        //pick the language from the dropdown
+        private void selectLanguageBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (selectLanguageBox.SelectedIndex)
+            {
+                case 0:
+                    LanguageManager.ChangeLanguage("en-US", this);
+                    break;
+                case 1:
+                    LanguageManager.ChangeLanguage("fr-FR", this);
+                    break;
+                case 2:
+                    LanguageManager.ChangeLanguage("es-ES", this);
+                    break;
+            }
         }
     }
 }

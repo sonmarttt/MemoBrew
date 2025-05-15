@@ -14,6 +14,9 @@ namespace MemoBrew
             InitializeComponent();
             this.memoDataDataSet = new MemoDataDataSet();
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
+            //added this for language
+            LanguageManager.ApplyLanguage();
+            UpdateLanguageComboBox();
         }
 
         private void signupButton_Click(object sender, EventArgs e)
@@ -132,6 +135,39 @@ namespace MemoBrew
             this.Hide();
 
             newForm.FormClosed += (s, args) => this.Close();
+        }
+
+        //update the language that was selected before
+        private void UpdateLanguageComboBox()
+        {
+            switch (LanguageManager.CurrentLanguage)
+            {
+                case "en-US":
+                    selectLanguageBox.SelectedIndex = 0;
+                    break;
+                case "fr-FR":
+                    selectLanguageBox.SelectedIndex = 1;
+                    break;
+                case "es-ES":
+                    selectLanguageBox.SelectedIndex = 2;
+                    break;
+            }
+        }
+        //change the language again from the dropdown in signup
+        private void selectLanguageBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (selectLanguageBox.SelectedIndex)
+            {
+                case 0:
+                    LanguageManager.ChangeLanguage("en-US", this);
+                    break;
+                case 1:
+                    LanguageManager.ChangeLanguage("fr-FR", this);
+                    break;
+                case 2:
+                    LanguageManager.ChangeLanguage("es-ES", this);
+                    break;
+            }
         }
     }
 }

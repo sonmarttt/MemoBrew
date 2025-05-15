@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
@@ -47,195 +48,143 @@
             this.DOBlabel = new System.Windows.Forms.Label();
             this.txtDateOfBirth = new System.Windows.Forms.TextBox();
             this.signupButton = new System.Windows.Forms.Button();
+            this.languageLabel = new System.Windows.Forms.Label();
+            this.selectLanguageBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(60, 42);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(331, 79);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "New to MemoBrew? Register Now";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(151, 121);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Fill in the information";
             // 
             // txtFirstName
             // 
             this.txtFirstName.BackColor = System.Drawing.Color.SandyBrown;
-            this.txtFirstName.Location = new System.Drawing.Point(43, 210);
-            this.txtFirstName.Multiline = true;
+            resources.ApplyResources(this.txtFirstName, "txtFirstName");
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(166, 28);
-            this.txtFirstName.TabIndex = 3;
             // 
             // firstnameLabel
             // 
-            this.firstnameLabel.AutoSize = true;
-            this.firstnameLabel.Location = new System.Drawing.Point(40, 191);
+            resources.ApplyResources(this.firstnameLabel, "firstnameLabel");
             this.firstnameLabel.Name = "firstnameLabel";
-            this.firstnameLabel.Size = new System.Drawing.Size(72, 16);
-            this.firstnameLabel.TabIndex = 5;
-            this.firstnameLabel.Text = "First Name";
             // 
             // passwordLabel
             // 
-            this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(40, 312);
+            resources.ApplyResources(this.passwordLabel, "passwordLabel");
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(67, 16);
-            this.passwordLabel.TabIndex = 6;
-            this.passwordLabel.Text = "Password";
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.SandyBrown;
-            this.txtPassword.Location = new System.Drawing.Point(43, 331);
-            this.txtPassword.Multiline = true;
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(367, 28);
-            this.txtPassword.TabIndex = 7;
             // 
             // txtLastName
             // 
             this.txtLastName.BackColor = System.Drawing.Color.SandyBrown;
-            this.txtLastName.Location = new System.Drawing.Point(244, 210);
-            this.txtLastName.Multiline = true;
+            resources.ApplyResources(this.txtLastName, "txtLastName");
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(166, 28);
-            this.txtLastName.TabIndex = 8;
             // 
             // lastNameLabel
             // 
-            this.lastNameLabel.AutoSize = true;
-            this.lastNameLabel.Location = new System.Drawing.Point(241, 191);
+            resources.ApplyResources(this.lastNameLabel, "lastNameLabel");
             this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(72, 16);
-            this.lastNameLabel.TabIndex = 9;
-            this.lastNameLabel.Text = "Last Name";
             // 
             // heightlabel
             // 
-            this.heightlabel.AutoSize = true;
-            this.heightlabel.Location = new System.Drawing.Point(241, 383);
+            resources.ApplyResources(this.heightlabel, "heightlabel");
             this.heightlabel.Name = "heightlabel";
-            this.heightlabel.Size = new System.Drawing.Size(46, 16);
-            this.heightlabel.TabIndex = 13;
-            this.heightlabel.Text = "Height";
             // 
             // txtHeight
             // 
             this.txtHeight.BackColor = System.Drawing.Color.SandyBrown;
-            this.txtHeight.Location = new System.Drawing.Point(244, 402);
-            this.txtHeight.Multiline = true;
+            resources.ApplyResources(this.txtHeight, "txtHeight");
             this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(166, 28);
-            this.txtHeight.TabIndex = 12;
             // 
             // weightLabel
             // 
-            this.weightLabel.AutoSize = true;
-            this.weightLabel.Location = new System.Drawing.Point(42, 383);
+            resources.ApplyResources(this.weightLabel, "weightLabel");
             this.weightLabel.Name = "weightLabel";
-            this.weightLabel.Size = new System.Drawing.Size(49, 16);
-            this.weightLabel.TabIndex = 11;
-            this.weightLabel.Text = "Weight";
             // 
             // txtWeight
             // 
             this.txtWeight.BackColor = System.Drawing.Color.SandyBrown;
-            this.txtWeight.Location = new System.Drawing.Point(45, 402);
-            this.txtWeight.Multiline = true;
+            resources.ApplyResources(this.txtWeight, "txtWeight");
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(166, 28);
-            this.txtWeight.TabIndex = 10;
             // 
             // txtUsername
             // 
             this.txtUsername.BackColor = System.Drawing.Color.SandyBrown;
-            this.txtUsername.Location = new System.Drawing.Point(43, 268);
-            this.txtUsername.Multiline = true;
+            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(367, 28);
-            this.txtUsername.TabIndex = 15;
             // 
             // usernameLabel
             // 
-            this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(40, 249);
+            resources.ApplyResources(this.usernameLabel, "usernameLabel");
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(70, 16);
-            this.usernameLabel.TabIndex = 14;
-            this.usernameLabel.Text = "Username";
             // 
             // rbMale
             // 
-            this.rbMale.AutoSize = true;
-            this.rbMale.Location = new System.Drawing.Point(43, 475);
+            resources.ApplyResources(this.rbMale, "rbMale");
             this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(58, 20);
-            this.rbMale.TabIndex = 16;
             this.rbMale.TabStop = true;
-            this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
             // 
             // rbFemale
             // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.Location = new System.Drawing.Point(137, 475);
+            resources.ApplyResources(this.rbFemale, "rbFemale");
             this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(74, 20);
-            this.rbFemale.TabIndex = 17;
             this.rbFemale.TabStop = true;
-            this.rbFemale.Text = "Female";
             this.rbFemale.UseVisualStyleBackColor = true;
             // 
             // DOBlabel
             // 
-            this.DOBlabel.AutoSize = true;
-            this.DOBlabel.Location = new System.Drawing.Point(241, 456);
+            resources.ApplyResources(this.DOBlabel, "DOBlabel");
             this.DOBlabel.Name = "DOBlabel";
-            this.DOBlabel.Size = new System.Drawing.Size(79, 16);
-            this.DOBlabel.TabIndex = 19;
-            this.DOBlabel.Text = "Date of Birth";
             // 
             // txtDateOfBirth
             // 
             this.txtDateOfBirth.BackColor = System.Drawing.Color.SandyBrown;
-            this.txtDateOfBirth.Location = new System.Drawing.Point(244, 475);
-            this.txtDateOfBirth.Multiline = true;
+            resources.ApplyResources(this.txtDateOfBirth, "txtDateOfBirth");
             this.txtDateOfBirth.Name = "txtDateOfBirth";
-            this.txtDateOfBirth.Size = new System.Drawing.Size(166, 28);
-            this.txtDateOfBirth.TabIndex = 18;
             // 
             // signupButton
             // 
             this.signupButton.BackColor = System.Drawing.Color.Black;
-            this.signupButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.signupButton, "signupButton");
             this.signupButton.ForeColor = System.Drawing.Color.SeaShell;
-            this.signupButton.Location = new System.Drawing.Point(43, 550);
             this.signupButton.Name = "signupButton";
-            this.signupButton.Size = new System.Drawing.Size(375, 52);
-            this.signupButton.TabIndex = 20;
-            this.signupButton.Text = "Sign Up";
             this.signupButton.UseVisualStyleBackColor = false;
             this.signupButton.Click += new System.EventHandler(this.signupButton_Click);
             // 
+            // languageLabel
+            // 
+            resources.ApplyResources(this.languageLabel, "languageLabel");
+            this.languageLabel.Name = "languageLabel";
+            // 
+            // selectLanguageBox
+            // 
+            this.selectLanguageBox.FormattingEnabled = true;
+            this.selectLanguageBox.Items.AddRange(new object[] {
+            resources.GetString("selectLanguageBox.Items"),
+            resources.GetString("selectLanguageBox.Items1"),
+            resources.GetString("selectLanguageBox.Items2")});
+            resources.ApplyResources(this.selectLanguageBox, "selectLanguageBox");
+            this.selectLanguageBox.Name = "selectLanguageBox";
+            this.selectLanguageBox.SelectedIndexChanged += new System.EventHandler(this.selectLanguageBox_SelectedIndexChanged);
+            // 
             // Signup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
-            this.ClientSize = new System.Drawing.Size(451, 675);
+            this.Controls.Add(this.languageLabel);
+            this.Controls.Add(this.selectLanguageBox);
             this.Controls.Add(this.signupButton);
             this.Controls.Add(this.DOBlabel);
             this.Controls.Add(this.txtDateOfBirth);
@@ -256,7 +205,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Signup";
-            this.Text = "Signup";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,5 +231,7 @@
         private System.Windows.Forms.Label DOBlabel;
         private System.Windows.Forms.TextBox txtDateOfBirth;
         private System.Windows.Forms.Button signupButton;
+        private System.Windows.Forms.Label languageLabel;
+        private System.Windows.Forms.ComboBox selectLanguageBox;
     }
 }

@@ -17,7 +17,6 @@ namespace MemoBrew
         {
             InitializeComponent();
             this.userId = userId;
-            this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
           
         }
 
