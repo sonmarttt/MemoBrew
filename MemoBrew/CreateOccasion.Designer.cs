@@ -33,21 +33,21 @@
             this.endDateLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.v = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.createOccasionButton = new System.Windows.Forms.Button();
             this.locationLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.addFriendsButton = new System.Windows.Forms.Button();
+            this.friendsButton = new System.Windows.Forms.Button();
+            this.eventButton = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.friendsButton = new System.Windows.Forms.Button();
-            this.eventButton = new System.Windows.Forms.Button();
-            this.homeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -113,15 +113,6 @@
             this.v.TabIndex = 13;
             this.v.Text = "Description";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.SeaShell;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(197, 228);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 24);
-            this.comboBox1.TabIndex = 14;
-            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(197, 152);
@@ -170,6 +161,56 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(262, 54);
             this.textBox2.TabIndex = 23;
+            // 
+            // addFriendsButton
+            // 
+            this.addFriendsButton.BackColor = System.Drawing.Color.Black;
+            this.addFriendsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addFriendsButton.ForeColor = System.Drawing.Color.SeaShell;
+            this.addFriendsButton.Location = new System.Drawing.Point(197, 224);
+            this.addFriendsButton.Name = "addFriendsButton";
+            this.addFriendsButton.Size = new System.Drawing.Size(200, 36);
+            this.addFriendsButton.TabIndex = 30;
+            this.addFriendsButton.Text = "Add";
+            this.addFriendsButton.UseVisualStyleBackColor = false;
+            this.addFriendsButton.Click += new System.EventHandler(this.addFriendsButton_Click);
+            // 
+            // friendsButton
+            // 
+            this.friendsButton.BackColor = System.Drawing.Color.SandyBrown;
+            this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
+            this.friendsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.friendsButton.Location = new System.Drawing.Point(363, 614);
+            this.friendsButton.Name = "friendsButton";
+            this.friendsButton.Size = new System.Drawing.Size(53, 49);
+            this.friendsButton.TabIndex = 29;
+            this.friendsButton.UseVisualStyleBackColor = false;
+            this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
+            // 
+            // eventButton
+            // 
+            this.eventButton.BackColor = System.Drawing.Color.SandyBrown;
+            this.eventButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus;
+            this.eventButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.eventButton.Location = new System.Drawing.Point(191, 600);
+            this.eventButton.Name = "eventButton";
+            this.eventButton.Size = new System.Drawing.Size(69, 63);
+            this.eventButton.TabIndex = 28;
+            this.eventButton.UseVisualStyleBackColor = false;
+            this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
+            // 
+            // homeButton
+            // 
+            this.homeButton.BackColor = System.Drawing.Color.SandyBrown;
+            this.homeButton.BackgroundImage = global::MemoBrew.Properties.Resources.home__1_;
+            this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homeButton.Location = new System.Drawing.Point(30, 614);
+            this.homeButton.Margin = new System.Windows.Forms.Padding(0);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(57, 49);
+            this.homeButton.TabIndex = 27;
+            this.homeButton.UseVisualStyleBackColor = false;
+            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox2
             // 
@@ -232,48 +273,12 @@
             this.pictureBox6.TabIndex = 26;
             this.pictureBox6.TabStop = false;
             // 
-            // friendsButton
-            // 
-            this.friendsButton.BackColor = System.Drawing.Color.SandyBrown;
-            this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
-            this.friendsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.friendsButton.Location = new System.Drawing.Point(363, 614);
-            this.friendsButton.Name = "friendsButton";
-            this.friendsButton.Size = new System.Drawing.Size(53, 49);
-            this.friendsButton.TabIndex = 29;
-            this.friendsButton.UseVisualStyleBackColor = false;
-            this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
-            // 
-            // eventButton
-            // 
-            this.eventButton.BackColor = System.Drawing.Color.SandyBrown;
-            this.eventButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus;
-            this.eventButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eventButton.Location = new System.Drawing.Point(187, 600);
-            this.eventButton.Name = "eventButton";
-            this.eventButton.Size = new System.Drawing.Size(69, 63);
-            this.eventButton.TabIndex = 28;
-            this.eventButton.UseVisualStyleBackColor = false;
-            this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
-            // 
-            // homeButton
-            // 
-            this.homeButton.BackColor = System.Drawing.Color.SandyBrown;
-            this.homeButton.BackgroundImage = global::MemoBrew.Properties.Resources.home__1_;
-            this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeButton.Location = new System.Drawing.Point(30, 614);
-            this.homeButton.Margin = new System.Windows.Forms.Padding(0);
-            this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(57, 49);
-            this.homeButton.TabIndex = 27;
-            this.homeButton.UseVisualStyleBackColor = false;
-            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
-            // 
             // CreateOccasion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 675);
+            this.Controls.Add(this.addFriendsButton);
             this.Controls.Add(this.friendsButton);
             this.Controls.Add(this.eventButton);
             this.Controls.Add(this.homeButton);
@@ -282,7 +287,6 @@
             this.Controls.Add(this.locationLabel);
             this.Controls.Add(this.createOccasionButton);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.v);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.endDateLabel);
@@ -316,7 +320,6 @@
         private System.Windows.Forms.Label endDateLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label v;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button createOccasionButton;
         private System.Windows.Forms.Label locationLabel;
@@ -329,5 +332,6 @@
         private System.Windows.Forms.Button friendsButton;
         private System.Windows.Forms.Button eventButton;
         private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.Button addFriendsButton;
     }
 }

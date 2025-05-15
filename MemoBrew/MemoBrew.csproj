@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddFriendsOccasion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFriendsOccasion.Designer.cs">
+      <DependentUpon>AddFriendsOccasion.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateOccasion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddFriendsOccasion.resx">
+      <DependentUpon>AddFriendsOccasion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateOccasion.resx">
       <DependentUpon>CreateOccasion.cs</DependentUpon>
     </EmbeddedResource>

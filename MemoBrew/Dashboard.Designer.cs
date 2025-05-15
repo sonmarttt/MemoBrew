@@ -29,15 +29,19 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.logoutButton = new System.Windows.Forms.Button();
             this.friendsButton = new System.Windows.Forms.Button();
             this.eventButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userinfoButton = new System.Windows.Forms.Button();
-            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.occasionEndDateLabel = new System.Windows.Forms.Label();
+            this.occasionNameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -51,6 +55,29 @@
             this.label1.Size = new System.Drawing.Size(195, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome, Username";
+            // 
+            // welcomeLabel
+            // 
+            this.welcomeLabel.AutoSize = true;
+            this.welcomeLabel.Location = new System.Drawing.Point(156, 197);
+            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(0, 16);
+            this.welcomeLabel.TabIndex = 8;
+            // 
+            // logoutButton
+            // 
+            this.logoutButton.BackColor = System.Drawing.Color.Black;
+            this.logoutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoutButton.ForeColor = System.Drawing.Color.SeaShell;
+            this.logoutButton.Location = new System.Drawing.Point(363, 13);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(0);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(78, 42);
+            this.logoutButton.TabIndex = 15;
+            this.logoutButton.Text = "Log Out";
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // friendsButton
             // 
@@ -110,26 +137,32 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // userinfoButton
+            // panel1
             // 
-            this.userinfoButton.BackColor = System.Drawing.Color.Black;
-            this.userinfoButton.BackgroundImage = global::MemoBrew.Properties.Resources.lines;
-            this.userinfoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userinfoButton.Location = new System.Drawing.Point(9, 13);
-            this.userinfoButton.Margin = new System.Windows.Forms.Padding(0);
-            this.userinfoButton.Name = "userinfoButton";
-            this.userinfoButton.Size = new System.Drawing.Size(41, 42);
-            this.userinfoButton.TabIndex = 7;
-            this.userinfoButton.UseVisualStyleBackColor = false;
+            this.panel1.Controls.Add(this.occasionEndDateLabel);
+            this.panel1.Controls.Add(this.occasionNameLabel);
+            this.panel1.Location = new System.Drawing.Point(24, 129);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(392, 51);
+            this.panel1.TabIndex = 16;
             // 
-            // welcomeLabel
+            // occasionEndDateLabel
             // 
-            this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.Location = new System.Drawing.Point(156, 197);
-            this.welcomeLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(0, 16);
-            this.welcomeLabel.TabIndex = 8;
+            this.occasionEndDateLabel.AutoSize = true;
+            this.occasionEndDateLabel.Location = new System.Drawing.Point(319, 15);
+            this.occasionEndDateLabel.Name = "occasionEndDateLabel";
+            this.occasionEndDateLabel.Size = new System.Drawing.Size(60, 16);
+            this.occasionEndDateLabel.TabIndex = 1;
+            this.occasionEndDateLabel.Text = "end date";
+            // 
+            // occasionNameLabel
+            // 
+            this.occasionNameLabel.AutoSize = true;
+            this.occasionNameLabel.Location = new System.Drawing.Point(13, 15);
+            this.occasionNameLabel.Name = "occasionNameLabel";
+            this.occasionNameLabel.Size = new System.Drawing.Size(102, 16);
+            this.occasionNameLabel.TabIndex = 0;
+            this.occasionNameLabel.Text = "occasion Name";
             // 
             // Dashboard
             // 
@@ -138,8 +171,9 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(451, 675);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.welcomeLabel);
-            this.Controls.Add(this.userinfoButton);
             this.Controls.Add(this.friendsButton);
             this.Controls.Add(this.eventButton);
             this.Controls.Add(this.homeButton);
@@ -150,6 +184,8 @@
             this.Text = "MemoBrew";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,7 +199,10 @@
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.Button eventButton;
         private System.Windows.Forms.Button friendsButton;
-        private System.Windows.Forms.Button userinfoButton;
         private System.Windows.Forms.Label welcomeLabel;
+        private System.Windows.Forms.Button logoutButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label occasionEndDateLabel;
+        private System.Windows.Forms.Label occasionNameLabel;
     }
 }

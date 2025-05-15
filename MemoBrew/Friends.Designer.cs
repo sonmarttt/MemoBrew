@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.searchtextBox = new System.Windows.Forms.TextBox();
             this.friendLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -36,26 +35,17 @@
             this.eventButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.userinfoButton = new System.Windows.Forms.Button();
+            this.friendInfoPanel = new System.Windows.Forms.Panel();
+            this.FriendName = new System.Windows.Forms.Label();
+            this.invitationStatusLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.friendInfoPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SeaShell;
-            this.label1.Location = new System.Drawing.Point(61, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 25);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Welcome, Username";
             // 
             // searchtextBox
             // 
-            this.searchtextBox.Location = new System.Drawing.Point(79, 94);
+            this.searchtextBox.Location = new System.Drawing.Point(79, 63);
             this.searchtextBox.Name = "searchtextBox";
             this.searchtextBox.Size = new System.Drawing.Size(297, 22);
             this.searchtextBox.TabIndex = 12;
@@ -66,7 +56,7 @@
             this.friendLabel.BackColor = System.Drawing.Color.Black;
             this.friendLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.friendLabel.ForeColor = System.Drawing.Color.SeaShell;
-            this.friendLabel.Location = new System.Drawing.Point(75, 71);
+            this.friendLabel.Location = new System.Drawing.Point(75, 40);
             this.friendLabel.Name = "friendLabel";
             this.friendLabel.Size = new System.Drawing.Size(116, 20);
             this.friendLabel.TabIndex = 13;
@@ -75,9 +65,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MemoBrew.Properties.Resources.black;
-            this.pictureBox1.Location = new System.Drawing.Point(-39, -58);
+            this.pictureBox1.Location = new System.Drawing.Point(-39, -89);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(524, 202);
+            this.pictureBox1.Size = new System.Drawing.Size(524, 215);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -129,27 +119,41 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // userinfoButton
+            // friendInfoPanel
             // 
-            this.userinfoButton.BackColor = System.Drawing.Color.Black;
-            this.userinfoButton.BackgroundImage = global::MemoBrew.Properties.Resources.lines;
-            this.userinfoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userinfoButton.Location = new System.Drawing.Point(9, 13);
-            this.userinfoButton.Margin = new System.Windows.Forms.Padding(0);
-            this.userinfoButton.Name = "userinfoButton";
-            this.userinfoButton.Size = new System.Drawing.Size(41, 42);
-            this.userinfoButton.TabIndex = 14;
-            this.userinfoButton.UseVisualStyleBackColor = false;
+            this.friendInfoPanel.Controls.Add(this.invitationStatusLabel);
+            this.friendInfoPanel.Controls.Add(this.FriendName);
+            this.friendInfoPanel.Location = new System.Drawing.Point(30, 148);
+            this.friendInfoPanel.Name = "friendInfoPanel";
+            this.friendInfoPanel.Size = new System.Drawing.Size(386, 81);
+            this.friendInfoPanel.TabIndex = 14;
+            // 
+            // FriendName
+            // 
+            this.FriendName.AutoSize = true;
+            this.FriendName.Location = new System.Drawing.Point(23, 29);
+            this.FriendName.Name = "FriendName";
+            this.FriendName.Size = new System.Drawing.Size(77, 16);
+            this.FriendName.TabIndex = 0;
+            this.FriendName.Text = "friend name";
+            // 
+            // invitationStatusLabel
+            // 
+            this.invitationStatusLabel.AutoSize = true;
+            this.invitationStatusLabel.Location = new System.Drawing.Point(289, 29);
+            this.invitationStatusLabel.Name = "invitationStatusLabel";
+            this.invitationStatusLabel.Size = new System.Drawing.Size(77, 16);
+            this.invitationStatusLabel.TabIndex = 1;
+            this.invitationStatusLabel.Text = "is accepted";
             // 
             // Friends
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 675);
-            this.Controls.Add(this.userinfoButton);
+            this.Controls.Add(this.friendInfoPanel);
             this.Controls.Add(this.friendLabel);
             this.Controls.Add(this.searchtextBox);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.friendsButton);
             this.Controls.Add(this.eventButton);
@@ -159,6 +163,8 @@
             this.Text = "Friends";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.friendInfoPanel.ResumeLayout(false);
+            this.friendInfoPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,10 +176,11 @@
         private System.Windows.Forms.Button eventButton;
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox searchtextBox;
         private System.Windows.Forms.Label friendLabel;
-        private System.Windows.Forms.Button userinfoButton;
+        private System.Windows.Forms.Panel friendInfoPanel;
+        private System.Windows.Forms.Label invitationStatusLabel;
+        private System.Windows.Forms.Label FriendName;
     }
 }

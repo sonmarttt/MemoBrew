@@ -45,5 +45,11 @@ namespace MemoBrew
 
             newForm.FormClosed += (s, args) => this.Close();
         }
+
+        private void addFriendsButton_Click(object sender, EventArgs e)
+        {
+            AddFriendsOccasion addFriend = new AddFriendsOccasion(userID);
+            CloseAndOpenNewForm(addFriend);
+        }
     }
 }

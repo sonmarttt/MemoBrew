@@ -70,5 +70,12 @@ namespace MemoBrew
 
             newForm.FormClosed += (s, args) => this.Close();
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have logged out successfully.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Welcome welcome = new Welcome();
+            CloseAndOpenNewForm(welcome);
+        }
     }
 }
