@@ -50,6 +50,7 @@
             this.signupButton = new System.Windows.Forms.Button();
             this.languageLabel = new System.Windows.Forms.Label();
             this.selectLanguageBox = new System.Windows.Forms.ComboBox();
+            this.gobackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,8 +65,8 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.BackColor = System.Drawing.Color.SandyBrown;
             resources.ApplyResources(this.txtFirstName, "txtFirstName");
+            this.txtFirstName.BackColor = System.Drawing.Color.SandyBrown;
             this.txtFirstName.Name = "txtFirstName";
             // 
             // firstnameLabel
@@ -80,14 +81,14 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.SandyBrown;
             resources.ApplyResources(this.txtPassword, "txtPassword");
+            this.txtPassword.BackColor = System.Drawing.Color.SandyBrown;
             this.txtPassword.Name = "txtPassword";
             // 
             // txtLastName
             // 
-            this.txtLastName.BackColor = System.Drawing.Color.SandyBrown;
             resources.ApplyResources(this.txtLastName, "txtLastName");
+            this.txtLastName.BackColor = System.Drawing.Color.SandyBrown;
             this.txtLastName.Name = "txtLastName";
             // 
             // lastNameLabel
@@ -102,8 +103,8 @@
             // 
             // txtHeight
             // 
-            this.txtHeight.BackColor = System.Drawing.Color.SandyBrown;
             resources.ApplyResources(this.txtHeight, "txtHeight");
+            this.txtHeight.BackColor = System.Drawing.Color.SandyBrown;
             this.txtHeight.Name = "txtHeight";
             // 
             // weightLabel
@@ -113,14 +114,14 @@
             // 
             // txtWeight
             // 
-            this.txtWeight.BackColor = System.Drawing.Color.SandyBrown;
             resources.ApplyResources(this.txtWeight, "txtWeight");
+            this.txtWeight.BackColor = System.Drawing.Color.SandyBrown;
             this.txtWeight.Name = "txtWeight";
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.SandyBrown;
             resources.ApplyResources(this.txtUsername, "txtUsername");
+            this.txtUsername.BackColor = System.Drawing.Color.SandyBrown;
             this.txtUsername.Name = "txtUsername";
             // 
             // usernameLabel
@@ -149,14 +150,14 @@
             // 
             // txtDateOfBirth
             // 
-            this.txtDateOfBirth.BackColor = System.Drawing.Color.SandyBrown;
             resources.ApplyResources(this.txtDateOfBirth, "txtDateOfBirth");
+            this.txtDateOfBirth.BackColor = System.Drawing.Color.SandyBrown;
             this.txtDateOfBirth.Name = "txtDateOfBirth";
             // 
             // signupButton
             // 
-            this.signupButton.BackColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.signupButton, "signupButton");
+            this.signupButton.BackColor = System.Drawing.Color.Black;
             this.signupButton.ForeColor = System.Drawing.Color.SeaShell;
             this.signupButton.Name = "signupButton";
             this.signupButton.UseVisualStyleBackColor = false;
@@ -169,20 +170,30 @@
             // 
             // selectLanguageBox
             // 
+            resources.ApplyResources(this.selectLanguageBox, "selectLanguageBox");
             this.selectLanguageBox.FormattingEnabled = true;
             this.selectLanguageBox.Items.AddRange(new object[] {
             resources.GetString("selectLanguageBox.Items"),
             resources.GetString("selectLanguageBox.Items1"),
             resources.GetString("selectLanguageBox.Items2")});
-            resources.ApplyResources(this.selectLanguageBox, "selectLanguageBox");
             this.selectLanguageBox.Name = "selectLanguageBox";
             this.selectLanguageBox.SelectedIndexChanged += new System.EventHandler(this.selectLanguageBox_SelectedIndexChanged);
+            // 
+            // gobackButton
+            // 
+            resources.ApplyResources(this.gobackButton, "gobackButton");
+            this.gobackButton.BackColor = System.Drawing.Color.Black;
+            this.gobackButton.ForeColor = System.Drawing.Color.SeaShell;
+            this.gobackButton.Name = "gobackButton";
+            this.gobackButton.UseVisualStyleBackColor = false;
+            this.gobackButton.Click += new System.EventHandler(this.gobackButton_Click);
             // 
             // Signup
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
+            this.Controls.Add(this.gobackButton);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.selectLanguageBox);
             this.Controls.Add(this.signupButton);
@@ -233,5 +244,6 @@
         private System.Windows.Forms.Button signupButton;
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.ComboBox selectLanguageBox;
+        private System.Windows.Forms.Button gobackButton;
     }
 }

@@ -169,5 +169,11 @@ namespace MemoBrew
                     break;
             }
         }
+
+        private void gobackButton_Click(object sender, EventArgs e)
+        {
+            Welcome welcome = new Welcome();
+            CloseAndOpenNewForm(welcome);
+        }
     }
 }

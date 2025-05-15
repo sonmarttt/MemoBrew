@@ -99,5 +99,11 @@ namespace MemoBrew
 
             newForm.FormClosed += (s, args) => this.Close();
         }
+
+        private void gobackButton_Click(object sender, EventArgs e)
+        {
+            Welcome welcome = new Welcome();
+            CloseAndOpenNewForm(welcome);
+        }
     }
 }

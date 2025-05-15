@@ -208,4 +208,7 @@
   <data name="selectLanguageBox.Items2" xml:space="preserve">
     <value>Espagnol</value>
   </data>
+  <data name="gobackButton.Text" xml:space="preserve">
+    <value>Retourner</value>
+  </data>
 </root>

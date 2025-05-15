@@ -40,6 +40,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.gobackButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -108,9 +109,9 @@
             this.loginButton.BackColor = System.Drawing.Color.Black;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.Color.SeaShell;
-            this.loginButton.Location = new System.Drawing.Point(42, 397);
+            this.loginButton.Location = new System.Drawing.Point(42, 402);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(375, 52);
+            this.loginButton.Size = new System.Drawing.Size(168, 52);
             this.loginButton.TabIndex = 6;
             this.loginButton.Text = "Log In";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -166,12 +167,27 @@
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
             // 
+            // gobackButton
+            // 
+            this.gobackButton.BackColor = System.Drawing.Color.Black;
+            this.gobackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.gobackButton.ForeColor = System.Drawing.Color.SeaShell;
+            this.gobackButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.gobackButton.Location = new System.Drawing.Point(241, 402);
+            this.gobackButton.Name = "gobackButton";
+            this.gobackButton.Size = new System.Drawing.Size(168, 52);
+            this.gobackButton.TabIndex = 25;
+            this.gobackButton.Text = "Go Back";
+            this.gobackButton.UseVisualStyleBackColor = false;
+            this.gobackButton.Click += new System.EventHandler(this.gobackButton_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(451, 675);
+            this.Controls.Add(this.gobackButton);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -210,5 +226,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button gobackButton;
     }
 }
