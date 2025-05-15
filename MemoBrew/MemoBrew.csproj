@@ -74,6 +74,12 @@
     <Compile Include="CreateOccasion.Designer.cs">
       <DependentUpon>CreateOccasion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FriendRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendRequests.Designer.cs">
+      <DependentUpon>FriendRequests.cs</DependentUpon>
+    </Compile>
     <Compile Include="Friends.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateOccasion.resx">
       <DependentUpon>CreateOccasion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendRequests.resx">
+      <DependentUpon>FriendRequests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Friends.resx">
       <DependentUpon>Friends.cs</DependentUpon>

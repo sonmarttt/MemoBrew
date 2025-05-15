@@ -1,6 +1,6 @@
 ﻿namespace MemoBrew
 {
-    partial class Friends
+    partial class FriendRequests
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.searchtextBox = new System.Windows.Forms.TextBox();
-            this.friendLabel = new System.Windows.Forms.Label();
             this.friendInfoPanel = new System.Windows.Forms.Panel();
+            this.rejectFriendButton = new System.Windows.Forms.Button();
+            this.acceptFriendButton = new System.Windows.Forms.Button();
             this.FriendName = new System.Windows.Forms.Label();
-            this.searchFriend = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.friendlistLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.friendLabel = new System.Windows.Forms.Label();
             this.friendsButton = new System.Windows.Forms.Button();
             this.eventButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
@@ -45,71 +43,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // searchtextBox
-            // 
-            this.searchtextBox.Location = new System.Drawing.Point(18, 63);
-            this.searchtextBox.Name = "searchtextBox";
-            this.searchtextBox.Size = new System.Drawing.Size(297, 22);
-            this.searchtextBox.TabIndex = 12;
-            // 
-            // friendLabel
-            // 
-            this.friendLabel.AutoSize = true;
-            this.friendLabel.BackColor = System.Drawing.Color.Black;
-            this.friendLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.friendLabel.ForeColor = System.Drawing.Color.SeaShell;
-            this.friendLabel.Location = new System.Drawing.Point(14, 40);
-            this.friendLabel.Name = "friendLabel";
-            this.friendLabel.Size = new System.Drawing.Size(125, 20);
-            this.friendLabel.TabIndex = 13;
-            this.friendLabel.Text = "Find your friend";
-            // 
             // friendInfoPanel
             // 
+            this.friendInfoPanel.Controls.Add(this.rejectFriendButton);
+            this.friendInfoPanel.Controls.Add(this.acceptFriendButton);
             this.friendInfoPanel.Controls.Add(this.FriendName);
-            this.friendInfoPanel.Location = new System.Drawing.Point(30, 209);
+            this.friendInfoPanel.Location = new System.Drawing.Point(12, 149);
             this.friendInfoPanel.Name = "friendInfoPanel";
-            this.friendInfoPanel.Size = new System.Drawing.Size(386, 50);
-            this.friendInfoPanel.TabIndex = 14;
+            this.friendInfoPanel.Size = new System.Drawing.Size(417, 50);
+            this.friendInfoPanel.TabIndex = 15;
+            // 
+            // rejectFriendButton
+            // 
+            this.rejectFriendButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rejectFriendButton.ForeColor = System.Drawing.Color.SeaShell;
+            this.rejectFriendButton.Location = new System.Drawing.Point(302, 5);
+            this.rejectFriendButton.Name = "rejectFriendButton";
+            this.rejectFriendButton.Size = new System.Drawing.Size(100, 38);
+            this.rejectFriendButton.TabIndex = 18;
+            this.rejectFriendButton.Text = "Reject";
+            this.rejectFriendButton.UseVisualStyleBackColor = false;
+            // 
+            // acceptFriendButton
+            // 
+            this.acceptFriendButton.BackColor = System.Drawing.Color.SandyBrown;
+            this.acceptFriendButton.Location = new System.Drawing.Point(196, 5);
+            this.acceptFriendButton.Name = "acceptFriendButton";
+            this.acceptFriendButton.Size = new System.Drawing.Size(100, 38);
+            this.acceptFriendButton.TabIndex = 17;
+            this.acceptFriendButton.Text = "Accept";
+            this.acceptFriendButton.UseVisualStyleBackColor = false;
             // 
             // FriendName
             // 
             this.FriendName.AutoSize = true;
-            this.FriendName.Location = new System.Drawing.Point(23, 16);
+            this.FriendName.Location = new System.Drawing.Point(14, 16);
             this.FriendName.Name = "FriendName";
             this.FriendName.Size = new System.Drawing.Size(77, 16);
             this.FriendName.TabIndex = 0;
             this.FriendName.Text = "friend name";
-            // 
-            // searchFriend
-            // 
-            this.searchFriend.BackColor = System.Drawing.Color.SandyBrown;
-            this.searchFriend.Location = new System.Drawing.Point(350, 62);
-            this.searchFriend.Name = "searchFriend";
-            this.searchFriend.Size = new System.Drawing.Size(75, 23);
-            this.searchFriend.TabIndex = 15;
-            this.searchFriend.Text = "Search";
-            this.searchFriend.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SandyBrown;
-            this.button1.Location = new System.Drawing.Point(30, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 38);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Requests";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // friendlistLabel
-            // 
-            this.friendlistLabel.AutoSize = true;
-            this.friendlistLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.friendlistLabel.Location = new System.Drawing.Point(169, 181);
-            this.friendlistLabel.Name = "friendlistLabel";
-            this.friendlistLabel.Size = new System.Drawing.Size(113, 25);
-            this.friendlistLabel.TabIndex = 1;
-            this.friendlistLabel.Text = "Friend List";
             // 
             // pictureBox1
             // 
@@ -118,74 +90,79 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(524, 215);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
+            // 
+            // friendLabel
+            // 
+            this.friendLabel.AutoSize = true;
+            this.friendLabel.BackColor = System.Drawing.Color.Black;
+            this.friendLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.friendLabel.ForeColor = System.Drawing.Color.SeaShell;
+            this.friendLabel.Location = new System.Drawing.Point(110, 30);
+            this.friendLabel.Name = "friendLabel";
+            this.friendLabel.Size = new System.Drawing.Size(228, 29);
+            this.friendLabel.TabIndex = 19;
+            this.friendLabel.Text = "View your requests";
             // 
             // friendsButton
             // 
             this.friendsButton.BackColor = System.Drawing.Color.SandyBrown;
             this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
             this.friendsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.friendsButton.Location = new System.Drawing.Point(363, 614);
+            this.friendsButton.Location = new System.Drawing.Point(363, 615);
             this.friendsButton.Name = "friendsButton";
             this.friendsButton.Size = new System.Drawing.Size(53, 49);
-            this.friendsButton.TabIndex = 9;
+            this.friendsButton.TabIndex = 23;
             this.friendsButton.UseVisualStyleBackColor = false;
-            this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
             // 
             // eventButton
             // 
             this.eventButton.BackColor = System.Drawing.Color.SandyBrown;
             this.eventButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus;
             this.eventButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eventButton.Location = new System.Drawing.Point(187, 600);
+            this.eventButton.Location = new System.Drawing.Point(187, 601);
             this.eventButton.Name = "eventButton";
             this.eventButton.Size = new System.Drawing.Size(69, 63);
-            this.eventButton.TabIndex = 8;
+            this.eventButton.TabIndex = 22;
             this.eventButton.UseVisualStyleBackColor = false;
-            this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
             // 
             // homeButton
             // 
             this.homeButton.BackColor = System.Drawing.Color.SandyBrown;
             this.homeButton.BackgroundImage = global::MemoBrew.Properties.Resources.home__1_;
             this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeButton.Location = new System.Drawing.Point(30, 614);
+            this.homeButton.Location = new System.Drawing.Point(30, 615);
             this.homeButton.Margin = new System.Windows.Forms.Padding(0);
             this.homeButton.Name = "homeButton";
             this.homeButton.Size = new System.Drawing.Size(57, 49);
-            this.homeButton.TabIndex = 7;
+            this.homeButton.TabIndex = 21;
             this.homeButton.UseVisualStyleBackColor = false;
-            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MemoBrew.Properties.Resources.orange;
-            this.pictureBox2.Location = new System.Drawing.Point(-39, 583);
+            this.pictureBox2.Location = new System.Drawing.Point(-39, 584);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(524, 166);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
-            // Friends
+            // FriendRequests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 675);
-            this.Controls.Add(this.friendlistLabel);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.searchFriend);
-            this.Controls.Add(this.friendInfoPanel);
-            this.Controls.Add(this.friendLabel);
-            this.Controls.Add(this.searchtextBox);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.friendsButton);
             this.Controls.Add(this.eventButton);
             this.Controls.Add(this.homeButton);
             this.Controls.Add(this.pictureBox2);
-            this.Name = "Friends";
-            this.Text = "Friends";
+            this.Controls.Add(this.friendLabel);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.friendInfoPanel);
+            this.Name = "FriendRequests";
+            this.Text = "FriendRequests";
             this.friendInfoPanel.ResumeLayout(false);
             this.friendInfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -197,17 +174,15 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel friendInfoPanel;
+        private System.Windows.Forms.Label FriendName;
+        private System.Windows.Forms.Button rejectFriendButton;
+        private System.Windows.Forms.Button acceptFriendButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label friendLabel;
         private System.Windows.Forms.Button friendsButton;
         private System.Windows.Forms.Button eventButton;
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox searchtextBox;
-        private System.Windows.Forms.Label friendLabel;
-        private System.Windows.Forms.Panel friendInfoPanel;
-        private System.Windows.Forms.Label FriendName;
-        private System.Windows.Forms.Button searchFriend;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label friendlistLabel;
     }
 }
