@@ -52,12 +52,11 @@
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.ForeColor = System.Drawing.Color.SeaShell;
             this.label1.Name = "label1";
-//            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // logoutButton
             // 
-            resources.ApplyResources(this.logoutButton, "logoutButton");
             this.logoutButton.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.logoutButton, "logoutButton");
             this.logoutButton.ForeColor = System.Drawing.Color.SeaShell;
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.UseVisualStyleBackColor = false;
@@ -65,9 +64,9 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.occasionEndDateLabel);
             this.panel1.Controls.Add(this.occasionNameLabel);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // occasionEndDateLabel
@@ -89,54 +88,53 @@
             // 
             // selectLanguageBox
             // 
-            resources.ApplyResources(this.selectLanguageBox, "selectLanguageBox");
             this.selectLanguageBox.FormattingEnabled = true;
             this.selectLanguageBox.Items.AddRange(new object[] {
             resources.GetString("selectLanguageBox.Items"),
             resources.GetString("selectLanguageBox.Items1"),
             resources.GetString("selectLanguageBox.Items2")});
+            resources.ApplyResources(this.selectLanguageBox, "selectLanguageBox");
             this.selectLanguageBox.Name = "selectLanguageBox";
-            //this.selectLanguageBox.SelectedIndexChanged += new System.EventHandler(this.selectLanguageBox_SelectedIndexChanged);
             // 
             // friendsButton
             // 
-            resources.ApplyResources(this.friendsButton, "friendsButton");
             this.friendsButton.BackColor = System.Drawing.Color.SandyBrown;
             this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
+            resources.ApplyResources(this.friendsButton, "friendsButton");
             this.friendsButton.Name = "friendsButton";
             this.friendsButton.UseVisualStyleBackColor = false;
             this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
             // 
             // eventButton
             // 
-            resources.ApplyResources(this.eventButton, "eventButton");
             this.eventButton.BackColor = System.Drawing.Color.SandyBrown;
             this.eventButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus;
+            resources.ApplyResources(this.eventButton, "eventButton");
             this.eventButton.Name = "eventButton";
             this.eventButton.UseVisualStyleBackColor = false;
             this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
             // 
             // homeButton
             // 
-            resources.ApplyResources(this.homeButton, "homeButton");
             this.homeButton.BackColor = System.Drawing.Color.SandyBrown;
             this.homeButton.BackgroundImage = global::MemoBrew.Properties.Resources.home__1_;
+            resources.ApplyResources(this.homeButton, "homeButton");
             this.homeButton.Name = "homeButton";
             this.homeButton.UseVisualStyleBackColor = false;
             this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::MemoBrew.Properties.Resources.orange;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::MemoBrew.Properties.Resources.black;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 

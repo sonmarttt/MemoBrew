@@ -69,7 +69,6 @@
             this.occasionNameLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.occasionNameLabel.ForeColor = System.Drawing.Color.SeaShell;
             this.occasionNameLabel.Name = "occasionNameLabel";
-            this.occasionNameLabel.Text = "Occasion Name";
             // 
             // endDateLabel
             // 
@@ -77,7 +76,6 @@
             this.endDateLabel.BackColor = System.Drawing.Color.SandyBrown;
             this.endDateLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.endDateLabel.Name = "endDateLabel";
-            this.endDateLabel.Text = "End Date";
             // 
             // label2
             // 
@@ -85,7 +83,6 @@
             this.label2.BackColor = System.Drawing.Color.SandyBrown;
             this.label2.ForeColor = System.Drawing.Color.SeaShell;
             this.label2.Name = "label2";
-            this.label2.Text = "Participants";
             // 
             // v
             // 
@@ -93,7 +90,6 @@
             this.v.BackColor = System.Drawing.Color.SandyBrown;
             this.v.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.v.Name = "v";
-            this.v.Text = "Description";
             // 
             // endDatePick
             // 
@@ -106,7 +102,6 @@
             this.createOccasionButton.BackColor = System.Drawing.Color.Black;
             this.createOccasionButton.ForeColor = System.Drawing.Color.SeaShell;
             this.createOccasionButton.Name = "createOccasionButton";
-            this.createOccasionButton.Text = "Create";
             this.createOccasionButton.UseVisualStyleBackColor = false;
             this.createOccasionButton.Click += new System.EventHandler(this.createOccasionButton_Click);
             // 
@@ -116,7 +111,6 @@
             this.locationLabel.BackColor = System.Drawing.Color.SandyBrown;
             this.locationLabel.ForeColor = System.Drawing.Color.SeaShell;
             this.locationLabel.Name = "locationLabel";
-            this.locationLabel.Text = "Location";
             // 
             // textBox1
             // 
@@ -136,8 +130,8 @@
             this.addFriendsButton.BackColor = System.Drawing.Color.Black;
             this.addFriendsButton.ForeColor = System.Drawing.Color.SeaShell;
             this.addFriendsButton.Name = "addFriendsButton";
-            this.addFriendsButton.Text = "Add";
             this.addFriendsButton.UseVisualStyleBackColor = false;
+   //         this.addFriendsButton.Click += new System.EventHandler(this.addFriendsButton_Click);
             // 
             // friendsButton
             // 
@@ -213,7 +207,6 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.Controls.Add(this.addFriendsButton);
             this.Controls.Add(this.friendsButton);
             this.Controls.Add(this.eventButton);

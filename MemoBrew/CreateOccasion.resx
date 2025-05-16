@@ -141,9 +141,6 @@
   <data name="homeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="txtOccasionName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>46, 61</value>
-  </data>
   <data name="friendsButton.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
@@ -171,14 +168,17 @@
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>524, 210</value>
   </data>
+  <data name="&gt;&gt;occasionNameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
+    <value>pictureBox5</value>
+  </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
-  </data>
-  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
-    <value>textBox2</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -213,9 +213,6 @@
   <data name="&gt;&gt;addFriendsButton.Name" xml:space="preserve">
     <value>addFriendsButton</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -243,9 +240,6 @@
   <data name="&gt;&gt;endDateLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="endDateLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15pt</value>
-  </data>
   <data name="&gt;&gt;eventButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -267,6 +261,9 @@
   <data name="&gt;&gt;txtOccasionName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;createOccasionButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -281,9 +278,6 @@
   </data>
   <data name="textBox2.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;homeButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -348,11 +342,8 @@
   <data name="&gt;&gt;friendsButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-39, 582</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>CreateOccasion</value>
   </data>
   <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -392,9 +383,6 @@
   </data>
   <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>CreateOccasion</value>
   </data>
   <data name="endDatePick.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 22</value>
@@ -459,11 +447,14 @@
   <data name="&gt;&gt;v.Name" xml:space="preserve">
     <value>v</value>
   </data>
-  <data name="friendsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="&gt;&gt;occasionNameLabel.Name" xml:space="preserve">
     <value>occasionNameLabel</value>
+  </data>
+  <data name="addFriendsButton.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="occasionNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>491, 65</value>
@@ -477,6 +468,9 @@
   <data name="&gt;&gt;locationLabel.Name" xml:space="preserve">
     <value>locationLabel</value>
   </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 29</value>
   </data>
@@ -485,6 +479,12 @@
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-39, 582</value>
   </data>
   <data name="locationLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 29</value>
@@ -501,11 +501,17 @@
   <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 223</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="v.Text" xml:space="preserve">
     <value>Description</value>
@@ -525,8 +531,8 @@
   <data name="homeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 49</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
-    <value>pictureBox5</value>
+  <data name="txtOccasionName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 61</value>
   </data>
   <data name="&gt;&gt;createOccasionButton.Name" xml:space="preserve">
     <value>createOccasionButton</value>
@@ -542,9 +548,6 @@
   </data>
   <data name="eventButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>191, 600</value>
-  </data>
-  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
   </data>
   <data name="&gt;&gt;txtOccasionName.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -582,11 +585,11 @@
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;occasionNameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="endDateLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15pt</value>
   </data>
-  <data name="v.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 29</value>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
   </data>
   <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -621,20 +624,20 @@
   <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="occasionNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="addFriendsButton.Text" xml:space="preserve">
-    <value>Add</value>
+  <data name="v.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 29</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;pictureBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>-21, 137</value>
   </data>
-  <data name="&gt;&gt;createOccasionButton.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="dateTimePicker1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
@@ -666,8 +669,8 @@
   <data name="occasionNameLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 16</value>
   </data>
-  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="friendsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>491, 135</value>

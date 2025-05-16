@@ -129,10 +129,10 @@ namespace MemoBrew
 
         private void DisplayAllOccasions(IOrderedEnumerable<MemoDataDataSet.OccasionRow> occasions)
         {
-            int itemHeight = 30; // Smaller height to fit more
-            int yPos = 40; // Start below the header
+            int itemHeight = 60; 
+            int yPos = 40;
 
-            // Replace any existing headers with our own
+            
             Label headerName = new Label();
             headerName.Text = "Occasion Name";
             headerName.Font = new Font(headerName.Font, FontStyle.Bold);
@@ -147,7 +147,6 @@ namespace MemoBrew
             headerDate.AutoSize = true;
             panel1.Controls.Add(headerDate);
 
-            // Draw a separator line
             Panel separatorLine = new Panel();
             separatorLine.BorderStyle = BorderStyle.FixedSingle;
             separatorLine.Height = 1;
@@ -157,30 +156,25 @@ namespace MemoBrew
 
             foreach (var occasion in occasions)
             {
-                // Create a panel for this occasion
                 Panel itemPanel = new Panel();
                 itemPanel.Size = new Size(panel1.Width - 20, itemHeight);
                 itemPanel.Location = new Point(10, yPos);
                 itemPanel.BackColor = Color.White;
 
-                // Name label
                 Label nameLabel = new Label();
                 nameLabel.Text = occasion.Name;
                 nameLabel.Location = new Point(5, 5);
                 nameLabel.AutoSize = true;
                 itemPanel.Controls.Add(nameLabel);
 
-                // Date label
                 Label dateLabel = new Label();
                 dateLabel.Text = occasion.Date.ToShortDateString();
                 dateLabel.Location = new Point(itemPanel.Width - 90, 5);
                 dateLabel.AutoSize = true;
                 itemPanel.Controls.Add(dateLabel);
 
-                // Add to panel
                 panel1.Controls.Add(itemPanel);
 
-                // Increment position for next item
                 yPos += itemHeight + 5;
             }
         }
