@@ -123,6 +123,7 @@
             this.addFriendsButton.ForeColor = System.Drawing.Color.SeaShell;
             this.addFriendsButton.Name = "addFriendsButton";
             this.addFriendsButton.UseVisualStyleBackColor = false;
+            this.addFriendsButton.Click += new System.EventHandler(this.addFriendsButton_Click);
             // 
             // friendsButton
             // 

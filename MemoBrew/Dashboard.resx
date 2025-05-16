@@ -136,9 +136,6 @@
     <value>$this</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>451, 675</value>
-  </data>
   <data name="eventButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>187, 600</value>
   </data>
@@ -152,10 +149,6 @@
   <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 16</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
   <data name="logoutButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 42</value>
   </data>
@@ -168,17 +161,11 @@
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
   </data>
-  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="logoutButton.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="&gt;&gt;friendsButton.Name" xml:space="preserve">
+    <value>friendsButton</value>
   </data>
   <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
-  </data>
-  <data name="&gt;&gt;occasionNameLabel.Parent" xml:space="preserve">
-    <value>panel1</value>
   </data>
   <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -192,20 +179,17 @@
   <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;occasionNameLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="friendsButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>363, 614</value>
+  </data>
+  <data name="friendsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 49</value>
   </data>
   <data name="&gt;&gt;occasionEndDateLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>-39, 583</value>
@@ -219,6 +203,7 @@
   <data name="occasionEndDateLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 7, 7, 7</value>
   </data>
@@ -249,8 +234,14 @@
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;occasionEndDateLabel.Name" xml:space="preserve">
+    <value>occasionEndDateLabel</value>
+  </data>
   <data name="&gt;&gt;homeButton.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="languageLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="selectLanguageBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 31</value>
@@ -294,8 +285,17 @@
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>392, 415</value>
+  </data>
+  <data name="&gt;&gt;logoutButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="eventButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="logoutButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -318,17 +318,14 @@
   <data name="logoutButton.Text" xml:space="preserve">
     <value>Log Out</value>
   </data>
-  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="selectLanguageBox.Items" xml:space="preserve">
+    <value>English</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
   </data>
-  <data name="occasionEndDateLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;occasionNameLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -336,17 +333,17 @@
   <data name="homeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 614</value>
   </data>
-  <data name="&gt;&gt;eventButton.Name" xml:space="preserve">
-    <value>eventButton</value>
-  </data>
   <data name="&gt;&gt;panel1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="friendsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 49</value>
+  <data name="&gt;&gt;occasionNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="eventButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="&gt;&gt;occasionNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="homeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 49</value>
@@ -359,6 +356,9 @@
   </data>
   <data name="selectLanguageBox.Items2" xml:space="preserve">
     <value>Spanish</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
     <value>languageLabel</value>
@@ -384,8 +384,8 @@
   <data name="occasionEndDateLabel.Text" xml:space="preserve">
     <value>end date</value>
   </data>
-  <data name="&gt;&gt;occasionEndDateLabel.Name" xml:space="preserve">
-    <value>occasionEndDateLabel</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>451, 675</value>
   </data>
   <data name="&gt;&gt;friendsButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -393,8 +393,8 @@
   <data name="logoutButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="occasionEndDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -408,29 +408,29 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="selectLanguageBox.Items" xml:space="preserve">
-    <value>English</value>
+  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;logoutButton.Name" xml:space="preserve">
     <value>logoutButton</value>
   </data>
-  <data name="&gt;&gt;occasionNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="languageLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="logoutButton.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 25</value>
   </data>
-  <data name="&gt;&gt;friendsButton.Name" xml:space="preserve">
-    <value>friendsButton</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
-  <data name="&gt;&gt;logoutButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;eventButton.Name" xml:space="preserve">
+    <value>eventButton</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -447,8 +447,8 @@
   <data name="&gt;&gt;homeButton.Name" xml:space="preserve">
     <value>homeButton</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>392, 415</value>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="friendsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -458,8 +458,5 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es</value>
   </metadata>
 </root>

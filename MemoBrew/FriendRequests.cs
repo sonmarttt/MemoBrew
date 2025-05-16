@@ -85,7 +85,7 @@ namespace MemoBrew
                     requestPanel.BorderStyle = BorderStyle.FixedSingle;
 
                     Label nameLabel = new Label();
-                    nameLabel.Text = $"{request.SenderFirstName} {request.SenderLastName} (@{request.SenderUsername})";
+                    nameLabel.Text = $"@{request.SenderUsername}";
                     nameLabel.AutoSize = true;
                     nameLabel.Location = new Point(10, 10);
                     requestPanel.Controls.Add(nameLabel);
