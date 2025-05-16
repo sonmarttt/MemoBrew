@@ -36,22 +36,23 @@
             // 
             // txtUsername
             // 
-            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.BackColor = System.Drawing.Color.SeaShell;
+            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.Name = "txtUsername";
             // 
             // addFriendsButton
             // 
-            resources.ApplyResources(this.addFriendsButton, "addFriendsButton");
             this.addFriendsButton.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.addFriendsButton, "addFriendsButton");
             this.addFriendsButton.ForeColor = System.Drawing.Color.SeaShell;
             this.addFriendsButton.Name = "addFriendsButton";
             this.addFriendsButton.UseVisualStyleBackColor = false;
+            this.addFriendsButton.Click += new System.EventHandler(this.addFriendsButton_Click);
             // 
             // goBackOccasionButton
             // 
-            resources.ApplyResources(this.goBackOccasionButton, "goBackOccasionButton");
             this.goBackOccasionButton.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.goBackOccasionButton, "goBackOccasionButton");
             this.goBackOccasionButton.ForeColor = System.Drawing.Color.SeaShell;
             this.goBackOccasionButton.Name = "goBackOccasionButton";
             this.goBackOccasionButton.UseVisualStyleBackColor = false;

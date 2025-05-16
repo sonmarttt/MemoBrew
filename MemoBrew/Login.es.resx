@@ -126,8 +126,11 @@
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 115</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>259, 94</value>
+    <value>571, 178</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>bienvenido de nuevo</value>
@@ -142,19 +145,22 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 152</value>
+    <value>265, 293</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 33</value>
+    <value>541, 108</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Inicia sesión con los datos que nos proporcionaste</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="usenameIdLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="usenameIdLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 16</value>
+    <value>291, 37</value>
   </data>
   <data name="usenameIdLabel.Text" xml:space="preserve">
     <value>Nombre de usuario</value>
@@ -163,7 +169,7 @@
     <value>NoControl</value>
   </data>
   <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 16</value>
+    <value>183, 37</value>
   </data>
   <data name="passwordLabel.Text" xml:space="preserve">
     <value>Contraseña</value>
@@ -184,7 +190,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>374, 10</value>
+    <value>829, 16</value>
   </data>
   <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

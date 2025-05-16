@@ -7,6 +7,7 @@ namespace MemoBrew
     public partial class CreateOccasion : Form
     {
         private int userID;
+        private int newOccasionID;
 
         public CreateOccasion(int userID)
         {
@@ -17,6 +18,8 @@ namespace MemoBrew
 
             this.userID = userID;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
+
+            addFriendsButton.Enabled = false;
         }
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
@@ -81,20 +84,20 @@ namespace MemoBrew
 
                     cmd.Parameters.Add("@Name", System.Data.SqlDbType.NVarChar, 100).Value = txtOccasionName.Text;
 
-                    if (string.IsNullOrWhiteSpace(descriptionTextBox.Text))
+                    if (string.IsNullOrWhiteSpace(locationTextBox.Text))
                         cmd.Parameters.Add("@Location", System.Data.SqlDbType.NVarChar, 255).Value = DBNull.Value;
                     else
-                        cmd.Parameters.Add("@Location", System.Data.SqlDbType.NVarChar, 255).Value = descriptionTextBox.Text;
+                        cmd.Parameters.Add("@Location", System.Data.SqlDbType.NVarChar, 255).Value = locationTextBox.Text;
 
-                    if (string.IsNullOrWhiteSpace(locationTextBox.Text))
+                    if (string.IsNullOrWhiteSpace(descriptionTextBox.Text))
                         cmd.Parameters.Add("@Description", System.Data.SqlDbType.NVarChar).Value = DBNull.Value;
                     else
-                        cmd.Parameters.Add("@Description", System.Data.SqlDbType.NVarChar).Value = locationTextBox.Text;
+                        cmd.Parameters.Add("@Description", System.Data.SqlDbType.NVarChar).Value = descriptionTextBox.Text;
 
                     cmd.Parameters.Add("@CurrentDate", System.Data.SqlDbType.Date).Value = endDatePick.Value.Date;
                     cmd.Parameters.Add("@CreatorID", System.Data.SqlDbType.Int).Value = this.userID;
 
-                    int newOccasionID = Convert.ToInt32(cmd.ExecuteScalar());
+                    newOccasionID = Convert.ToInt32(cmd.ExecuteScalar());
 
                     string participantSql = @"
                 INSERT INTO OccasionParticipants (OccasionID, UserID, Status)
@@ -108,6 +111,17 @@ namespace MemoBrew
                     MessageBox.Show("Occasion created successfully!", "Success",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    addFriendsButton.Enabled = true;
+
+                    DialogResult addFriendsResult = MessageBox.Show("Do you want to add friends to this occasion?",
+                        "Add Friends", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (addFriendsResult == DialogResult.Yes)
+                    {
+                        AddFriendsOccasion addFriendsOccasionForm = new AddFriendsOccasion(userID, newOccasionID);
+                        addFriendsOccasionForm.ShowDialog();
+                    }
+
                     Dashboard dashboard = new Dashboard(this.userID);
                     CloseAndOpenNewForm(dashboard);
                 }
@@ -119,6 +133,18 @@ namespace MemoBrew
             }
         }
 
-    
+        private void addFriendsButton_Click(object sender, EventArgs e)
+        {
+            if (newOccasionID > 0)
+            {
+                AddFriendsOccasion addFriendsOccasionForm = new AddFriendsOccasion(userID, newOccasionID);
+                addFriendsOccasionForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please create an occasion first before adding friends.",
+                    "Occasion Required", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

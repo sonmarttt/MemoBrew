@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OccasionLogs));
             this.logOccasionNameLabel = new System.Windows.Forms.Label();
             this.DrinksPanel = new System.Windows.Forms.Panel();
-            this.drinkAmountNumber = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.hangoverLevelLabel = new System.Windows.Forms.Label();
@@ -54,8 +53,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.uploadPicturesButton = new System.Windows.Forms.Button();
             this.DrinksPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.drinkAmountNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HangoverLevelNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sicknessLevelNumber)).BeginInit();
@@ -76,34 +75,28 @@
             // 
             // DrinksPanel
             // 
-            resources.ApplyResources(this.DrinksPanel, "DrinksPanel");
-            this.DrinksPanel.Controls.Add(this.drinkAmountNumber);
             this.DrinksPanel.Controls.Add(this.textBox1);
             this.DrinksPanel.Controls.Add(this.pictureBox2);
+            resources.ApplyResources(this.DrinksPanel, "DrinksPanel");
             this.DrinksPanel.Name = "DrinksPanel";
-            // 
-            // drinkAmountNumber
-            // 
-            resources.ApplyResources(this.drinkAmountNumber, "drinkAmountNumber");
-            this.drinkAmountNumber.Name = "drinkAmountNumber";
             // 
             // textBox1
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.BackColor = System.Drawing.Color.SeaShell;
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::MemoBrew.Properties.Resources.orange;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // hangoverLevelLabel
             // 
-            resources.ApplyResources(this.hangoverLevelLabel, "hangoverLevelLabel");
             this.hangoverLevelLabel.BackColor = System.Drawing.Color.SandyBrown;
+            resources.ApplyResources(this.hangoverLevelLabel, "hangoverLevelLabel");
             this.hangoverLevelLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.hangoverLevelLabel.Name = "hangoverLevelLabel";
             // 
@@ -114,8 +107,8 @@
             // 
             // sicknessLevelLabel
             // 
-            resources.ApplyResources(this.sicknessLevelLabel, "sicknessLevelLabel");
             this.sicknessLevelLabel.BackColor = System.Drawing.Color.SandyBrown;
+            resources.ApplyResources(this.sicknessLevelLabel, "sicknessLevelLabel");
             this.sicknessLevelLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.sicknessLevelLabel.Name = "sicknessLevelLabel";
             // 
@@ -133,11 +126,12 @@
             // 
             // submitOccasionLogButton
             // 
-            resources.ApplyResources(this.submitOccasionLogButton, "submitOccasionLogButton");
             this.submitOccasionLogButton.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.submitOccasionLogButton, "submitOccasionLogButton");
             this.submitOccasionLogButton.ForeColor = System.Drawing.Color.SeaShell;
             this.submitOccasionLogButton.Name = "submitOccasionLogButton";
             this.submitOccasionLogButton.UseVisualStyleBackColor = false;
+            this.submitOccasionLogButton.Click += new System.EventHandler(this.submitOccasionLogButton_Click);
             // 
             // uploadPicturesLabel
             // 
@@ -155,101 +149,113 @@
             // 
             // addCommentTextbox
             // 
-            resources.ApplyResources(this.addCommentTextbox, "addCommentTextbox");
             this.addCommentTextbox.BackColor = System.Drawing.Color.SeaShell;
+            resources.ApplyResources(this.addCommentTextbox, "addCommentTextbox");
             this.addCommentTextbox.Name = "addCommentTextbox";
             // 
             // friendsButton
             // 
-            resources.ApplyResources(this.friendsButton, "friendsButton");
             this.friendsButton.BackColor = System.Drawing.Color.SandyBrown;
             this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
+            resources.ApplyResources(this.friendsButton, "friendsButton");
             this.friendsButton.Name = "friendsButton";
             this.friendsButton.UseVisualStyleBackColor = false;
             this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
             // 
             // eventButton
             // 
-            resources.ApplyResources(this.eventButton, "eventButton");
             this.eventButton.BackColor = System.Drawing.Color.SandyBrown;
             this.eventButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus;
+            resources.ApplyResources(this.eventButton, "eventButton");
             this.eventButton.Name = "eventButton";
             this.eventButton.UseVisualStyleBackColor = false;
             this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
             // 
             // homeButton
             // 
-            resources.ApplyResources(this.homeButton, "homeButton");
             this.homeButton.BackColor = System.Drawing.Color.SandyBrown;
             this.homeButton.BackgroundImage = global::MemoBrew.Properties.Resources.home__1_;
+            resources.ApplyResources(this.homeButton, "homeButton");
             this.homeButton.Name = "homeButton";
             this.homeButton.UseVisualStyleBackColor = false;
             this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox7
             // 
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.Image = global::MemoBrew.Properties.Resources.orange;
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.TabStop = false;
             // 
             // removeDrinkButton
             // 
-            resources.ApplyResources(this.removeDrinkButton, "removeDrinkButton");
             this.removeDrinkButton.BackColor = System.Drawing.Color.SeaShell;
             this.removeDrinkButton.BackgroundImage = global::MemoBrew.Properties.Resources.minus;
+            resources.ApplyResources(this.removeDrinkButton, "removeDrinkButton");
             this.removeDrinkButton.Name = "removeDrinkButton";
             this.removeDrinkButton.UseVisualStyleBackColor = false;
+            this.removeDrinkButton.Click += new System.EventHandler(this.removeDrinkButton_Click);
             // 
             // addDrinkButton
             // 
-            resources.ApplyResources(this.addDrinkButton, "addDrinkButton");
             this.addDrinkButton.BackColor = System.Drawing.Color.SeaShell;
             this.addDrinkButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus__2_;
+            resources.ApplyResources(this.addDrinkButton, "addDrinkButton");
             this.addDrinkButton.Name = "addDrinkButton";
             this.addDrinkButton.UseVisualStyleBackColor = false;
+            this.addDrinkButton.Click += new System.EventHandler(this.addDrinkButton_Click);
             // 
             // pictureBox5
             // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Image = global::MemoBrew.Properties.Resources.orange;
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Image = global::MemoBrew.Properties.Resources.orange;
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::MemoBrew.Properties.Resources.black;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Image = global::MemoBrew.Properties.Resources.orange;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox6
             // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Image = global::MemoBrew.Properties.Resources.orange;
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
+            // 
+            // uploadPicturesButton
+            // 
+            this.uploadPicturesButton.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.uploadPicturesButton, "uploadPicturesButton");
+            this.uploadPicturesButton.ForeColor = System.Drawing.Color.SeaShell;
+            this.uploadPicturesButton.Name = "uploadPicturesButton";
+            this.uploadPicturesButton.UseVisualStyleBackColor = false;
+            this.uploadPicturesButton.Click += new System.EventHandler(this.uploadPicturesButton_Click);
             // 
             // OccasionLogs
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
+            this.Controls.Add(this.uploadPicturesButton);
             this.Controls.Add(this.friendsButton);
             this.Controls.Add(this.eventButton);
             this.Controls.Add(this.homeButton);
@@ -275,7 +281,6 @@
             this.Name = "OccasionLogs";
             this.DrinksPanel.ResumeLayout(false);
             this.DrinksPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.drinkAmountNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HangoverLevelNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sicknessLevelNumber)).EndInit();
@@ -303,7 +308,6 @@
         private System.Windows.Forms.NumericUpDown sicknessLevelNumber;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown drinkAmountNumber;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button submitOccasionLogButton;
@@ -317,5 +321,6 @@
         private System.Windows.Forms.Button friendsButton;
         private System.Windows.Forms.Button eventButton;
         private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.Button uploadPicturesButton;
     }
 }

@@ -61,14 +61,14 @@
             // 
             // txtUsername
             // 
-            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.BackColor = System.Drawing.Color.SandyBrown;
+            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.Name = "txtUsername";
             // 
             // txtPassword
             // 
-            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.BackColor = System.Drawing.Color.SandyBrown;
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
             // 
             // usenameIdLabel
@@ -83,8 +83,8 @@
             // 
             // loginButton
             // 
-            resources.ApplyResources(this.loginButton, "loginButton");
             this.loginButton.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.loginButton, "loginButton");
             this.loginButton.ForeColor = System.Drawing.Color.SeaShell;
             this.loginButton.Name = "loginButton";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -92,8 +92,8 @@
             // 
             // gobackButton
             // 
-            resources.ApplyResources(this.gobackButton, "gobackButton");
             this.gobackButton.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.gobackButton, "gobackButton");
             this.gobackButton.ForeColor = System.Drawing.Color.SeaShell;
             this.gobackButton.Name = "gobackButton";
             this.gobackButton.UseVisualStyleBackColor = false;
@@ -101,36 +101,36 @@
             // 
             // pictureBox4
             // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Image = global::MemoBrew.Properties.Resources.circle;
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Image = global::MemoBrew.Properties.Resources.circle;
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::MemoBrew.Properties.Resources.circle;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox
             // 
-            resources.ApplyResources(this.pictureBox, "pictureBox");
             this.pictureBox.Image = global::MemoBrew.Properties.Resources.beer_mug;
+            resources.ApplyResources(this.pictureBox, "pictureBox");
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.TabStop = false;
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::MemoBrew.Properties.Resources.circle;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 

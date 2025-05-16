@@ -74,12 +74,7 @@
     <Compile Include="CreateOccasion.Designer.cs">
       <DependentUpon>CreateOccasion.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateNewOccasion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateNewOccasion.Designer.cs">
-      <DependentUpon>CreateNewOccasion.cs</DependentUpon>
-    </Compile>
+    <Compile Include="DatabaseManager.cs" />
     <Compile Include="FriendRequests.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,9 +152,6 @@
     <EmbeddedResource Include="CreateOccasion.resx">
       <DependentUpon>CreateOccasion.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreateNewOccasion.resx">
-      <DependentUpon>CreateNewOccasion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.es.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -311,10 +303,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MemoData.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="MemoData_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>MemoData.mdf</DependentUpon>
     </Content>
   </ItemGroup>
