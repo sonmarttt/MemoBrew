@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Friends));
             this.searchtextBox = new System.Windows.Forms.TextBox();
             this.friendLabel = new System.Windows.Forms.Label();
             this.friendInfoPanel = new System.Windows.Forms.Panel();
@@ -47,132 +48,91 @@
             // 
             // searchtextBox
             // 
-            this.searchtextBox.Location = new System.Drawing.Point(18, 63);
+            resources.ApplyResources(this.searchtextBox, "searchtextBox");
             this.searchtextBox.Name = "searchtextBox";
-            this.searchtextBox.Size = new System.Drawing.Size(297, 22);
-            this.searchtextBox.TabIndex = 12;
             // 
             // friendLabel
             // 
-            this.friendLabel.AutoSize = true;
+            resources.ApplyResources(this.friendLabel, "friendLabel");
             this.friendLabel.BackColor = System.Drawing.Color.Black;
-            this.friendLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.friendLabel.ForeColor = System.Drawing.Color.SeaShell;
-            this.friendLabel.Location = new System.Drawing.Point(14, 40);
             this.friendLabel.Name = "friendLabel";
-            this.friendLabel.Size = new System.Drawing.Size(125, 20);
-            this.friendLabel.TabIndex = 13;
-            this.friendLabel.Text = "Find your friend";
             // 
             // friendInfoPanel
             // 
+            resources.ApplyResources(this.friendInfoPanel, "friendInfoPanel");
             this.friendInfoPanel.Controls.Add(this.FriendName);
-            this.friendInfoPanel.Location = new System.Drawing.Point(30, 209);
             this.friendInfoPanel.Name = "friendInfoPanel";
-            this.friendInfoPanel.Size = new System.Drawing.Size(386, 50);
-            this.friendInfoPanel.TabIndex = 14;
             // 
             // FriendName
             // 
-            this.FriendName.AutoSize = true;
-            this.FriendName.Location = new System.Drawing.Point(23, 16);
+            resources.ApplyResources(this.FriendName, "FriendName");
             this.FriendName.Name = "FriendName";
-            this.FriendName.Size = new System.Drawing.Size(77, 16);
-            this.FriendName.TabIndex = 0;
-            this.FriendName.Text = "friend name";
             // 
             // searchFriend
             // 
+            resources.ApplyResources(this.searchFriend, "searchFriend");
             this.searchFriend.BackColor = System.Drawing.Color.SandyBrown;
-            this.searchFriend.Location = new System.Drawing.Point(350, 62);
             this.searchFriend.Name = "searchFriend";
-            this.searchFriend.Size = new System.Drawing.Size(75, 23);
-            this.searchFriend.TabIndex = 15;
-            this.searchFriend.Text = "Search";
             this.searchFriend.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
+            resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.SandyBrown;
-            this.button1.Location = new System.Drawing.Point(30, 132);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 38);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Requests";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // friendlistLabel
             // 
-            this.friendlistLabel.AutoSize = true;
-            this.friendlistLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.friendlistLabel.Location = new System.Drawing.Point(169, 181);
+            resources.ApplyResources(this.friendlistLabel, "friendlistLabel");
             this.friendlistLabel.Name = "friendlistLabel";
-            this.friendlistLabel.Size = new System.Drawing.Size(113, 25);
-            this.friendlistLabel.TabIndex = 1;
-            this.friendlistLabel.Text = "Friend List";
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::MemoBrew.Properties.Resources.black;
-            this.pictureBox1.Location = new System.Drawing.Point(-39, -89);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(524, 215);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // friendsButton
             // 
+            resources.ApplyResources(this.friendsButton, "friendsButton");
             this.friendsButton.BackColor = System.Drawing.Color.SandyBrown;
             this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
-            this.friendsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.friendsButton.Location = new System.Drawing.Point(363, 614);
             this.friendsButton.Name = "friendsButton";
-            this.friendsButton.Size = new System.Drawing.Size(53, 49);
-            this.friendsButton.TabIndex = 9;
             this.friendsButton.UseVisualStyleBackColor = false;
             this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
             // 
             // eventButton
             // 
+            resources.ApplyResources(this.eventButton, "eventButton");
             this.eventButton.BackColor = System.Drawing.Color.SandyBrown;
             this.eventButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus;
-            this.eventButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eventButton.Location = new System.Drawing.Point(187, 600);
             this.eventButton.Name = "eventButton";
-            this.eventButton.Size = new System.Drawing.Size(69, 63);
-            this.eventButton.TabIndex = 8;
             this.eventButton.UseVisualStyleBackColor = false;
             this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
             // 
             // homeButton
             // 
+            resources.ApplyResources(this.homeButton, "homeButton");
             this.homeButton.BackColor = System.Drawing.Color.SandyBrown;
             this.homeButton.BackgroundImage = global::MemoBrew.Properties.Resources.home__1_;
-            this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeButton.Location = new System.Drawing.Point(30, 614);
-            this.homeButton.Margin = new System.Windows.Forms.Padding(0);
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(57, 49);
-            this.homeButton.TabIndex = 7;
             this.homeButton.UseVisualStyleBackColor = false;
             this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox2
             // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::MemoBrew.Properties.Resources.orange;
-            this.pictureBox2.Location = new System.Drawing.Point(-39, 583);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(524, 166);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
             // Friends
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 675);
             this.Controls.Add(this.friendlistLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.searchFriend);
@@ -185,7 +145,6 @@
             this.Controls.Add(this.homeButton);
             this.Controls.Add(this.pictureBox2);
             this.Name = "Friends";
-            this.Text = "Friends";
             this.friendInfoPanel.ResumeLayout(false);
             this.friendInfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

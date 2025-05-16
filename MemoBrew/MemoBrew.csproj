@@ -133,23 +133,74 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddFriendsOccasion.es.resx">
+      <DependentUpon>AddFriendsOccasion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFriendsOccasion.fr.resx">
+      <DependentUpon>AddFriendsOccasion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddFriendsOccasion.resx">
       <DependentUpon>AddFriendsOccasion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateOccasion.es.resx">
+      <DependentUpon>CreateOccasion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateOccasion.fr.resx">
+      <DependentUpon>CreateOccasion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateOccasion.resx">
       <DependentUpon>CreateOccasion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.es.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.fr.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendRequests.es.resx">
+      <DependentUpon>FriendRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendRequests.fr.resx">
+      <DependentUpon>FriendRequests.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FriendRequests.resx">
       <DependentUpon>FriendRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Friends.es.resx">
+      <DependentUpon>Friends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Friends.fr.resx">
+      <DependentUpon>Friends.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Friends.resx">
       <DependentUpon>Friends.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.es.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.fr-DZ.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.fr.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OccasionLogs.es.resx">
+      <DependentUpon>OccasionLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OccasionLogs.fr.resx">
+      <DependentUpon>OccasionLogs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OccasionLogs.resx">
       <DependentUpon>OccasionLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occasions.es.resx">
+      <DependentUpon>Occasions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occasions.fr.resx">
+      <DependentUpon>Occasions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Occasions.resx">
       <DependentUpon>Occasions.cs</DependentUpon>

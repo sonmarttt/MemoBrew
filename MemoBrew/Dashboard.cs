@@ -9,6 +9,8 @@ namespace MemoBrew
 
         public Dashboard(int userId)
         {
+            LanguageManager.ApplyLanguage();
+            UpdateLanguageComboBox();
             InitializeComponent();
             this.userId = userId;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
@@ -76,6 +78,39 @@ namespace MemoBrew
             MessageBox.Show("You have logged out successfully.", "Logout", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Welcome welcome = new Welcome();
             CloseAndOpenNewForm(welcome);
+        }
+
+        //update the language that was selected before
+        private void UpdateLanguageComboBox()
+        {
+            switch (LanguageManager.CurrentLanguage)
+            {
+                case "en-US":
+                    selectLanguageBox.SelectedIndex = 0;
+                    break;
+                case "fr-FR":
+                    selectLanguageBox.SelectedIndex = 1;
+                    break;
+                case "es-ES":
+                    selectLanguageBox.SelectedIndex = 2;
+                    break;
+            }
+        }
+        //change the language again from the dropdown in signup
+        private void selectLanguageBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (selectLanguageBox.SelectedIndex)
+            {
+                case 0:
+                    LanguageManager.ChangeLanguage("en-US", this);
+                    break;
+                case 1:
+                    LanguageManager.ChangeLanguage("fr-FR", this);
+                    break;
+                case 2:
+                    LanguageManager.ChangeLanguage("es-ES", this);
+                    break;
+            }
         }
     }
 }

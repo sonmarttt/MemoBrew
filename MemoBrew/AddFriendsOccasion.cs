@@ -15,6 +15,7 @@ namespace MemoBrew
         private int userId;
         public AddFriendsOccasion(int userId)
         {
+            LanguageManager.ApplyLanguage();
             InitializeComponent();
             this.userId = userId;
           
@@ -33,5 +34,6 @@ namespace MemoBrew
 
             newForm.FormClosed += (s, args) => this.Close();
         }
+
     }
 }

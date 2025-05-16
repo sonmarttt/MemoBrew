@@ -9,6 +9,7 @@ namespace MemoBrew
     {
         public Login()
         {
+            LanguageManager.ApplyLanguage();
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
