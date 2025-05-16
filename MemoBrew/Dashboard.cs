@@ -15,23 +15,11 @@ namespace MemoBrew
             this.userId = userId;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
 
-            ConfigurePanelForOccasions();
+            panel1.Controls.Clear();
+            panel1.AutoScroll = true;
 
             LoadUserData();
             LoadUserOccasions();
-        }
-
-        private void ConfigurePanelForOccasions()
-        {
-            panel1.AutoScroll = true;
-
-            foreach (Control control in panel1.Controls)
-            {
-                if (control is Label)
-                {
-                    control.Visible = false;
-                }
-            }
         }
 
         private void LoadUserData()
@@ -42,7 +30,6 @@ namespace MemoBrew
                     new MemoDataDataSetTableAdapters.UsersTableAdapter();
                 MemoDataDataSet.UsersDataTable userTable = usersAdapter.GetData();
                 MemoDataDataSet.UsersRow userRow = userTable.FindByUserID(userId);
-
             }
             catch (Exception ex)
             {
@@ -142,70 +129,59 @@ namespace MemoBrew
 
         private void DisplayAllOccasions(IOrderedEnumerable<MemoDataDataSet.OccasionRow> occasions)
         {
-            int itemHeight = 80;
-            int panelWidth = panel1.Width - 25;
-            int yPos = 10;
+            int itemHeight = 30; // Smaller height to fit more
+            int yPos = 40; // Start below the header
 
-            Label headerNameLabel = new Label();
-            headerNameLabel.Text = "Occasion Name";
-            headerNameLabel.Font = new Font(headerNameLabel.Font, FontStyle.Bold);
-            headerNameLabel.Location = new Point(10, yPos);
-            headerNameLabel.Size = new Size(200, 20);
-            panel1.Controls.Add(headerNameLabel);
+            // Replace any existing headers with our own
+            Label headerName = new Label();
+            headerName.Text = "Occasion Name";
+            headerName.Font = new Font(headerName.Font, FontStyle.Bold);
+            headerName.Location = new Point(10, 10);
+            headerName.AutoSize = true;
+            panel1.Controls.Add(headerName);
 
-            Label headerDateLabel = new Label();
-            headerDateLabel.Text = "Date";
-            headerDateLabel.Font = new Font(headerDateLabel.Font, FontStyle.Bold);
-            headerDateLabel.Location = new Point(panelWidth - 110, yPos);
-            headerDateLabel.Size = new Size(100, 20);
-            headerDateLabel.TextAlign = ContentAlignment.TopRight;
-            panel1.Controls.Add(headerDateLabel);
+            Label headerDate = new Label();
+            headerDate.Text = "Date";
+            headerDate.Font = new Font(headerDate.Font, FontStyle.Bold);
+            headerDate.Location = new Point(panel1.Width - 100, 10);
+            headerDate.AutoSize = true;
+            panel1.Controls.Add(headerDate);
 
-            yPos += 25;
+            // Draw a separator line
+            Panel separatorLine = new Panel();
+            separatorLine.BorderStyle = BorderStyle.FixedSingle;
+            separatorLine.Height = 1;
+            separatorLine.Width = panel1.Width - 20;
+            separatorLine.Location = new Point(10, 35);
+            panel1.Controls.Add(separatorLine);
 
             foreach (var occasion in occasions)
             {
-                Panel occasionPanel = new Panel();
-                occasionPanel.Size = new Size(panelWidth, itemHeight);
-                occasionPanel.Location = new Point(0, yPos);
-                occasionPanel.BorderStyle = BorderStyle.FixedSingle;
-                occasionPanel.BackColor = Color.White;
+                // Create a panel for this occasion
+                Panel itemPanel = new Panel();
+                itemPanel.Size = new Size(panel1.Width - 20, itemHeight);
+                itemPanel.Location = new Point(10, yPos);
+                itemPanel.BackColor = Color.White;
 
+                // Name label
                 Label nameLabel = new Label();
                 nameLabel.Text = occasion.Name;
-                nameLabel.Font = new Font(nameLabel.Font, FontStyle.Regular);
-                nameLabel.Location = new Point(10, 5);
-                nameLabel.Size = new Size(panelWidth - 130, 20);
-                nameLabel.AutoEllipsis = true;
-                occasionPanel.Controls.Add(nameLabel);
+                nameLabel.Location = new Point(5, 5);
+                nameLabel.AutoSize = true;
+                itemPanel.Controls.Add(nameLabel);
 
+                // Date label
                 Label dateLabel = new Label();
                 dateLabel.Text = occasion.Date.ToShortDateString();
-                dateLabel.Location = new Point(panelWidth - 120, 5);
-                dateLabel.Size = new Size(100, 20);
-                dateLabel.TextAlign = ContentAlignment.TopRight;
-                occasionPanel.Controls.Add(dateLabel);
+                dateLabel.Location = new Point(itemPanel.Width - 90, 5);
+                dateLabel.AutoSize = true;
+                itemPanel.Controls.Add(dateLabel);
 
-                if (!occasion.IsLocationNull())
-                {
-                    string locationInfo = occasion.Location;
-                    if (locationInfo.Length > 30)
-                    {
-                        locationInfo = locationInfo.Substring(0, 27) + "...";
-                    }
+                // Add to panel
+                panel1.Controls.Add(itemPanel);
 
-                    Label locationLabel = new Label();
-                    locationLabel.Text = "📍 " + locationInfo;
-                    locationLabel.Location = new Point(10, 20);
-                    locationLabel.Size = new Size(panelWidth - 20, 15);
-                    locationLabel.Font = new Font(locationLabel.Font.FontFamily, 7.5f);
-                    locationLabel.ForeColor = Color.Gray;
-                    occasionPanel.Controls.Add(locationLabel);
-                }
-
-                panel1.Controls.Add(occasionPanel);
-
-                yPos += itemHeight + 3;
+                // Increment position for next item
+                yPos += itemHeight + 5;
             }
         }
 

@@ -15,6 +15,7 @@ namespace MemoBrew
         private int userID;
         public OccasionLogs(int userID)
         {
+            LanguageManager.ApplyLanguage();
             InitializeComponent();
             this.userID = userID;
         }

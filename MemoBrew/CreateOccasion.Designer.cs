@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateOccasion));
             this.txtOccasionName = new System.Windows.Forms.TextBox();
             this.occasionNameLabel = new System.Windows.Forms.Label();
             this.endDateLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.v = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.endDatePick = new System.Windows.Forms.DateTimePicker();
             this.createOccasionButton = new System.Windows.Forms.Button();
             this.locationLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -58,245 +59,161 @@
             // 
             // txtOccasionName
             // 
+            resources.ApplyResources(this.txtOccasionName, "txtOccasionName");
             this.txtOccasionName.BackColor = System.Drawing.Color.SandyBrown;
-            this.txtOccasionName.Location = new System.Drawing.Point(109, 141);
-            this.txtOccasionName.Margin = new System.Windows.Forms.Padding(7);
-            this.txtOccasionName.Multiline = true;
             this.txtOccasionName.Name = "txtOccasionName";
-            this.txtOccasionName.Size = new System.Drawing.Size(866, 96);
-            this.txtOccasionName.TabIndex = 9;
             // 
             // occasionNameLabel
             // 
-            this.occasionNameLabel.AutoSize = true;
+            resources.ApplyResources(this.occasionNameLabel, "occasionNameLabel");
             this.occasionNameLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.occasionNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.occasionNameLabel.ForeColor = System.Drawing.Color.SeaShell;
-            this.occasionNameLabel.Location = new System.Drawing.Point(323, 37);
-            this.occasionNameLabel.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.occasionNameLabel.Name = "occasionNameLabel";
-            this.occasionNameLabel.Size = new System.Drawing.Size(455, 69);
-            this.occasionNameLabel.TabIndex = 10;
             this.occasionNameLabel.Text = "Occasion Name";
             // 
             // endDateLabel
             // 
-            this.endDateLabel.AutoSize = true;
+            resources.ApplyResources(this.endDateLabel, "endDateLabel");
             this.endDateLabel.BackColor = System.Drawing.Color.SandyBrown;
-            this.endDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.endDateLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.endDateLabel.Location = new System.Drawing.Point(28, 352);
-            this.endDateLabel.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.endDateLabel.Name = "endDateLabel";
-            this.endDateLabel.Size = new System.Drawing.Size(278, 69);
-            this.endDateLabel.TabIndex = 11;
             this.endDateLabel.Text = "End Date";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.SandyBrown;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SeaShell;
-            this.label2.Location = new System.Drawing.Point(28, 516);
-            this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(344, 69);
-            this.label2.TabIndex = 12;
             this.label2.Text = "Participants";
             // 
             // v
             // 
-            this.v.AutoSize = true;
+            resources.ApplyResources(this.v, "v");
             this.v.BackColor = System.Drawing.Color.SandyBrown;
-            this.v.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.v.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.v.Location = new System.Drawing.Point(28, 691);
-            this.v.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.v.Name = "v";
-            this.v.Size = new System.Drawing.Size(330, 69);
-            this.v.TabIndex = 13;
             this.v.Text = "Description";
             // 
-            // dateTimePicker1
+            // endDatePick
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(468, 352);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(7);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(470, 44);
-            this.dateTimePicker1.TabIndex = 15;
+            resources.ApplyResources(this.endDatePick, "endDatePick");
+            this.endDatePick.Name = "endDatePick";
             // 
             // createOccasionButton
             // 
+            resources.ApplyResources(this.createOccasionButton, "createOccasionButton");
             this.createOccasionButton.BackColor = System.Drawing.Color.Black;
-            this.createOccasionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createOccasionButton.ForeColor = System.Drawing.Color.SeaShell;
-            this.createOccasionButton.Location = new System.Drawing.Point(90, 1212);
-            this.createOccasionButton.Margin = new System.Windows.Forms.Padding(7);
             this.createOccasionButton.Name = "createOccasionButton";
-            this.createOccasionButton.Size = new System.Drawing.Size(891, 120);
-            this.createOccasionButton.TabIndex = 16;
             this.createOccasionButton.Text = "Create";
             this.createOccasionButton.UseVisualStyleBackColor = false;
             this.createOccasionButton.Click += new System.EventHandler(this.createOccasionButton_Click);
             // 
             // locationLabel
             // 
-            this.locationLabel.AutoSize = true;
+            resources.ApplyResources(this.locationLabel, "locationLabel");
             this.locationLabel.BackColor = System.Drawing.Color.SandyBrown;
-            this.locationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.locationLabel.ForeColor = System.Drawing.Color.SeaShell;
-            this.locationLabel.Location = new System.Drawing.Point(28, 999);
-            this.locationLabel.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.locationLabel.Name = "locationLabel";
-            this.locationLabel.Size = new System.Drawing.Size(256, 69);
-            this.locationLabel.TabIndex = 17;
             this.locationLabel.Text = "Location";
             // 
             // textBox1
             // 
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.BackColor = System.Drawing.Color.SeaShell;
-            this.textBox1.Location = new System.Drawing.Point(375, 691);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(617, 189);
-            this.textBox1.TabIndex = 22;
             // 
             // textBox2
             // 
+            resources.ApplyResources(this.textBox2, "textBox2");
             this.textBox2.BackColor = System.Drawing.Color.SeaShell;
-            this.textBox2.Location = new System.Drawing.Point(375, 999);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(7);
-            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(617, 120);
-            this.textBox2.TabIndex = 23;
             // 
             // addFriendsButton
             // 
+            resources.ApplyResources(this.addFriendsButton, "addFriendsButton");
             this.addFriendsButton.BackColor = System.Drawing.Color.Black;
-            this.addFriendsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addFriendsButton.ForeColor = System.Drawing.Color.SeaShell;
-            this.addFriendsButton.Location = new System.Drawing.Point(468, 518);
-            this.addFriendsButton.Margin = new System.Windows.Forms.Padding(7);
             this.addFriendsButton.Name = "addFriendsButton";
-            this.addFriendsButton.Size = new System.Drawing.Size(475, 83);
-            this.addFriendsButton.TabIndex = 30;
             this.addFriendsButton.Text = "Add";
             this.addFriendsButton.UseVisualStyleBackColor = false;
             // 
             // friendsButton
             // 
+            resources.ApplyResources(this.friendsButton, "friendsButton");
             this.friendsButton.BackColor = System.Drawing.Color.SandyBrown;
             this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
-            this.friendsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.friendsButton.Location = new System.Drawing.Point(862, 1420);
-            this.friendsButton.Margin = new System.Windows.Forms.Padding(7);
             this.friendsButton.Name = "friendsButton";
-            this.friendsButton.Size = new System.Drawing.Size(126, 113);
-            this.friendsButton.TabIndex = 29;
             this.friendsButton.UseVisualStyleBackColor = false;
             this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
             // 
             // eventButton
             // 
+            resources.ApplyResources(this.eventButton, "eventButton");
             this.eventButton.BackColor = System.Drawing.Color.SandyBrown;
             this.eventButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus;
-            this.eventButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.eventButton.Location = new System.Drawing.Point(454, 1388);
-            this.eventButton.Margin = new System.Windows.Forms.Padding(7);
             this.eventButton.Name = "eventButton";
-            this.eventButton.Size = new System.Drawing.Size(164, 146);
-            this.eventButton.TabIndex = 28;
             this.eventButton.UseVisualStyleBackColor = false;
             this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
             // 
             // homeButton
             // 
+            resources.ApplyResources(this.homeButton, "homeButton");
             this.homeButton.BackColor = System.Drawing.Color.SandyBrown;
             this.homeButton.BackgroundImage = global::MemoBrew.Properties.Resources.home__1_;
-            this.homeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.homeButton.Location = new System.Drawing.Point(71, 1420);
-            this.homeButton.Margin = new System.Windows.Forms.Padding(0);
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(135, 113);
-            this.homeButton.TabIndex = 27;
             this.homeButton.UseVisualStyleBackColor = false;
             this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox2
             // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::MemoBrew.Properties.Resources.orange;
-            this.pictureBox2.Location = new System.Drawing.Point(-93, 1346);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1244, 384);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::MemoBrew.Properties.Resources.black;
-            this.pictureBox1.Location = new System.Drawing.Point(-93, -183);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1244, 486);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Image = global::MemoBrew.Properties.Resources.orange;
-            this.pictureBox3.Location = new System.Drawing.Point(-50, 317);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(7);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1166, 150);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Image = global::MemoBrew.Properties.Resources.orange;
-            this.pictureBox4.Location = new System.Drawing.Point(-50, 481);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(7);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(1166, 150);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 24;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Image = global::MemoBrew.Properties.Resources.orange;
-            this.pictureBox5.Location = new System.Drawing.Point(-50, 645);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(7);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1166, 312);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 25;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Image = global::MemoBrew.Properties.Resources.orange;
-            this.pictureBox6.Location = new System.Drawing.Point(-50, 964);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(7);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1166, 206);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 26;
             this.pictureBox6.TabStop = false;
             // 
             // CreateOccasion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 1561);
+            this.AutoScroll = true;
             this.Controls.Add(this.addFriendsButton);
             this.Controls.Add(this.friendsButton);
             this.Controls.Add(this.eventButton);
@@ -305,7 +222,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.locationLabel);
             this.Controls.Add(this.createOccasionButton);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.endDatePick);
             this.Controls.Add(this.v);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.endDateLabel);
@@ -317,9 +234,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
-            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "CreateOccasion";
-            this.Text = "CreateOccasion";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -340,7 +255,7 @@
         private System.Windows.Forms.Label endDateLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label v;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker endDatePick;
         private System.Windows.Forms.Button createOccasionButton;
         private System.Windows.Forms.Label locationLabel;
         private System.Windows.Forms.PictureBox pictureBox3;

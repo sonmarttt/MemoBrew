@@ -1,16 +1,24 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
+
 namespace MemoBrew
 {
     public partial class CreateOccasion : Form
     {
         private int userID;
+
         public CreateOccasion(int userID)
         {
+            LanguageManager.ApplyLanguage();
             InitializeComponent();
+
+            this.AutoScroll = true;
+
             this.userID = userID;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
+
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (Application.OpenForms.Count == 1)
@@ -18,25 +26,30 @@ namespace MemoBrew
                 Application.Exit();
             }
         }
+
         private void eventButton_Click(object sender, EventArgs e)
         {
         }
+
         private void friendsButton_Click(object sender, EventArgs e)
         {
             Friends friends = new Friends(userID);
             CloseAndOpenNewForm(friends);
         }
+
         private void homeButton_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard(userID);
             CloseAndOpenNewForm(dashboard);
         }
+
         private void CloseAndOpenNewForm(Form newForm)
         {
             newForm.Show();
             this.Hide();
             newForm.FormClosed += (s, args) => this.Close();
         }
+
         private void createOccasionButton_Click(object sender, EventArgs e)
         {
             try
@@ -47,7 +60,7 @@ namespace MemoBrew
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (dateTimePicker1.Value < DateTime.Today)
+                if (endDatePick.Value < DateTime.Today)
                 {
                     MessageBox.Show("Please select a future date.", "Validation Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -78,12 +91,11 @@ namespace MemoBrew
                     else
                         cmd.Parameters.Add("@Description", System.Data.SqlDbType.NVarChar).Value = textBox2.Text;
 
-                    cmd.Parameters.Add("@CurrentDate", System.Data.SqlDbType.Date).Value = dateTimePicker1.Value.Date;
+                    cmd.Parameters.Add("@CurrentDate", System.Data.SqlDbType.Date).Value = endDatePick.Value.Date;
                     cmd.Parameters.Add("@CreatorID", System.Data.SqlDbType.Int).Value = this.userID;
 
                     int newOccasionID = Convert.ToInt32(cmd.ExecuteScalar());
 
-                    
                     string participantSql = @"
                 INSERT INTO OccasionParticipants (OccasionID, UserID, Status)
                 VALUES (@OccasionID, @UserID, 'going')";

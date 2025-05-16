@@ -1,6 +1,6 @@
 ﻿namespace MemoBrew
 {
-    partial class Dashboard
+    partial class FriendRequests
     {
         /// <summary>
         /// Required designer variable.
@@ -28,75 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.label1 = new System.Windows.Forms.Label();
-            this.logoutButton = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.occasionEndDateLabel = new System.Windows.Forms.Label();
-            this.occasionNameLabel = new System.Windows.Forms.Label();
-            this.languageLabel = new System.Windows.Forms.Label();
-            this.selectLanguageBox = new System.Windows.Forms.ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FriendRequests));
+            this.friendInfoPanel = new System.Windows.Forms.Panel();
+            this.rejectFriendButton = new System.Windows.Forms.Button();
+            this.acceptFriendButton = new System.Windows.Forms.Button();
+            this.FriendName = new System.Windows.Forms.Label();
+            this.friendLabel = new System.Windows.Forms.Label();
             this.friendsButton = new System.Windows.Forms.Button();
             this.eventButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.friendInfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // friendInfoPanel
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.ForeColor = System.Drawing.Color.SeaShell;
-            this.label1.Name = "label1";
-//            this.label1.Click += new System.EventHandler(this.label1_Click);
+            resources.ApplyResources(this.friendInfoPanel, "friendInfoPanel");
+            this.friendInfoPanel.Controls.Add(this.rejectFriendButton);
+            this.friendInfoPanel.Controls.Add(this.acceptFriendButton);
+            this.friendInfoPanel.Controls.Add(this.FriendName);
+            this.friendInfoPanel.Name = "friendInfoPanel";
             // 
-            // logoutButton
+            // rejectFriendButton
             // 
-            resources.ApplyResources(this.logoutButton, "logoutButton");
-            this.logoutButton.BackColor = System.Drawing.Color.Black;
-            this.logoutButton.ForeColor = System.Drawing.Color.SeaShell;
-            this.logoutButton.Name = "logoutButton";
-            this.logoutButton.UseVisualStyleBackColor = false;
-            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            resources.ApplyResources(this.rejectFriendButton, "rejectFriendButton");
+            this.rejectFriendButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.rejectFriendButton.ForeColor = System.Drawing.Color.SeaShell;
+            this.rejectFriendButton.Name = "rejectFriendButton";
+            this.rejectFriendButton.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // acceptFriendButton
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.occasionEndDateLabel);
-            this.panel1.Controls.Add(this.occasionNameLabel);
-            this.panel1.Name = "panel1";
+            resources.ApplyResources(this.acceptFriendButton, "acceptFriendButton");
+            this.acceptFriendButton.BackColor = System.Drawing.Color.SandyBrown;
+            this.acceptFriendButton.Name = "acceptFriendButton";
+            this.acceptFriendButton.UseVisualStyleBackColor = false;
             // 
-            // occasionEndDateLabel
+            // FriendName
             // 
-            resources.ApplyResources(this.occasionEndDateLabel, "occasionEndDateLabel");
-            this.occasionEndDateLabel.Name = "occasionEndDateLabel";
+            resources.ApplyResources(this.FriendName, "FriendName");
+            this.FriendName.Name = "FriendName";
             // 
-            // occasionNameLabel
+            // friendLabel
             // 
-            resources.ApplyResources(this.occasionNameLabel, "occasionNameLabel");
-            this.occasionNameLabel.Name = "occasionNameLabel";
-            // 
-            // languageLabel
-            // 
-            resources.ApplyResources(this.languageLabel, "languageLabel");
-            this.languageLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.languageLabel.ForeColor = System.Drawing.Color.SeaShell;
-            this.languageLabel.Name = "languageLabel";
-            // 
-            // selectLanguageBox
-            // 
-            resources.ApplyResources(this.selectLanguageBox, "selectLanguageBox");
-            this.selectLanguageBox.FormattingEnabled = true;
-            this.selectLanguageBox.Items.AddRange(new object[] {
-            resources.GetString("selectLanguageBox.Items"),
-            resources.GetString("selectLanguageBox.Items1"),
-            resources.GetString("selectLanguageBox.Items2")});
-            this.selectLanguageBox.Name = "selectLanguageBox";
-            //this.selectLanguageBox.SelectedIndexChanged += new System.EventHandler(this.selectLanguageBox_SelectedIndexChanged);
+            resources.ApplyResources(this.friendLabel, "friendLabel");
+            this.friendLabel.BackColor = System.Drawing.Color.Black;
+            this.friendLabel.ForeColor = System.Drawing.Color.SeaShell;
+            this.friendLabel.Name = "friendLabel";
             // 
             // friendsButton
             // 
@@ -105,7 +86,6 @@
             this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
             this.friendsButton.Name = "friendsButton";
             this.friendsButton.UseVisualStyleBackColor = false;
-            this.friendsButton.Click += new System.EventHandler(this.friendsButton_Click);
             // 
             // eventButton
             // 
@@ -135,30 +115,24 @@
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::MemoBrew.Properties.Resources.black;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // Dashboard
+            // FriendRequests
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.Color.SeaShell;
-            this.Controls.Add(this.languageLabel);
-            this.Controls.Add(this.selectLanguageBox);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.friendsButton);
             this.Controls.Add(this.eventButton);
             this.Controls.Add(this.homeButton);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.friendLabel);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Dashboard";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Controls.Add(this.friendInfoPanel);
+            this.Name = "FriendRequests";
+            this.friendInfoPanel.ResumeLayout(false);
+            this.friendInfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -168,17 +142,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel friendInfoPanel;
+        private System.Windows.Forms.Label FriendName;
+        private System.Windows.Forms.Button rejectFriendButton;
+        private System.Windows.Forms.Button acceptFriendButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button homeButton;
-        private System.Windows.Forms.Button eventButton;
+        private System.Windows.Forms.Label friendLabel;
         private System.Windows.Forms.Button friendsButton;
-        private System.Windows.Forms.Button logoutButton;
-        private System.Windows.Forms.Label occasionNameLabel;
-        private System.Windows.Forms.Label occasionEndDateLabel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label languageLabel;
-        private System.Windows.Forms.ComboBox selectLanguageBox;
+        private System.Windows.Forms.Button eventButton;
+        private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

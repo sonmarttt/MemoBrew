@@ -8,6 +8,7 @@ namespace MemoBrew
         private int userID;
         public Occasions(int userID)
         {
+            LanguageManager.ApplyLanguage();
             InitializeComponent();
             this.userID = userID;
         }
