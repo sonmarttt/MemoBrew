@@ -33,6 +33,7 @@
             this.DrinksPanel = new System.Windows.Forms.Panel();
             this.drinkAmountNumber = new System.Windows.Forms.NumericUpDown();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.hangoverLevelLabel = new System.Windows.Forms.Label();
             this.HangoverLevelNumber = new System.Windows.Forms.NumericUpDown();
             this.sicknessLevelLabel = new System.Windows.Forms.Label();
@@ -49,18 +50,17 @@
             this.removeDrinkButton = new System.Windows.Forms.Button();
             this.addDrinkButton = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.DrinksPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drinkAmountNumber)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HangoverLevelNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sicknessLevelNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -92,6 +92,13 @@
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.BackColor = System.Drawing.Color.SeaShell;
             this.textBox1.Name = "textBox1";
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::MemoBrew.Properties.Resources.orange;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
             // 
             // hangoverLevelLabel
             // 
@@ -209,13 +216,6 @@
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Image = global::MemoBrew.Properties.Resources.orange;
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox4
             // 
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
@@ -276,11 +276,11 @@
             this.DrinksPanel.ResumeLayout(false);
             this.DrinksPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drinkAmountNumber)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HangoverLevelNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sicknessLevelNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

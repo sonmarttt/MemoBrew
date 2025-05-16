@@ -11,6 +11,7 @@ namespace MemoBrew
 
         public Dashboard(int userId)
         {
+            LanguageManager.ApplyLanguage();
             InitializeComponent();
             this.userId = userId;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
@@ -192,6 +193,22 @@ namespace MemoBrew
             noOccasionsLabel.Size = new Size(panel1.Width - 20, 30);
             noOccasionsLabel.TextAlign = ContentAlignment.MiddleCenter;
             panel1.Controls.Add(noOccasionsLabel);
+        }
+
+        private void selectLanguageBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (selectLanguageBox.SelectedIndex)
+            {
+                case 0:
+                    LanguageManager.ChangeLanguage("en-US", this);
+                    break;
+                case 1:
+                    LanguageManager.ChangeLanguage("fr-FR", this);
+                    break;
+                case 2:
+                    LanguageManager.ChangeLanguage("es-ES", this);
+                    break;
+            }
         }
     }
 }

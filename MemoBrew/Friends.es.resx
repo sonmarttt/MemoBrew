@@ -135,7 +135,7 @@
     <value>NoControl</value>
   </data>
   <data name="searchFriend.Text" xml:space="preserve">
-    <value>Buscar</value>
+    <value>Agregar</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -168,9 +168,6 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
 </root>

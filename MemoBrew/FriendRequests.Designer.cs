@@ -46,24 +46,24 @@
             // 
             // friendInfoPanel
             // 
-            resources.ApplyResources(this.friendInfoPanel, "friendInfoPanel");
             this.friendInfoPanel.Controls.Add(this.rejectFriendButton);
             this.friendInfoPanel.Controls.Add(this.acceptFriendButton);
             this.friendInfoPanel.Controls.Add(this.FriendName);
+            resources.ApplyResources(this.friendInfoPanel, "friendInfoPanel");
             this.friendInfoPanel.Name = "friendInfoPanel";
             // 
             // rejectFriendButton
             // 
-            resources.ApplyResources(this.rejectFriendButton, "rejectFriendButton");
             this.rejectFriendButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.rejectFriendButton.ForeColor = System.Drawing.Color.SeaShell;
+            resources.ApplyResources(this.rejectFriendButton, "rejectFriendButton");
             this.rejectFriendButton.Name = "rejectFriendButton";
             this.rejectFriendButton.UseVisualStyleBackColor = false;
             // 
             // acceptFriendButton
             // 
-            resources.ApplyResources(this.acceptFriendButton, "acceptFriendButton");
             this.acceptFriendButton.BackColor = System.Drawing.Color.SandyBrown;
+            resources.ApplyResources(this.acceptFriendButton, "acceptFriendButton");
             this.acceptFriendButton.Name = "acceptFriendButton";
             this.acceptFriendButton.UseVisualStyleBackColor = false;
             // 
@@ -81,41 +81,41 @@
             // 
             // friendsButton
             // 
-            resources.ApplyResources(this.friendsButton, "friendsButton");
             this.friendsButton.BackColor = System.Drawing.Color.SandyBrown;
             this.friendsButton.BackgroundImage = global::MemoBrew.Properties.Resources.add_user;
+            resources.ApplyResources(this.friendsButton, "friendsButton");
             this.friendsButton.Name = "friendsButton";
             this.friendsButton.UseVisualStyleBackColor = false;
             // 
             // eventButton
             // 
-            resources.ApplyResources(this.eventButton, "eventButton");
             this.eventButton.BackColor = System.Drawing.Color.SandyBrown;
             this.eventButton.BackgroundImage = global::MemoBrew.Properties.Resources.plus;
+            resources.ApplyResources(this.eventButton, "eventButton");
             this.eventButton.Name = "eventButton";
             this.eventButton.UseVisualStyleBackColor = false;
             this.eventButton.Click += new System.EventHandler(this.eventButton_Click);
             // 
             // homeButton
             // 
-            resources.ApplyResources(this.homeButton, "homeButton");
             this.homeButton.BackColor = System.Drawing.Color.SandyBrown;
             this.homeButton.BackgroundImage = global::MemoBrew.Properties.Resources.home__1_;
+            resources.ApplyResources(this.homeButton, "homeButton");
             this.homeButton.Name = "homeButton";
             this.homeButton.UseVisualStyleBackColor = false;
             this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::MemoBrew.Properties.Resources.orange;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::MemoBrew.Properties.Resources.black;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 

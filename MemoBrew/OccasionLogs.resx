@@ -120,9 +120,6 @@
   <data name="&gt;&gt;hangoverLevelLabel.Name" xml:space="preserve">
     <value>hangoverLevelLabel</value>
   </data>
-  <data name="&gt;&gt;pictureBox7.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;removeDrinkButton.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
@@ -134,6 +131,9 @@
     <value>DrinksPanel</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="removeDrinkButton.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
   <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
@@ -204,6 +204,9 @@
   <data name="pictureBox7.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
+  <data name="&gt;&gt;sicknessLevelNumber.Name" xml:space="preserve">
+    <value>sicknessLevelNumber</value>
+  </data>
   <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -252,6 +255,9 @@
   <data name="&gt;&gt;friendsButton.Name" xml:space="preserve">
     <value>friendsButton</value>
   </data>
+  <data name="uploadPicturesLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="HangoverLevelNumber.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
@@ -285,17 +291,8 @@
   <data name="&gt;&gt;HangoverLevelNumber.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-36, -147</value>
-  </data>
-  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>524, 166</value>
-  </data>
   <data name="&gt;&gt;pictureBox7.Name" xml:space="preserve">
     <value>pictureBox7</value>
-  </data>
-  <data name="&gt;&gt;addDrinkButton.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="HangoverLevelNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 138</value>
@@ -312,6 +309,9 @@
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>223, 69</value>
   </data>
+  <data name="addCommentTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 383</value>
+  </data>
   <data name="&gt;&gt;homeButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -327,11 +327,11 @@
   <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;submitOccasionLogButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 26</value>
+  </data>
+  <data name="&gt;&gt;addDrinkButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -378,20 +378,29 @@
   <data name="logOccasionNameLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 9</value>
   </data>
+  <data name="&gt;&gt;HangoverLevelNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;friendsButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>OccasionLogs</value>
   </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="drinkAmountNumber.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
+  <data name="logOccasionNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;addCommentLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;drinkAmountNumber.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;eventButton.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="addCommentLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>256, 344</value>
@@ -407,6 +416,9 @@
   </data>
   <data name="addCommentTextbox.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
@@ -443,9 +455,6 @@
   </data>
   <data name="submitOccasionLogButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
   </data>
   <data name="&gt;&gt;addCommentLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -504,23 +513,23 @@
   <data name="&gt;&gt;hangoverLevelLabel.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="addCommentLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
   <data name="&gt;&gt;logOccasionNameLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;addDrinkButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;addDrinkButton.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="addCommentLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 13pt</value>
   </data>
-  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 112</value>
-  </data>
   <data name="&gt;&gt;DrinksPanel.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;HangoverLevelNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 112</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -530,6 +539,9 @@
   </data>
   <data name="addDrinkButton.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>DrinksPanel</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>DrinksPanel</value>
@@ -549,9 +561,6 @@
   <data name="addCommentTextbox.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>451, 675</value>
   </data>
@@ -563,9 +572,6 @@
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="submitOccasionLogButton.Text" xml:space="preserve">
     <value>Submit</value>
@@ -624,8 +630,8 @@
   <data name="sicknessLevelNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
   </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="&gt;&gt;submitOccasionLogButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -633,14 +639,8 @@
   <data name="&gt;&gt;uploadPicturesLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="friendsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <data name="HangoverLevelNumber.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="uploadPicturesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 26</value>
@@ -651,8 +651,8 @@
   <data name="&gt;&gt;drinkAmountNumber.Name" xml:space="preserve">
     <value>drinkAmountNumber</value>
   </data>
-  <data name="addCommentLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-36, -147</value>
   </data>
   <data name="eventButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 63</value>
@@ -675,17 +675,14 @@
   <data name="&gt;&gt;logOccasionNameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;drinkAmountNumber.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;addCommentTextbox.Name" xml:space="preserve">
     <value>addCommentTextbox</value>
   </data>
-  <data name="&gt;&gt;sicknessLevelLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;submitOccasionLogButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="logOccasionNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;pictureBox7.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="sicknessLevelNumber.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -693,20 +690,23 @@
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;pictureBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
   <data name="addCommentLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="uploadPicturesLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
-  <data name="addCommentTextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 383</value>
+  <data name="&gt;&gt;drinkAmountNumber.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="removeDrinkButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 33</value>
@@ -723,8 +723,8 @@
   <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>DrinksPanel</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="addCommentLabel.Text" xml:space="preserve">
     <value>Any Comments?</value>
@@ -732,8 +732,8 @@
   <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
     <value>pictureBox3</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
+  <data name="&gt;&gt;sicknessLevelLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;sicknessLevelNumber.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -747,11 +747,11 @@
   <data name="eventButton.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
-  <data name="&gt;&gt;pictureBox7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;eventButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="removeDrinkButton.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>20</value>
   </data>
   <data name="friendsButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>362, 614</value>
@@ -762,19 +762,16 @@
   <data name="&gt;&gt;addDrinkButton.Name" xml:space="preserve">
     <value>addDrinkButton</value>
   </data>
-  <data name="&gt;&gt;addCommentLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="friendsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="DrinksPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>427, 76</value>
   </data>
-  <data name="&gt;&gt;sicknessLevelNumber.Name" xml:space="preserve">
-    <value>sicknessLevelNumber</value>
+  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>524, 166</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>fr</value>
   </metadata>
 </root>
