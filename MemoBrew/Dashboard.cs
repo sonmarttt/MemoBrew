@@ -155,25 +155,54 @@ namespace MemoBrew
             separatorLine.Location = new Point(10, 35);
             panel1.Controls.Add(separatorLine);
 
+            DateTime today = DateTime.Today;
+
             foreach (var occasion in occasions)
             {
                 Panel itemPanel = new Panel();
                 itemPanel.Size = new Size(panel1.Width - 20, itemHeight);
                 itemPanel.Location = new Point(10, yPos);
-                itemPanel.BackColor = Color.White;
                 itemPanel.Tag = occasion.OccasionID;
                 itemPanel.Cursor = Cursors.Hand;
-                itemPanel.Click += OccasionPanel_Click;
 
-                itemPanel.MouseEnter += (sender, e) => { itemPanel.BackColor = Color.FromArgb(245, 245, 245); };
-                itemPanel.MouseLeave += (sender, e) => { itemPanel.BackColor = Color.White; };
+                bool isPastOccasion = occasion.Date < today;
+
+                if (isPastOccasion)
+                {
+                    itemPanel.BackColor = Color.FromArgb(255, 245, 230);
+                    itemPanel.Click += PastOccasionPanel_Click;
+                }
+                else
+                {
+                    itemPanel.BackColor = Color.White;
+                    itemPanel.Click += OccasionPanel_Click;
+                }
+
+                Color originalColor = itemPanel.BackColor;
+                itemPanel.MouseEnter += (sender, e) =>
+                {
+                    if (isPastOccasion)
+                        itemPanel.BackColor = Color.FromArgb(255, 225, 190);
+                    else
+                        itemPanel.BackColor = Color.FromArgb(245, 245, 245);
+                };
+                itemPanel.MouseLeave += (sender, e) => { itemPanel.BackColor = originalColor; };
 
                 Label nameLabel = new Label();
                 nameLabel.Text = occasion.Name;
                 nameLabel.Location = new Point(5, 5);
                 nameLabel.AutoSize = true;
                 nameLabel.Tag = occasion.OccasionID;
-                nameLabel.Click += OccasionPanel_Click;
+
+                if (isPastOccasion)
+                {
+                    nameLabel.Click += PastOccasionPanel_Click;
+                }
+                else
+                {
+                    nameLabel.Click += OccasionPanel_Click;
+                }
+
                 itemPanel.Controls.Add(nameLabel);
 
                 Label dateLabel = new Label();
@@ -181,17 +210,36 @@ namespace MemoBrew
                 dateLabel.Location = new Point(itemPanel.Width - 90, 5);
                 dateLabel.AutoSize = true;
                 dateLabel.Tag = occasion.OccasionID;
-                dateLabel.Click += OccasionPanel_Click;
+
+                if (isPastOccasion)
+                {
+                    dateLabel.Click += PastOccasionPanel_Click;
+                }
+                else
+                {
+                    dateLabel.Click += OccasionPanel_Click;
+                }
+
                 itemPanel.Controls.Add(dateLabel);
 
-                Button logButton = new Button();
-                logButton.Text = "Add Log";
-                logButton.Size = new Size(80, 25);
-                logButton.Location = new Point(itemPanel.Width - 90, 30);
-                logButton.Tag = occasion.OccasionID;
-                logButton.Click += OccasionPanel_Click;
-                logButton.Cursor = Cursors.Hand;
-                itemPanel.Controls.Add(logButton);
+                Button actionButton = new Button();
+                actionButton.Size = new Size(80, 25);
+                actionButton.Location = new Point(itemPanel.Width - 90, 30);
+                actionButton.Tag = occasion.OccasionID;
+                actionButton.Cursor = Cursors.Hand;
+
+                if (isPastOccasion)
+                {
+                    actionButton.Text = "View Summary";
+                    actionButton.Click += PastOccasionPanel_Click;
+                }
+                else
+                {
+                    actionButton.Text = "Add Log";
+                    actionButton.Click += OccasionPanel_Click;
+                }
+
+                itemPanel.Controls.Add(actionButton);
 
                 panel1.Controls.Add(itemPanel);
 
@@ -209,6 +257,19 @@ namespace MemoBrew
 
                 OccasionLogs occasionLogs = new OccasionLogs(userId, occasionId);
                 CloseAndOpenNewForm(occasionLogs);
+            }
+        }
+
+        private void PastOccasionPanel_Click(object sender, EventArgs e)
+        {
+            int occasionId;
+
+            if (sender is Control control)
+            {
+                occasionId = (int)control.Tag;
+
+                Occasions occasionsSummary = new Occasions(userId, occasionId);
+                CloseAndOpenNewForm(occasionsSummary);
             }
         }
 
