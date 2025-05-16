@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="rejectFriendButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 5</value>
+    <value>329, 97</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rejectFriendButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="rejectFriendButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
+    <value>238, 88</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="rejectFriendButton.TabIndex" type="System.Int32, mscorlib">
@@ -144,10 +148,13 @@
     <value>0</value>
   </data>
   <data name="acceptFriendButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>196, 5</value>
+    <value>40, 97</value>
+  </data>
+  <data name="acceptFriendButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="acceptFriendButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
+    <value>238, 88</value>
   </data>
   <data name="acceptFriendButton.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -171,10 +178,13 @@
     <value>True</value>
   </data>
   <data name="FriendName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 16</value>
+    <value>33, 37</value>
+  </data>
+  <data name="FriendName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 0, 7, 0</value>
   </data>
   <data name="FriendName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 16</value>
+    <value>186, 37</value>
   </data>
   <data name="FriendName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -195,10 +205,13 @@
     <value>2</value>
   </data>
   <data name="friendInfoPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 149</value>
+    <value>28, 345</value>
+  </data>
+  <data name="friendInfoPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="friendInfoPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>417, 69</value>
+    <value>990, 240</value>
   </data>
   <data name="friendInfoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -222,10 +235,13 @@
     <value>Microsoft Sans Serif, 15pt</value>
   </data>
   <data name="friendLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 30</value>
+    <value>261, 69</value>
+  </data>
+  <data name="friendLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 0, 7, 0</value>
   </data>
   <data name="friendLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>228, 29</value>
+    <value>537, 69</value>
   </data>
   <data name="friendLabel.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -245,15 +261,17 @@
   <data name="&gt;&gt;friendLabel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="friendsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
   <data name="friendsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 615</value>
+    <value>862, 1422</value>
+  </data>
+  <data name="friendsButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="friendsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 49</value>
+    <value>126, 113</value>
   </data>
   <data name="friendsButton.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -274,10 +292,13 @@
     <value>Stretch</value>
   </data>
   <data name="eventButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 601</value>
+    <value>444, 1390</value>
+  </data>
+  <data name="eventButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="eventButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 63</value>
+    <value>164, 146</value>
   </data>
   <data name="eventButton.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -298,13 +319,13 @@
     <value>Stretch</value>
   </data>
   <data name="homeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 615</value>
+    <value>71, 1422</value>
   </data>
   <data name="homeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="homeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 49</value>
+    <value>135, 113</value>
   </data>
   <data name="homeButton.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -322,10 +343,13 @@
     <value>2</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-39, 584</value>
+    <value>-93, 1350</value>
+  </data>
+  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>524, 166</value>
+    <value>1244, 384</value>
   </data>
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -346,10 +370,13 @@
     <value>3</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-39, -89</value>
+    <value>-93, -206</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>524, 215</value>
+    <value>1244, 497</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -373,13 +400,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>19, 37</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>451, 675</value>
+    <value>1071, 1561</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
+    <value>17, 16, 17, 16</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FriendRequests</value>

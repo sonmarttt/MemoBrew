@@ -134,17 +134,14 @@
   <data name="&gt;&gt;passwordLabel.Name" xml:space="preserve">
     <value>passwordLabel</value>
   </data>
-  <data name="&gt;&gt;selectLanguageBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
   <data name="signupButton.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="weightLabel.Text" xml:space="preserve">
     <value>Weight</value>
-  </data>
-  <data name="selectLanguageBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 28</value>
   </data>
   <data name="&gt;&gt;txtHeight.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -158,26 +155,29 @@
   <data name="&gt;&gt;rbMale.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
-    <value>languageLabel</value>
-  </data>
-  <data name="weightLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="txtHeight.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;txtFirstName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="heightlabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;weightLabel.Name" xml:space="preserve">
     <value>weightLabel</value>
   </data>
-  <data name="txtWeight.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;txtHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectLanguageBox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;usernameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtFirstName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 210</value>
+  <data name="DOBlabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="heightlabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>241, 383</value>
@@ -191,9 +191,6 @@
   <data name="weightLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 16</value>
   </data>
-  <data name="signupButton.Text" xml:space="preserve">
-    <value>Sign Up</value>
-  </data>
   <data name="&gt;&gt;txtHeight.Name" xml:space="preserve">
     <value>txtHeight</value>
   </data>
@@ -202,9 +199,6 @@
   </data>
   <data name="&gt;&gt;passwordLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;firstnameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;usernameLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -224,16 +218,6 @@
   <data name="&gt;&gt;DOBlabel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="selectLanguageBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 24</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="languageLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="txtLastName.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
   <data name="&gt;&gt;txtUsername.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -249,23 +233,20 @@
   <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
     <value>txtPassword</value>
   </data>
-  <data name="DOBlabel.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
   <data name="&gt;&gt;rbMale.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;heightlabel.Name" xml:space="preserve">
     <value>heightlabel</value>
   </data>
+  <data name="weightLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>New to MemoBrew? Register Now</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Signup</value>
-  </data>
-  <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
-    <value>txtUsername</value>
   </data>
   <data name="lastNameLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>241, 191</value>
@@ -279,14 +260,14 @@
   <data name="&gt;&gt;rbFemale.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;lastNameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;txtWeight.Name" xml:space="preserve">
+    <value>txtWeight</value>
   </data>
   <data name="&gt;&gt;txtHeight.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtFirstName.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;txtUsername.Name" xml:space="preserve">
+    <value>txtUsername</value>
   </data>
   <data name="&gt;&gt;lastNameLabel.ZOrder" xml:space="preserve">
     <value>14</value>
@@ -294,26 +275,17 @@
   <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="gobackButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
-  </data>
-  <data name="heightlabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 28</value>
   </data>
   <data name="txtHeight.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
-  </data>
-  <data name="selectLanguageBox.Items1" xml:space="preserve">
-    <value>French</value>
   </data>
   <data name="selectLanguageBox.Items" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="rbFemale.Text" xml:space="preserve">
     <value>Female</value>
-  </data>
-  <data name="&gt;&gt;txtWeight.Name" xml:space="preserve">
-    <value>txtWeight</value>
   </data>
   <data name="rbMale.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 20</value>
@@ -327,14 +299,17 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
+  <data name="&gt;&gt;lastNameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>331, 79</value>
   </data>
   <data name="&gt;&gt;passwordLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="usernameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 16</value>
+  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
+    <value>languageLabel</value>
   </data>
   <data name="&gt;&gt;txtPassword.ZOrder" xml:space="preserve">
     <value>16</value>
@@ -375,8 +350,8 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Signup</value>
   </data>
-  <data name="txtLastName.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;txtFirstName.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;rbMale.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -393,11 +368,8 @@
   <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="rbMale.Text" xml:space="preserve">
-    <value>Male</value>
+  <data name="selectLanguageBox.Items1" xml:space="preserve">
+    <value>French</value>
   </data>
   <data name="&gt;&gt;heightlabel.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -426,20 +398,21 @@
   <data name="txtPassword.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;weightLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="selectLanguageBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="usernameLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="txtWeight.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="passwordLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="languageLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lastNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="rbMale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 475</value>
+  <data name="gobackButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 7.8pt, style=Bold</value>
   </data>
   <data name="txtFirstName.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -450,7 +423,7 @@
   <data name="&gt;&gt;weightLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;weightLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;firstnameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
@@ -468,9 +441,6 @@
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 16</value>
-  </data>
   <data name="&gt;&gt;txtDateOfBirth.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -483,20 +453,26 @@
   <data name="&gt;&gt;txtWeight.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>21</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="txtLastName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 210</value>
   </data>
   <data name="&gt;&gt;selectLanguageBox.Name" xml:space="preserve">
     <value>selectLanguageBox</value>
   </data>
-  <data name="&gt;&gt;firstnameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="txtFirstName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 210</value>
+  </data>
+  <data name="&gt;&gt;weightLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;heightlabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 16</value>
+  <data name="&gt;&gt;weightLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="heightlabel.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -504,11 +480,8 @@
   <data name="&gt;&gt;signupButton.Name" xml:space="preserve">
     <value>signupButton</value>
   </data>
-  <data name="txtHeight.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtUsername.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 28</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 16</value>
   </data>
   <data name="txtPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 28</value>
@@ -516,23 +489,26 @@
   <data name="txtWeight.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="selectLanguageBox.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
   <data name="&gt;&gt;passwordLabel.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
   <data name="&gt;&gt;txtUsername.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="usernameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="rbMale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 475</value>
   </data>
   <data name="txtUsername.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;selectLanguageBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="usernameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -548,6 +524,9 @@
   </data>
   <data name="&gt;&gt;txtWeight.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="txtWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 402</value>
   </data>
   <data name="DOBlabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -573,17 +552,29 @@
   <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 9</value>
   </data>
+  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="rbFemale.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="gobackButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>244, 550</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Fill in the information</value>
+  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="&gt;&gt;lastNameLabel.Name" xml:space="preserve">
+    <value>lastNameLabel</value>
+  </data>
+  <data name="selectLanguageBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 28</value>
   </data>
   <data name="gobackButton.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
+  </data>
+  <data name="usernameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;txtPassword.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -591,8 +582,8 @@
   <data name="gobackButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;firstnameLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="heightlabel.Text" xml:space="preserve">
     <value>Height</value>
@@ -602,6 +593,9 @@
   </data>
   <data name="rbMale.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Fill in the information</value>
   </data>
   <data name="usernameLabel.Text" xml:space="preserve">
     <value>Username</value>
@@ -621,11 +615,14 @@
   <data name="&gt;&gt;DOBlabel.Name" xml:space="preserve">
     <value>DOBlabel</value>
   </data>
-  <data name="selectLanguageBox.Items2" xml:space="preserve">
-    <value>Spanish</value>
+  <data name="selectLanguageBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 24</value>
   </data>
-  <data name="&gt;&gt;lastNameLabel.Name" xml:space="preserve">
-    <value>lastNameLabel</value>
+  <data name="firstnameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="signupButton.Text" xml:space="preserve">
+    <value>Sign Up</value>
   </data>
   <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 312</value>
@@ -645,8 +642,11 @@
   <data name="signupButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 52</value>
   </data>
-  <data name="firstnameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
+  <data name="usernameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 16</value>
+  </data>
+  <data name="txtLastName.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;signupButton.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -672,8 +672,8 @@
   <data name="DOBlabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>241, 456</value>
   </data>
-  <data name="txtLastName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>244, 210</value>
+  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 16</value>
   </data>
   <data name="txtHeight.Location" type="System.Drawing.Point, System.Drawing">
     <value>244, 402</value>
@@ -684,17 +684,14 @@
   <data name="&gt;&gt;signupButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="txtWeight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 402</value>
-  </data>
   <data name="lastNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="firstnameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;txtHeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="selectLanguageBox.Items2" xml:space="preserve">
+    <value>Spanish</value>
   </data>
   <data name="firstnameLabel.Text" xml:space="preserve">
     <value>First Name</value>
@@ -702,8 +699,8 @@
   <data name="&gt;&gt;txtDateOfBirth.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lastNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
+  <data name="txtLastName.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;txtUsername.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -717,11 +714,17 @@
   <data name="txtPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 331</value>
   </data>
+  <data name="rbMale.Text" xml:space="preserve">
+    <value>Male</value>
+  </data>
   <data name="heightlabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 16</value>
   </data>
   <data name="signupButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 550</value>
+  </data>
+  <data name="passwordLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
