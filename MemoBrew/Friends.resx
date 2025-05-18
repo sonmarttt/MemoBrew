@@ -117,331 +117,361 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;eventButton.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="searchtextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 146</value>
   </data>
-  <data name="searchFriend.Text" xml:space="preserve">
-    <value>Add</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="searchtextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="searchtextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 44</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="friendlistLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="searchtextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="friendInfoPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 209</value>
-  </data>
-  <data name="eventButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 600</value>
-  </data>
-  <data name="&gt;&gt;searchtextBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;friendLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FriendName.Text" xml:space="preserve">
-    <value>friend name</value>
-  </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>524, 166</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
-    <value>pictureBox2</value>
-  </data>
-  <data name="&gt;&gt;friendsButton.Name" xml:space="preserve">
-    <value>friendsButton</value>
-  </data>
-  <data name="&gt;&gt;friendInfoPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FriendName.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;searchFriend.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="friendsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 49</value>
-  </data>
-  <data name="&gt;&gt;friendInfoPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;friendInfoPanel.Name" xml:space="preserve">
-    <value>friendInfoPanel</value>
-  </data>
-  <data name="friendsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 614</value>
+  <data name="&gt;&gt;searchtextBox.Name" xml:space="preserve">
+    <value>searchtextBox</value>
   </data>
   <data name="&gt;&gt;searchtextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-39, 583</value>
-  </data>
-  <data name="&gt;&gt;homeButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Friends</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
-  </data>
-  <data name="&gt;&gt;eventButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;searchtextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;friendlistLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;searchtextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="friendLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="friendLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="friendLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 92</value>
+  </data>
+  <data name="friendLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 0, 7, 0</value>
+  </data>
+  <data name="friendLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 46</value>
+  </data>
+  <data name="friendLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="friendLabel.Text" xml:space="preserve">
+    <value>Find your friend</value>
+  </data>
+  <data name="&gt;&gt;friendLabel.Name" xml:space="preserve">
+    <value>friendLabel</value>
+  </data>
+  <data name="&gt;&gt;friendLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;homeButton.Name" xml:space="preserve">
-    <value>homeButton</value>
+  <data name="&gt;&gt;friendLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;friendLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FriendName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FriendName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>55, 37</value>
+  </data>
+  <data name="FriendName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 0, 7, 0</value>
+  </data>
+  <data name="FriendName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 37</value>
+  </data>
+  <data name="FriendName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="FriendName.Text" xml:space="preserve">
+    <value>friend name</value>
+  </data>
+  <data name="&gt;&gt;FriendName.Name" xml:space="preserve">
+    <value>FriendName</value>
+  </data>
+  <data name="&gt;&gt;FriendName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FriendName.Parent" xml:space="preserve">
+    <value>friendInfoPanel</value>
+  </data>
+  <data name="&gt;&gt;FriendName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="friendInfoPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 483</value>
+  </data>
+  <data name="friendInfoPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="friendInfoPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>917, 815</value>
   </data>
   <data name="friendInfoPanel.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="friendlistLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="&gt;&gt;friendInfoPanel.Name" xml:space="preserve">
+    <value>friendInfoPanel</value>
   </data>
-  <data name="&gt;&gt;friendLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;friendInfoPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;friendInfoPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;friendInfoPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="searchFriend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>831, 143</value>
+  </data>
+  <data name="searchFriend.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="searchFriend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 53</value>
+  </data>
+  <data name="searchFriend.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="searchFriend.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;searchFriend.Name" xml:space="preserve">
+    <value>searchFriend</value>
+  </data>
+  <data name="&gt;&gt;searchFriend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchFriend.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;searchFriend.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 305</value>
+  </data>
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 88</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Requests</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+  <data name="friendlistLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="friendlistLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="friendlistLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 419</value>
+  </data>
+  <data name="friendlistLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 0, 7, 0</value>
+  </data>
+  <data name="friendlistLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 55</value>
+  </data>
+  <data name="friendlistLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="friendlistLabel.Text" xml:space="preserve">
+    <value>Friend List</value>
+  </data>
+  <data name="&gt;&gt;friendlistLabel.Name" xml:space="preserve">
+    <value>friendlistLabel</value>
+  </data>
+  <data name="&gt;&gt;friendlistLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;friendlistLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;friendlistLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-93, -206</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1244, 497</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="friendsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="friendsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>862, 1420</value>
+  </data>
+  <data name="friendsButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="friendsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 113</value>
+  </data>
+  <data name="friendsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;friendsButton.Name" xml:space="preserve">
+    <value>friendsButton</value>
+  </data>
+  <data name="&gt;&gt;friendsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;friendsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;friendsButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="eventButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="eventButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>444, 1388</value>
+  </data>
+  <data name="eventButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="eventButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 146</value>
+  </data>
+  <data name="eventButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;eventButton.Name" xml:space="preserve">
+    <value>eventButton</value>
+  </data>
+  <data name="&gt;&gt;eventButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eventButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;eventButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="homeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="homeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 1420</value>
+  </data>
+  <data name="homeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="homeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 113</value>
+  </data>
+  <data name="homeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;homeButton.Name" xml:space="preserve">
+    <value>homeButton</value>
+  </data>
+  <data name="&gt;&gt;homeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;homeButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;homeButton.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;searchFriend.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-93, 1348</value>
   </data>
-  <data name="searchFriend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
-  <data name="searchFriend.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="friendlistLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 181</value>
-  </data>
-  <data name="&gt;&gt;FriendName.Parent" xml:space="preserve">
-    <value>friendInfoPanel</value>
-  </data>
-  <data name="&gt;&gt;friendlistLabel.Name" xml:space="preserve">
-    <value>friendlistLabel</value>
-  </data>
-  <data name="FriendName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;friendsButton.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="eventButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 63</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="friendLabel.Text" xml:space="preserve">
-    <value>Find your friend</value>
-  </data>
-  <data name="friendLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 20</value>
-  </data>
-  <data name="searchtextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;friendsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="friendsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;searchtextBox.Name" xml:space="preserve">
-    <value>searchtextBox</value>
-  </data>
-  <data name="friendlistLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;friendlistLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="eventButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="friendlistLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 25</value>
-  </data>
-  <data name="&gt;&gt;friendInfoPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="homeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="&gt;&gt;homeButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;searchFriend.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>524, 215</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-39, -89</value>
-  </data>
-  <data name="searchtextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 22</value>
-  </data>
-  <data name="friendLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;friendLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;FriendName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="friendLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 40</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 132</value>
-  </data>
-  <data name="FriendName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 16</value>
-  </data>
-  <data name="homeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 614</value>
-  </data>
-  <data name="&gt;&gt;searchtextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="friendInfoPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 66</value>
-  </data>
-  <data name="&gt;&gt;friendLabel.Name" xml:space="preserve">
-    <value>friendLabel</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;FriendName.Name" xml:space="preserve">
-    <value>FriendName</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Friends</value>
-  </data>
-  <data name="FriendName.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="homeButton.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="homeButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="homeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 49</value>
-  </data>
-  <data name="friendlistLabel.Text" xml:space="preserve">
-    <value>Friend List</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>451, 675</value>
-  </data>
-  <data name="&gt;&gt;friendsButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;friendlistLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="searchtextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 63</value>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1244, 384</value>
   </data>
   <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="&gt;&gt;searchFriend.Name" xml:space="preserve">
-    <value>searchFriend</value>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="friendLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
   </data>
-  <data name="eventButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="friendLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;eventButton.Name" xml:space="preserve">
-    <value>eventButton</value>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="FriendName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 16</value>
-  </data>
-  <data name="&gt;&gt;eventButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Requests</value>
-  </data>
-  <data name="searchFriend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 62</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="friendsButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>19, 37</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1071, 1561</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>17, 16, 17, 16</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

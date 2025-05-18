@@ -22,6 +22,8 @@ namespace MemoBrew
             this.userID = userID;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
 
+            friendInfoPanel.AutoScroll = true;
+
             LoadFriendsList();
         }
 
@@ -76,23 +78,72 @@ namespace MemoBrew
                     return;
                 }
 
-                int yPos = 10;
+                Label headerName = new Label();
+                headerName.Text = "Friend Name";
+                headerName.Font = new Font(headerName.Font, FontStyle.Bold);
+                headerName.Location = new Point(10, 10);
+                headerName.AutoSize = true;
+                friendInfoPanel.Controls.Add(headerName);
+
+                Label headerUsername = new Label();
+                headerUsername.Text = "Username";
+                headerUsername.Font = new Font(headerUsername.Font, FontStyle.Bold);
+                headerUsername.Location = new Point(friendInfoPanel.Width - 150, 10);
+                headerUsername.AutoSize = true;
+                friendInfoPanel.Controls.Add(headerUsername);
+
+                Panel separatorLine = new Panel();
+                separatorLine.BorderStyle = BorderStyle.FixedSingle;
+                separatorLine.Height = 1;
+                separatorLine.Width = friendInfoPanel.Width - 20;
+                separatorLine.Location = new Point(10, 35);
+                friendInfoPanel.Controls.Add(separatorLine);
+
+                int yPos = 45;
                 foreach (FriendInfo friend in friends)
                 {
                     Panel friendPanel = new Panel();
-                    friendPanel.BorderStyle = BorderStyle.FixedSingle;
-                    friendPanel.Size = new Size(friendInfoPanel.Width - 20, 40);
+                    friendPanel.BorderStyle = BorderStyle.None;
+                    friendPanel.BackColor = Color.White;
+                    friendPanel.Size = new Size(friendInfoPanel.Width - 30, 60);
                     friendPanel.Location = new Point(10, yPos);
 
+                    friendPanel.MouseEnter += (sender, e) => { friendPanel.BackColor = Color.FromArgb(245, 245, 245); };
+                    friendPanel.MouseLeave += (sender, e) => { friendPanel.BackColor = Color.White; };
+
                     Label nameLabel = new Label();
-                    nameLabel.Text = $"{friend.FirstName} {friend.LastName} (@{friend.Username})";
+                    nameLabel.Text = $"{friend.FirstName} {friend.LastName}";
                     nameLabel.Location = new Point(10, 10);
                     nameLabel.AutoSize = true;
+                    nameLabel.Font = new Font(nameLabel.Font.FontFamily, 10);
                     friendPanel.Controls.Add(nameLabel);
+
+                    Label usernameLabel = new Label();
+                    usernameLabel.Text = $"@{friend.Username}";
+                    usernameLabel.Location = new Point(friendPanel.Width - 140, 10);
+                    usernameLabel.AutoSize = true;
+                    usernameLabel.ForeColor = Color.Gray;
+                    friendPanel.Controls.Add(usernameLabel);
+
+                    Label dateLabel = new Label();
+                    dateLabel.Text = $"Friends since: {friend.FriendsSince.ToShortDateString()}";
+                    dateLabel.Location = new Point(10, 35);
+                    dateLabel.AutoSize = true;
+                    dateLabel.Font = new Font(dateLabel.Font.FontFamily, 8);
+                    dateLabel.ForeColor = Color.DarkGray;
+                    friendPanel.Controls.Add(dateLabel);
+
+                    Panel itemSeparator = new Panel();
+                    itemSeparator.BorderStyle = BorderStyle.FixedSingle;
+                    itemSeparator.Height = 1;
+                    itemSeparator.Width = friendInfoPanel.Width - 40;
+                    itemSeparator.Location = new Point(20, yPos + 59);
+                    itemSeparator.BackColor = Color.LightGray;
+                    friendInfoPanel.Controls.Add(itemSeparator);
 
                     friendInfoPanel.Controls.Add(friendPanel);
 
-                    yPos += 50;
+                    yPos += 65;
                 }
             }
             catch (Exception ex)

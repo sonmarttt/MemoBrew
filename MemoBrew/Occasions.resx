@@ -319,7 +319,7 @@
     <value>7, 0, 7, 0</value>
   </data>
   <data name="mostHangoverNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 58</value>
+    <value>256, 58</value>
   </data>
   <data name="mostHangoverNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -679,7 +679,7 @@
     <value>17, 16, 17, 16</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Occasions</value>
+    <value>e</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Occasions</value>

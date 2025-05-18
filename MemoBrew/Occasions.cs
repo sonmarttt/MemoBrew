@@ -22,6 +22,7 @@ namespace MemoBrew
         private int currentCommentIndex = 0;
         private Timer imageTimer = new Timer();
         private Timer commentTimer = new Timer();
+        private string appBaseDirectory;
 
         public Occasions(int userID, int occasionID)
         {
@@ -32,6 +33,8 @@ namespace MemoBrew
             this.userID = userID;
             this.occasionID = occasionID;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
+
+            appBaseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
             imageTimer.Interval = 3000;
             imageTimer.Tick += ImageTimer_Tick;
@@ -110,11 +113,25 @@ namespace MemoBrew
                     {
                         while (reader.Read())
                         {
-                            string imagePath = reader.GetString(0);
+                            string relativePath = reader.GetString(0);
+                            string fullPath;
 
-                            if (File.Exists(imagePath))
+                            if (Path.IsPathRooted(relativePath))
                             {
-                                imagePaths.Add(imagePath);
+                                fullPath = relativePath;
+                            }
+                            else
+                            {
+                                fullPath = Path.Combine(appBaseDirectory, relativePath);
+                            }
+
+                            if (File.Exists(fullPath))
+                            {
+                                imagePaths.Add(fullPath);
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Image not found: {fullPath}");
                             }
                         }
                     }

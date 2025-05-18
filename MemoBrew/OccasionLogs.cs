@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace MemoBrew
         private int occasionID;
         private List<DrinkItem> userDrinks = new List<DrinkItem>();
         private Dictionary<int, DrinkInfo> availableDrinks = new Dictionary<int, DrinkInfo>();
+        private string imagesFolderPath;
 
         public OccasionLogs(int userID, int occasionID)
         {
@@ -27,9 +29,28 @@ namespace MemoBrew
             this.occasionID = occasionID;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
 
+            SetupImagesFolder();
             LoadAvailableDrinks();
-
             LoadOccasionData();
+        }
+
+        private void SetupImagesFolder()
+        {
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            imagesFolderPath = Path.Combine(baseDir, "OccasionImages");
+
+            if (!Directory.Exists(imagesFolderPath))
+            {
+                Directory.CreateDirectory(imagesFolderPath);
+            }
+
+            string occasionFolderPath = Path.Combine(imagesFolderPath, $"Occasion_{occasionID}");
+            if (!Directory.Exists(occasionFolderPath))
+            {
+                Directory.CreateDirectory(occasionFolderPath);
+            }
+
+            imagesFolderPath = occasionFolderPath;
         }
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
@@ -279,8 +300,6 @@ namespace MemoBrew
             }
         }
 
-        
-
         private void SaveDrinkLogs(int hangoverRating, int sicknessRating, string comments)
         {
             SqlConnection connection = null;
@@ -370,7 +389,40 @@ namespace MemoBrew
             newForm.FormClosed += (s, args) => this.Close();
         }
 
-        private void SaveImageReference(string filePath)
+        private void uploadPicturesButton_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Multiselect = true;
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
+                openFileDialog.Title = "Select Images";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    foreach (string sourcePath in openFileDialog.FileNames)
+                    {
+                        try
+                        {
+                            string fileName = $"img_{DateTime.Now.Ticks}_{Path.GetFileName(sourcePath)}";
+                            string destinationPath = Path.Combine(imagesFolderPath, fileName);
+                            File.Copy(sourcePath, destinationPath, true);
+                            string relativePath = $"OccasionImages/Occasion_{occasionID}/{fileName}";
+                            SaveImageReference(relativePath);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error copying image {Path.GetFileName(sourcePath)}: {ex.Message}",
+                                "Image Copy Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
+                    MessageBox.Show("Images uploaded successfully!",
+                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void SaveImageReference(string relativePath)
         {
             SqlConnection connection = null;
             try
@@ -383,7 +435,7 @@ namespace MemoBrew
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@ImagePath", filePath);
+                    command.Parameters.AddWithValue("@ImagePath", relativePath);
                     command.Parameters.AddWithValue("@OccasionID", occasionID);
                     command.Parameters.AddWithValue("@CreatorID", userID);
 
@@ -445,7 +497,6 @@ namespace MemoBrew
                     };
 
                     userDrinks.Add(newDrink);
-
                     UpdateDrinksDisplay();
                 }
             }
@@ -456,34 +507,12 @@ namespace MemoBrew
             if (userDrinks.Count > 0)
             {
                 userDrinks.RemoveAt(userDrinks.Count - 1);
-
                 UpdateDrinksDisplay();
             }
             else
             {
                 MessageBox.Show("There are no drinks to remove.",
                     "No Drinks", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void uploadPicturesButton_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            {
-                openFileDialog.Multiselect = true;
-                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
-                openFileDialog.Title = "Select Images";
-
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    foreach (string fileName in openFileDialog.FileNames)
-                    {
-                        SaveImageReference(fileName);
-                    }
-
-                    MessageBox.Show("Images uploaded successfully!",
-                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
             }
         }
     }
